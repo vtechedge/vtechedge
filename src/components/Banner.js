@@ -11,14 +11,14 @@ const Banner = ({
 }) => {
   return (
     <div
-      className={`w-full py-12 px-4 sm:px-6 lg:px-8 ${bgColor} ${className} h-[350px] mt-[100px] flex flex-col justify-center relative rounded-b-[20px] md:rounded-b-[50px]`}
+      className={`w-full py-12 px-4 sm:px-6 lg:px-8 ${bgColor} ${className} h-[350px] mt-[100px] flex flex-col justify-center relative`}
       style={{
         backgroundImage: 'url("/images/banner.jpg")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-80 rounded-b-[20px] md:rounded-b-[50px]" />
+      <div className="absolute inset-0 bg-black bg-opacity-80" />
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center">
           <h2 className={`text-3xl font-extrabold sm:text-4xl ${textColor}`}>

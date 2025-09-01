@@ -115,7 +115,6 @@ const About = () => {
 
   return (
     <>
-      <Banner title={"About Us"} />
       <div className="py-[50px] padding-x flex flex-col xl:flex-row items-center justify-between gap-5">
         <div className="relative w-full xl:w-[50%] h-[300px] xl:h-[700px]">
           <Image

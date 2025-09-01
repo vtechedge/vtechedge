@@ -4,76 +4,69 @@ export const serviceData = {
     description: "Unlock Scalable, Secure, and Smart Business Solutions",
     content: [
       {
-        heading: "Transforming Businesses with Scalable & Intelligent Software Solutions",
+        heading: "Strategic Planning & Business Strategy",
         paragraphs: [
-          "At VTechEdge, we specialize in Enterprise Software Development designed to empower businesses with scalable, secure, and future-ready digital solutions. Whether you're modernizing legacy systems, integrating enterprise applications, or building custom software from the ground up, our expert development team delivers robust solutions tailored to your unique business goals. In today's fast-evolving digital landscape, organizations need more than just off-the-shelf software. Our enterprise software services are built to streamline operations, increase productivity, and drive digital transformation—all while ensuring seamless integration across your technology stack. From consulting to development, deployment, and continuous optimization, we support businesses at every stage of the software lifecycle. Our approach is agile, collaborative, and deeply rooted in industry best practices, ensuring every solution we build is high-performing, adaptable, and aligned with your strategic vision. Partner with VTechEdge to transform your enterprise with intelligent software solutions that create measurable impact and long-term value.",
+          "Comprehensive business roadmap development for healthcare and pharmaceutical companies entering new markets or optimizing existing operations.",
         ],
       },
     ],
     mobileCards: {
-      heading: "Our Enterprise Software Solutions",
+      heading: "How We Can Help You To Offer And Build",
       cards: [
         {
-          icon: "💻",
-          title: "Custom Application Development",
-          description: "We build secure, scalable, and fully tailored software solutions—from ERP to CRM—designed around your business needs and goals",
+          icon: "ic:baseline-rocket-launch",
+          title: "Product launch feasibility studies",
         },
         {
-          icon: "🔄",
-          title: "Legacy System Modernization",
-          description: "Upgrade outdated systems with cloud migration, UX enhancements, and improved performance—all with minimal disruption to your operations.",
+          icon: "ic:round-business",
+          title: "Market size and opportunity assessment",
         },
         {
-          icon: "🔧",
-          title: "System Integration & Automation",
-          description: "Connect and automate your enterprise systems for seamless workflows, real-time data, and better decision-making across departments.",
+          icon: "ic:outline-analytics",
+          title: "Customer demographics and behavior analysis",
+        },
+        {
+          icon: "ic:outline-landscape",
+          title: "Regulatory landscape evaluation",
+        },
+        {
+          icon: "ic:twotone-groups-3",
+          title: "Competitive intelligence gathering",
         },
       ],
     },
     featureSection: {
-      heading: "Our Enterprise Software Development Approach",
-      image: "/images/bg-1.jpg",
+      heading: "How It's Benefitted Our Clients",
       features: [
         {
-          title: "Consult & Strategize",
+          icon: "material-symbols-light:stacked-line-chart-rounded",
+          title: "Reduced Market Risk",
           description:
-            "We begin by understanding your business goals, challenges, and technology landscape. Through in-depth consultation and analysis, we craft a clear software strategy aligned with your enterprise objectives.",
+            "Data-driven strategies minimize investment risks and maximize success probability",
         },
         {
-          title: "Design & Develop",
+          icon: "material-symbols-light:shutter-speed",
+          title: "Faster Time-to-Market",
           description:
-            "Our agile development process focuses on building secure, scalable, and user-centric solutions. We prioritize performance, integration, and adaptability to ensure your software evolves with your business.",
+            "Streamlined planning accelerates product and service launches",
         },
         {
-          title: "Deploy & Optimize",
+          icon: "material-symbols-light:briefcase-meal-outline",
+          title: "Competitive Advantag",
           description:
-            "After deployment, we ensure smooth integration and provide ongoing support. With continuous monitoring and improvements, we help your enterprise software stay reliable, efficient, and future-ready.",
-        },
-      ],
-    },
-    multiPhaseSection: {
-      heading: "Why Choose VTechEdge for Enterprise Software Development?",
-      subheading: "Choosing the right technology partner can make or break your digital transformation. Here’s why businesses trust VTechEdge:",
-      items: [
-        {
-          icon: "👥", // Replace with SVG if needed
-          title: "Industry Expertise",
-          description: " 10+ years of experience delivering enterprise-grade software across industries including healthcare, pharma, finance, and more.",
+            "Deep market analysis reveals opportunities competitors miss",
         },
         {
-          icon: "⏩",
-          title: "Custom-Built Solutions",
-          description: "write the Section 3 for  out Enterprise Software Solutions approach in three points ",
+          icon: "material-symbols-light:finance-mode-outline-rounded",
+          title: "Sustainable Growth",
+          description:
+            "Long-term strategies ensure scalable, profitable business development",
         },
         {
-          icon: "🛠️",
-          title: "Agile & Scalable Development",
-          description: " Flexible methodologies that support fast iterations, rapid deployment, and future scalability.",
-        },
-        {
-          icon: "🏋️",
-          title: "Security & Compliance First",
-          description: "Enterprise-level security protocols and full compliance with industry standards like HIPAA, GDPR, and ISO.",
+          icon: "material-symbols-light:atr",
+          title: "Informed Decision-Making",
+          description:
+            "Comprehensive market intelligence supports strategic choices2",
         },
       ],
     },
@@ -95,17 +88,20 @@ export const serviceData = {
         {
           icon: "☁️",
           title: "Business Web Applications",
-          description: "Streamline operations with tailored internal tools—dashboards, portals, and workflow systems built for your exact business needs.",
+          description:
+            "Streamline operations with tailored internal tools—dashboards, portals, and workflow systems built for your exact business needs.",
         },
         {
           icon: "🛡️",
           title: "Customer Web Portals",
-          description: "Create fast, responsive, and user-friendly platforms for your clients—perfect for e-commerce, service portals, or booking systems.",
+          description:
+            "Create fast, responsive, and user-friendly platforms for your clients—perfect for e-commerce, service portals, or booking systems.",
         },
         {
           icon: "📈",
           title: "Progressive Web Apps (PWAs)",
-          description: "Deliver app-like experiences on the web with offline access, push notifications, and fast load times across all devices.",
+          description:
+            "Deliver app-like experiences on the web with offline access, push notifications, and fast load times across all devices.",
         },
       ],
     },
@@ -115,11 +111,13 @@ export const serviceData = {
       features: [
         {
           title: "Discover & Plan",
-          description: "We begin with a deep dive into your business needs, user expectations, and technical goals—turning them into a clear development roadmap.",
+          description:
+            "We begin with a deep dive into your business needs, user expectations, and technical goals—turning them into a clear development roadmap.",
         },
         {
           title: "Design & Build",
-          description: "Using agile methodology, we create responsive, secure, and scalable web applications—built with clean code and modern technologies.",
+          description:
+            "Using agile methodology, we create responsive, secure, and scalable web applications—built with clean code and modern technologies.",
         },
         {
           title: "Test, Deploy & Support",
@@ -130,27 +128,32 @@ export const serviceData = {
     },
     multiPhaseSection: {
       heading: "Why Choose VTechEdge for Custom Web App Development?",
-      subheading: "Here’s why businesses choose VTechEdge to build their custom web applications:",
+      subheading:
+        "Here’s why businesses choose VTechEdge to build their custom web applications:",
       items: [
         {
           icon: "🔒",
           title: "Tailored to Your Business",
-          description: "We don’t offer one-size-fits-all solutions. Every application is custom-built to match your exact workflows, goals, and user needs.",
+          description:
+            "We don’t offer one-size-fits-all solutions. Every application is custom-built to match your exact workflows, goals, and user needs.",
         },
         {
           icon: "📈",
           title: "Scalable & Future-Ready",
-          description: "Our web apps are designed to grow with your business—flexible architectures that support new features, users, and integrations over time.",
+          description:
+            "Our web apps are designed to grow with your business—flexible architectures that support new features, users, and integrations over time.",
         },
         {
           icon: "⚡",
           title: "Fast & Secure Development",
-          description: "We follow best practices in security, performance, and agile delivery to ensure you get a high-quality product—on time and on budget.",
+          description:
+            "We follow best practices in security, performance, and agile delivery to ensure you get a high-quality product—on time and on budget.",
         },
         {
           icon: "🔄",
           title: "Ongoing Support & Optimization",
-          description: "Beyond launch, we're here to help with updates, enhancements, and technical support to keep your application running at its best.",
+          description:
+            "Beyond launch, we're here to help with updates, enhancements, and technical support to keep your application running at its best.",
         },
       ],
     },
@@ -172,17 +175,20 @@ export const serviceData = {
         {
           icon: "📱",
           title: "Native App Development",
-          description: "High-performance apps built specifically for iOS and Android to deliver the best speed, usability, and platform experience.",
+          description:
+            "High-performance apps built specifically for iOS and Android to deliver the best speed, usability, and platform experience.",
         },
         {
           icon: "🔄",
           title: "Cross-Platform Development",
-          description: "Single-codebase apps using Flutter or React Native—ideal for faster launch, lower cost, and consistent performance across devices.",
+          description:
+            "Single-codebase apps using Flutter or React Native—ideal for faster launch, lower cost, and consistent performance across devices.",
         },
         {
           icon: "🏢",
           title: "Enterprise Mobile Solutions",
-          description: "Secure, scalable apps for internal business use—integrated with your systems to boost productivity and mobility.",
+          description:
+            "Secure, scalable apps for internal business use—integrated with your systems to boost productivity and mobility.",
         },
       ],
     },
@@ -192,15 +198,18 @@ export const serviceData = {
       features: [
         {
           title: "Discovery & Strategy",
-          description: "We start by understanding your goals, target users, and business model to define a clear mobile strategy and app roadmap.",
+          description:
+            "We start by understanding your goals, target users, and business model to define a clear mobile strategy and app roadmap.",
         },
         {
           title: "Design & Development",
-          description: "Our team designs intuitive interfaces and develops robust, scalable mobile apps using the latest technologies and best practices.",
+          description:
+            "Our team designs intuitive interfaces and develops robust, scalable mobile apps using the latest technologies and best practices.",
         },
         {
           title: "Testing, Launch & Support",
-          description: "We ensure smooth performance with thorough testing, assist with app store deployment, and provide ongoing support for updates and enhancements.",
+          description:
+            "We ensure smooth performance with thorough testing, assist with app store deployment, and provide ongoing support for updates and enhancements.",
         },
       ],
     },
@@ -211,29 +220,34 @@ export const serviceData = {
         {
           icon: "🎨",
           title: "USER-FIRST DESIGN",
-          description: "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
+          description:
+            "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
         },
         {
           icon: "🔄",
           title: "END-TO-END EXPERTISE",
-          description: "From concept to launch and beyond, we manage the entire app lifecycle with a dedicated team of strategists, designers, and developers.",
+          description:
+            "From concept to launch and beyond, we manage the entire app lifecycle with a dedicated team of strategists, designers, and developers.",
         },
         {
           icon: "🛡️",
           title: "SCALABLE & SECURE SOLUTIONS",
-          description: "Our apps are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
+          description:
+            "Our apps are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
         },
         {
           icon: "⚡",
           title: "FAST DELIVERY & ONGOING SUPPORT",
-          description: "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your mobile solution.",
+          description:
+            "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your mobile solution.",
         },
       ],
     },
   },
   "business-intelligence-and-process-automation": {
     title: "Business Intelligence and Process Automation",
-    description: "Turn Data Into Strategy. Transform Processes Into Intelligent Automation.",
+    description:
+      "Turn Data Into Strategy. Transform Processes Into Intelligent Automation.",
     content: [
       {
         heading: "Unlocking the Power of Data & Efficiency",
@@ -259,8 +273,10 @@ export const serviceData = {
         },
         {
           icon: "🚀",
-          title: "Why Choose VTechEdge for Business Intelligence and Process Automation?",
-          description: "At VTechEdge, we specialize in helping businesses leverage data and automation to drive growth and efficiency.",
+          title:
+            "Why Choose VTechEdge for Business Intelligence and Process Automation?",
+          description:
+            "At VTechEdge, we specialize in helping businesses leverage data and automation to drive growth and efficiency.",
         },
       ],
     },
@@ -286,13 +302,15 @@ export const serviceData = {
       ],
     },
     multiPhaseSection: {
-      heading: "Why Choose VTechEdge for Business Intelligence and Process Automation?",
+      heading:
+        "Why Choose VTechEdge for Business Intelligence and Process Automation?",
       subheading: "Your Trusted Partner for Data-Driven Growth",
       items: [
         {
           icon: "🧑‍💼",
           title: "EXPERT GUIDANCE",
-          description: "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
+          description:
+            "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
         },
         {
           icon: "📊",
@@ -332,17 +350,20 @@ export const serviceData = {
         {
           icon: "🛡️",
           title: "Machine Learning & AI Models",
-          description: "Build custom machine learning models and AI agents that can learn, adapt, and make decisions based on your data.",
+          description:
+            "Build custom machine learning models and AI agents that can learn, adapt, and make decisions based on your data.",
         },
         {
           icon: "🔍",
           title: "Natural Language Processing (NLP)",
-          description: "Develop intelligent chatbots and voice assistants that understand and respond to natural language queries.",
+          description:
+            "Develop intelligent chatbots and voice assistants that understand and respond to natural language queries.",
         },
         {
           icon: "📚",
           title: "Predictive Analytics",
-          description: "Build predictive models that can forecast trends, identify risks, and optimize business operations.",
+          description:
+            "Build predictive models that can forecast trends, identify risks, and optimize business operations.",
         },
       ],
     },
@@ -374,7 +395,8 @@ export const serviceData = {
         {
           icon: "🔬",
           title: "EXPERT GUIDANCE",
-          description: "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
+          description:
+            "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
         },
         {
           icon: "🛡️",
@@ -421,12 +443,14 @@ export const serviceData = {
         {
           icon: "🔮",
           title: "Marketing & Advertising Design",
-          description: "From eye-catching social media graphics to high-converting ad creatives, we design visual content that stops the scroll and drives results.",
+          description:
+            "From eye-catching social media graphics to high-converting ad creatives, we design visual content that stops the scroll and drives results.",
         },
         {
           icon: "📈",
           title: "Corporate & Business Design",
-          description: "Professional design that supports your communication and enhances your brand image across all corporate touchpoints.",
+          description:
+            "Professional design that supports your communication and enhances your brand image across all corporate touchpoints.",
         },
       ],
     },
@@ -458,22 +482,26 @@ export const serviceData = {
         {
           icon: "🎨",
           title: "USER-FIRST DESIGN",
-          description: "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
+          description:
+            "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
         },
         {
           icon: "�",
           title: "END-TO-END EXPERTISE",
-          description: "From concept to launch and beyond, we manage the entire design lifecycle with a dedicated team of strategists, designers, and developers.",
+          description:
+            "From concept to launch and beyond, we manage the entire design lifecycle with a dedicated team of strategists, designers, and developers.",
         },
         {
           icon: "�️",
           title: "SCALABLE & SECURE SOLUTIONS",
-          description: "Our designs are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
+          description:
+            "Our designs are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
         },
         {
           icon: "⚡",
           title: "FAST DELIVERY & ONGOING SUPPORT",
-          description: "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your visual identity.",
+          description:
+            "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your visual identity.",
         },
       ],
     },
@@ -495,17 +523,20 @@ export const serviceData = {
         {
           icon: "🔍",
           title: "Search Engine Optimization (SEO)",
-          description: "Improve your website's visibility and rank higher in search results.",
+          description:
+            "Improve your website's visibility and rank higher in search results.",
         },
         {
           icon: "📱",
           title: "Social Media Marketing",
-          description: "Build brand awareness and engage with your audience across platforms.",
+          description:
+            "Build brand awareness and engage with your audience across platforms.",
         },
         {
           icon: "📧",
           title: "Email Marketing",
-          description: "Drive conversions with targeted email campaigns and automation.",
+          description:
+            "Drive conversions with targeted email campaigns and automation.",
         },
       ],
     },
@@ -520,11 +551,13 @@ export const serviceData = {
         },
         {
           title: "Campaign Execution",
-          description: "Our team implements multi-channel campaigns across SEO, PPC, social media, and content marketing, ensuring consistent messaging and optimal performance.",
+          description:
+            "Our team implements multi-channel campaigns across SEO, PPC, social media, and content marketing, ensuring consistent messaging and optimal performance.",
         },
         {
           title: "Analysis & Optimization",
-          description: "We continuously monitor campaign performance, analyze data, and optimize strategies to maximize ROI and achieve sustainable growth for your business.",
+          description:
+            "We continuously monitor campaign performance, analyze data, and optimize strategies to maximize ROI and achieve sustainable growth for your business.",
         },
       ],
     },
@@ -532,10 +565,30 @@ export const serviceData = {
       heading: "Why Choose VTechEdge for Digital Marketing?",
       subheading: "Your Partner for Digital Growth and Success",
       items: [
-        { icon: "📊", title: "DATA-DRIVEN APPROACH", description: "Make informed decisions with comprehensive analytics and performance tracking across all campaigns." },
-        { icon: "🎯", title: "TARGETED STRATEGIES", description: "Reach your ideal customers with precision-targeted campaigns and personalized messaging." },
-        { icon: "📈", title: "MEASURABLE RESULTS", description: "Track real-time performance and ROI with detailed reporting and transparent analytics." },
-        { icon: "🚀", title: "SCALABLE GROWTH", description: "Scale your marketing efforts efficiently as your business grows with flexible, adaptive strategies." },
+        {
+          icon: "📊",
+          title: "DATA-DRIVEN APPROACH",
+          description:
+            "Make informed decisions with comprehensive analytics and performance tracking across all campaigns.",
+        },
+        {
+          icon: "🎯",
+          title: "TARGETED STRATEGIES",
+          description:
+            "Reach your ideal customers with precision-targeted campaigns and personalized messaging.",
+        },
+        {
+          icon: "📈",
+          title: "MEASURABLE RESULTS",
+          description:
+            "Track real-time performance and ROI with detailed reporting and transparent analytics.",
+        },
+        {
+          icon: "🚀",
+          title: "SCALABLE GROWTH",
+          description:
+            "Scale your marketing efforts efficiently as your business grows with flexible, adaptive strategies.",
+        },
       ],
     },
   },

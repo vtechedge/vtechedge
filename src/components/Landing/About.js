@@ -5,7 +5,7 @@ import Clamp from "@/utils/Clamp";
 
 const About = () => {
   return (
-    <div className="padding-x py-[50px] flex flex-col gap-[50px]">
+    <div className="padding-x py-[150px] flex flex-col gap-[50px]">
       <div className="flex flex-col md:flex-row items-center gap-[50px]">
         <div className="relative w-full md:w-[60%] h-[300px] md:h-[500px]">
           <Image

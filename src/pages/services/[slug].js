@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Banner from "../../components/Banner";
 import { serviceData } from "../../static/serviceData";
+import { Icon } from "@iconify/react";
 
 const ServicePage = () => {
   const router = useRouter();
@@ -19,121 +20,95 @@ const ServicePage = () => {
 
   return (
     <div className="min-h-screen text-black">
-      <Banner
-        title={service.title}
-        description={service.description}
-        bgColor="bg-[#0d1b2a]"
-        textColor="text-[#e0e1dd]"
-      />
-
       {service.content.map((section, index) => (
-        <div
-          key={index}
-          className="p-8 rounded-lg mb-12 text-left md:text-center mt-6"
-        >
-          <h2 className="text-3xl font-bold mb-6">{section.heading}</h2>
-          <div className="space-y-6">
-            {section.paragraphs.map((paragraph, pIndex) => (
-              <p
-                key={pIndex}
-                className="text-[14px] md:text-lg text-gray-600 w-full md:w-[80%] mx-auto"
-              >
-                {paragraph}
-              </p>
-            ))}
+        <div className="flex flex-row py-[50px] gap-10 padding-x relative h-[80vh]">
+          <img
+            src="/images/background.png"
+            alt=""
+            className="absolute inset-0 h-[75vh] w-full object-cover z-0"
+          />
+          <div
+            key={index}
+            className="w-[50%] flex flex-col gap-[30px] z-10 text-white mt-[180px]"
+          >
+            <h2 className="text-[56px] font-normal">{section.heading}</h2>
+            <div className="space-y-6">
+              {section.paragraphs.map((paragraph, pIndex) => (
+                <p key={pIndex} className="text-[24px] text-gray-300 w-[80%]">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="w-[50%] z-10 mt-[180px] relative">
+            <img
+              src="/images/95.jpg"
+              alt=""
+              className="object-cover h-[600px] absolute w-full rounded-2xl z-10"
+            />
           </div>
         </div>
       ))}
 
-      {/* Dynamic Cards Section */}
-      <div className="py-[50px] xl:py-[100px] padding-x bg-[#ececec]">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-10">
+      <div className="py-[0px] padding-x flex flex-col gap-10">
+        <h2 className="text-[56px] font-normal w-[50%]">
           {service.mobileCards.heading}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {service.mobileCards.cards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 xl:p-8 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full items-center text-center"
-            >
-              <div className="w-[50px] h-[50px] xl:w-[60px] xl:h-[60px] bg-gray-200 rounded-full flex items-center justify-center mb-4 xl:mb-6 text-2xl xl:text-3xl">
-                {card.icon}
-              </div>
-              <h3 className="text-[20px] xl:text-[24px] font-bold mb-3 xl:mb-4">
-                {card.title}
-              </h3>
-              <p className="text-[14px] xl:text-[16px] text-gray-600 mb-4 xl:mb-6 flex-1">
-                {card.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Feature Section: Image Left, Features Right */}
-      <div className="py-[50px] xl:py-[100px] padding-x">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12">
-          {service.featureSection.heading}
-        </h2>
-        <div className="flex flex-col xl:flex-row items-center gap-12 bg-white">
-          <div className="flex-1 flex justify-center mb-8 xl:mb-0">
-            <img
-              src={service.featureSection.image}
-              alt="feature"
-              className="w-full h-[300px] xl:h-[400px] rounded-[20px] object-cover"
-            />
-          </div>
-          <div className="flex-1">
-            {service.featureSection.features.map((feature, idx) => (
-              <div key={idx} className="mb-6 xl:mb-8 last:mb-0">
-                <h3 className="text-lg xl:text-xl font-bold mb-2 text-[#274c77]">
-                  {feature.title}
+        <div className="flex flex-row gap-10 h-[700px]">
+          <img
+            src="/images/95.jpg"
+            alt=""
+            className="object-cover rounded-2xl w-[50%]"
+          />
+          <div className="grid grid-rows-3 grid-cols-2 gap-2 w-[50%]">
+            {service.mobileCards.cards.map((card, index) => (
+              <div
+                key={index}
+                className="py-3 pl-3 pr-5 rounded-2xl flex flex-col justify-between border-[1px] border-gray-100 shadow-md hover:shadow-xl transition-all duration-300"
+              >
+                <Icon
+                  icon={"meteor-icons:xmark"}
+                  width={35}
+                  height={35}
+                  color="gray"
+                  className="p-[10px] rounded-[10px] border-[1px] border-blue-500"
+                />
+                <h3 className="text-[20px] xl:text-[24px] font-light pl-[50px] text-end">
+                  {card.title}
                 </h3>
-                <p className="text-[14px] xl:text-base text-gray-600">
-                  {feature.description}
-                </p>
               </div>
             ))}
           </div>
         </div>
       </div>
 
-      {/* Multi Phase Section: 2x2 Grid with Heading and Subheading */}
-      <div className="py-[50px] xl:py-[100px] padding-x bg-[#ececec]">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-4 text-[#274c77]">
-          {service.multiPhaseSection.heading}
+      <div className="py-[50px] xl:py-[100px] padding-x">
+        <h2 className="text-[56px] font-normal">
+          {service.featureSection.heading}
         </h2>
-        <p className="text-[14px] xl:text-lg text-center mb-8 xl:mb-12 text-[#6c7a89] max-w-4xl mx-auto">
-          {service.multiPhaseSection.subheading}
-        </p>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12 max-w-5xl mx-auto">
-          {service.multiPhaseSection.items.map((item, idx) => (
-            <div key={idx} className="flex items-start gap-4 xl:gap-6">
-              <div className="flex-shrink-0 w-[60px] h-[60px] xl:w-[80px] xl:h-[80px] border-2 border-blue-500 rounded-full flex items-center justify-center text-2xl xl:text-4xl text-blue-500 bg-white">
-                {item.icon}
-              </div>
-              <div>
-                <h3 className="text-lg xl:text-xl font-bold mb-2 text-[#274c77]">
-                  {item.title}
+        <div className="grid grid-rows-2 grid-cols-3 py-[50px] gap-2">
+          {service.featureSection.features.map((feature, idx) => (
+            <div
+              className="py-3 pl-3 pr-5 rounded-2xl flex flex-col justify-between 
+              border-[1px] border-gray-100 shadow-md hover:shadow-xl transition-all duration-300 h-[200px]"
+            >
+              <Icon
+                icon={feature.icon}
+                width={55}
+                height={55}
+                className="text-blue-500"
+              />
+              <div key={idx}>
+                <h3 className="text-lg xl:text-xl font-bold mb-2 text-black">
+                  {feature.title}
                 </h3>
-                <p className="text-[14px] xl:text-base text-[#6c7a89]">
-                  {item.description}
+                <p className="text-[14px] xl:text-base text-gray-500">
+                  {feature.description}
                 </p>
               </div>
             </div>
           ))}
         </div>
-      </div>
-
-      {/* Centered Static Button at the End */}
-      <div className="flex justify-center my-12 xl:my-24">
-        <button
-          className="bg-[#274c77] text-white text-[14px] xl:text-lg font-bold px-6 xl:px-10 py-3 xl:py-4 rounded-full shadow-lg transition-all duration-300
-          hover:bg-gradient-to-r hover:from-[#415a77] hover:to-[#274c77] hover:scale-105 hover:shadow-[0_8px_32px_0_rgba(65,90,119,0.25)]
-          focus:outline-none focus:ring-4 focus:ring-[#415a77]/50 animate-bounce"
-        >
-          SETUP A FREE MEETING
-        </button>
       </div>
     </div>
   );

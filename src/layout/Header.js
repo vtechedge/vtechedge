@@ -43,7 +43,7 @@ const Header = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Pharmacy Consultant", path: "/pharmacy-consultant" },
-    { name: "Services", path: "/services", hasDropdown: true },
+    { name: "Services", path: "#", hasDropdown: true },
     { name: "Blog", path: "/blog" },
   ];
 
@@ -112,10 +112,7 @@ const Header = () => {
   return (
     <header
       ref={headerRef}
-      className={`w-full fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-[#0d1b2a]/30 backdrop-blur-[20px] text-[#e0e1dd] padding-x py-[20px]
-       transition-transform duration-300 ${
-         isVisible ? "translate-y-0" : "-translate-y-full"
-       }`}
+      className={`w-full fixed top-0 left-0 right-0 z-50 flex items-center justify-between bg-[#0d1b2a]/30 backdrop-blur-[20px] text-[#e0e1dd] padding-x py-[20px]`}
     >
       <Link
         href="/"
@@ -153,7 +150,12 @@ const Header = () => {
                     ? "text-white"
                     : "text-[#e0e1dd]"
                 }`}
-                onClick={handleMenuItemClick}
+                onClick={(e) => {
+                  if (item.name === "Services") {
+                    e.preventDefault();
+                    toggleServicesDropdown();
+                  }
+                }}
               >
                 {item.name}
               </Link>

@@ -1,12 +1,17 @@
-import React, { useEffect, useState, useCallback } from "react";
-import Image from "next/image";
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import AnimatedText from "@/utils/AnimatedText";
 import Clamp from "@/utils/Clamp";
 
 const Landing = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 3;
+  const textRef = useRef(null);
 
-  const images = ["/images/bg-1.jpg", "/images/bg-2.jpg", "/images/bg-3.jpg"];
+  const images = [
+    "/images/landing-1.png",
+    "/images/bg-2.jpg",
+    "/images/bg-3.jpg",
+  ];
 
   const slideContent = [
     {
@@ -32,97 +37,74 @@ const Landing = () => {
     },
   ];
 
-  const goToSlide = useCallback((index) => {
-    0;
-
-    if (index < 0) index = totalSlides - 1;
-    if (index >= totalSlides) index = 0;
-    setCurrentSlide(index);
-  }, []);
-
-  const nextSlide = useCallback(
-    () => goToSlide(currentSlide + 1),
-    [currentSlide, goToSlide]
-  );
-  const prevSlide = useCallback(
-    () => goToSlide(currentSlide - 1),
-    [currentSlide, goToSlide]
-  );
-
-  // Auto-play functionality
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
-    return () => clearInterval(interval);
-  }, [currentSlide, nextSlide]);
+    const tl = gsap.timeline({
+      defaults: { duration: 3, ease: "power2.out" },
+    });
+
+    tl.to(textRef.current, {
+      y: "-100",
+      opacity: 1,
+      duration: 2,
+      onComplete: () => {
+        setCurrentSlide((prev) => (prev + 1) % slideContent.length);
+      },
+    }).fromTo(
+      textRef.current,
+      { y: "100", opacity: 0 },
+      { y: "0", opacity: 1, delay: 0.5 } // Add delay to ensure text fades in after image change
+    );
+
+    return () => {
+      tl.kill();
+    };
+  }, [currentSlide]);
 
   return (
-    <div className="relative w-full h-[80vh] xl:h-[98vh] overflow-hidden">
-      {/* Slides Container */}
-      <div className="relative w-full h-full">
-        {images.map((image, index) => (
+    <div
+      className="relative h-[90vh] w-full"
+      style={{
+        backgroundImage: `url('/images/background.png')`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      <div className="flex flex-row h-full items-center padding-x">
+        <div className="z-[999] pl-[50px] w-[50%]">
           <div
-            key={index}
-            className={`absolute top-0 left-0 w-full h-full transition-opacity duration-700 ease-in-out ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
+            ref={textRef}
+            className={`flex items-center text-left absolute top-[300px] left-[50px]
+            text-[#e0e1dd] z-10 w-full max-w-3xl transition-all duration-700 ease-out`}
           >
-            <Image
-              src={image}
-              alt={`Slide ${index + 1}`}
-              fill
-              className="object-cover brightness-[0.3] rounded-b-[20px] md:rounded-b-[50px]"
-              priority={index === 0}
-            />
-          </div>
-        ))}
-      </div>
-
-      {/* Text Content */}
-      {slideContent.map((content, index) => (
-        <div
-          key={index}
-          className={`absolute left-8 md:left-16 lg:left-24 xl:left-32 inset-y-0 flex items-center text-left text-[#e0e1dd] z-10 w-full max-w-2xl transition-all duration-700 ease-out ${
-            index === currentSlide
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-8"
-          }`}
-        >
-          <div>
-            <h3
-              className="font-light mb-2"
-              style={{ fontSize: `${Clamp(1, 2)}` }}
-            >
-              {content.title}
-            </h3>
-            <h1
-              className="mb-4 break-words"
-              style={{ fontSize: `${Clamp(1.4, 2.4)}` }}
-            >
-              {content.subTitle}
-            </h1>
-            <p className="text-[16px] max-w-xl w-[80%]">
-              {content.description}
-            </p>
-            <button className="bg-[#274c77] hover:bg-[#415a77] transition-colors duration-300 text-white px-[20px] py-[10px] rounded-[8px] text-[18px] mt-[30px]">
-              {content.cta}
-            </button>
+            <div className="flex flex-col justify-center items-start">
+              <h3
+                className="font-light mb-2"
+                style={{ fontSize: `${Clamp(1, 1.65)}` }}
+              >
+                {slideContent[currentSlide].title}
+              </h3>
+              <h1
+                className="mb-4 break-words font-normal"
+                style={{ fontSize: `${Clamp(2, 3.5)}` }}
+              >
+                {slideContent[currentSlide].subTitle}
+              </h1>
+              <p className="text-[16px] max-w-xl w-[80%]">
+                {slideContent[currentSlide].description}
+              </p>
+              <button className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white px-[20px] py-[10px] rounded-[25px] text-[18px] mt-[30px] z-50">
+                {slideContent[currentSlide].cta}
+              </button>
+            </div>
           </div>
         </div>
-      ))}
-
-      {/* Navigation Dots */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3 z-20">
-        {Array.from({ length: totalSlides }).map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentSlide
-                ? "bg-white scale-110"
-                : "bg-white/50 hover:bg-white/75"
-            }`}
+        <div className=" w-[50%] h-full">
+          <img
+            src={images[currentSlide]}
+            alt=""
+            className="w-full h-full object-cover rounded-xl"
           />
-        ))}
+        </div>
       </div>
     </div>
   );

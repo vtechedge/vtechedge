@@ -19,8 +19,8 @@ export const plugins = [
   function ({ addUtilities }) {
     addUtilities({
       ".padding-x": {
-        "padding-left": Clamp(0.5, 9.37),
-        "padding-right": Clamp(0.5, 9.37),
+        "padding-left": Clamp(0.5, 11.37),
+        "padding-right": Clamp(0.5, 11.37),
       },
       ".margin-x": {
         "margin-left": Clamp(0.5, 15),

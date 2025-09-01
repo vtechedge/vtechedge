@@ -19,3 +19,20 @@ h5,
 h6 {
   font-weight: 700;
 }
+
+.marginTop {
+  margin-top: 110px;
+}
+
+.curved-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Curve only at the bottom */
+  clip-path: path("M0,0 H100% V85% C70% 95%, 30% 95%, 0 85% Z");
+}
