@@ -1,5 +1,5 @@
-import Banner from "@/components/Banner";
 import React, { useState } from "react";
+import Clamp from "@/utils/Clamp";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,12 +29,12 @@ const Contact = () => {
 
   return (
     <>
-      <Banner title="Contact Us" description="Get in touch with us to discuss your project or learn more about our services." />
-
       {/* Hero Section */}
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-16 mt-28">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Let&apos;s Build Something</h2>
+          <h2 className="text-4xl font-light mb-4" style={{ fontSize: `${Clamp(1.5, 2.5)}` }}>
+            Let&apos;s Build Something
+          </h2>
           <p className="text-xl text-gray-600">We just don&apos;t build apps, we build perfect mobile experience for you</p>
         </div>
 
@@ -80,7 +80,9 @@ const Contact = () => {
         {/* Contact Form Section */}
         <div className="max-w-4xl mx-auto bg-[#ececec] p-8 rounded-lg">
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
+            <h2 className="text-3xl font-light mb-4" style={{ fontSize: `${Clamp(1.5, 2.5)}` }}>
+              Get In Touch
+            </h2>
             <p className="text-gray-600">Have a question or want to work together? Fill out the form below and we&apos;ll get back to you as soon as possible.</p>
           </div>
 

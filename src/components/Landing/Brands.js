@@ -1,9 +1,12 @@
 import React from "react";
+import Clamp from "@/utils/Clamp";
 
 const Brands = () => {
   return (
     <div className="w-full overflow-hidden py-[40px] flex flex-col items-center">
-      <h2 className="text-black text-center text-[24px] mb-8">Brands Who Trust Us</h2>
+      <h2 className="text-black text-center text-[24px] mb-8 font-light" style={{ fontSize: `${Clamp(1.5, 2.5)}` }}>
+        Brands Who Trust Us
+      </h2>
 
       <div className="w-full overflow-hidden">
         <div className="marquee-wrapper">

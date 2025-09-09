@@ -1,593 +1,6915 @@
+export const serviceCategories = [
+  {
+    name: "Business Solutions",
+    subcategories: [
+      {
+        name: "Business Strategy & Consulting",
+        services: [
+          {
+            name: "Strategic Planning & Business Strategy",
+            slug: "strategic-planning-business-strategy",
+          },
+          {
+            name: "Market Research & Feasibility Analysis",
+            slug: "market-research-feasibility-analysis",
+          },
+          {
+            name: "Business Consultation & Advisory",
+            slug: "business-consultation-advisory",
+          },
+          {
+            name: "Competitive Analysis & Benchmarking",
+            slug: "competitive-analysis-benchmarking",
+          },
+        ],
+      },
+      {
+        name: "Business Formation & Legal",
+        services: [
+          {
+            name: "Business Registration (Canada)",
+            slug: "business-registration-canada",
+          },
+          {
+            name: "Licenses & Permits",
+            slug: "licenses-permits",
+          },
+          {
+            name: "Corporate Structure Setup",
+            slug: "corporate-structure-setup",
+          },
+          {
+            name: "Legal Documentation",
+            slug: "legal-documentation",
+          },
+        ],
+      },
+      {
+        name: "Compliance & Regulatory",
+        services: [
+          {
+            name: "Regulatory Guidance & Navigation",
+            slug: "regulatory-guidance-navigation",
+          },
+          {
+            name: "Industry Standards Compliance",
+            slug: "industry-standards-compliance",
+          },
+          {
+            name: "International Compliance Support",
+            slug: "international-compliance-support",
+          },
+          {
+            name: "Ongoing Compliance Monitoring",
+            slug: "ongoing-compliance-monitoring",
+          },
+        ],
+      },
+      {
+        name: "Specialized Consulting",
+        services: [
+          {
+            name: "Business & IT Consulting",
+            slug: "business-it-consulting",
+          },
+          {
+            name: "Channel Strategy Consulting",
+            slug: "channel-strategy-consulting",
+          },
+          {
+            name: "Partner & Vendor Sourcing",
+            slug: "partner-vendor-sourcing",
+          },
+          {
+            name: "Localization Services",
+            slug: "localization-services",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "AI Automation",
+    subcategories: [
+      {
+        name: "AIBots - Robotic Process Automation",
+        services: [
+          {
+            name: "Inventory Management Automation",
+            slug: "inventory-management-automation",
+          },
+          {
+            name: "Patient Scheduling Systems",
+            slug: "patient-scheduling-systems",
+          },
+          {
+            name: "Production Workflow Automation",
+            slug: "production-workflow-automation",
+          },
+          {
+            name: "Customer Service Bots",
+            slug: "customer-service-bots",
+          },
+        ],
+      },
+      {
+        name: "AI Platforms & Solutions",
+        services: [
+          {
+            name: "Data and AI Platform Development",
+            slug: "data-ai-platform-development",
+          },
+          {
+            name: "Generative AI Solutions",
+            slug: "generative-ai-solutions",
+          },
+          {
+            name: "Google Cloud Gen AI Integration",
+            slug: "google-cloud-gen-ai-integration",
+          },
+          {
+            name: "Custom AI Model Development",
+            slug: "custom-ai-model-development",
+          },
+        ],
+      },
+      {
+        name: "RPA Implementation",
+        services: [
+          {
+            name: "Process Assessment & Design",
+            slug: "process-assessment-design",
+          },
+          {
+            name: "Bot Development & Deployment",
+            slug: "bot-development-deployment",
+          },
+          {
+            name: "Performance Monitoring & Analytics",
+            slug: "performance-monitoring-analytics",
+          },
+          {
+            name: "Maintenance & Optimization",
+            slug: "maintenance-optimization",
+          },
+        ],
+      },
+      {
+        name: "Advanced Robotics",
+        services: [
+          {
+            name: "Industrial Robots",
+            slug: "industrial-robots",
+          },
+          {
+            name: "Healthcare Robotics",
+            slug: "healthcare-robotics",
+          },
+          {
+            name: "Smart Manufacturing Systems",
+            slug: "smart-manufacturing-systems",
+          },
+          {
+            name: "IoT Integration",
+            slug: "iot-integration",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "IT & Digital Services",
+    subcategories: [
+      {
+        name: "IT Solutions & Digital Transformation",
+        services: [
+          {
+            name: "IT Infrastructure Setup",
+            slug: "it-infrastructure-setup",
+          },
+          {
+            name: "IT Modernization",
+            slug: "it-modernization",
+          },
+          {
+            name: "Digital Workspace Solutions",
+            slug: "digital-workspace-solutions",
+          },
+          {
+            name: "IT Procurement",
+            slug: "it-procurement",
+          },
+        ],
+      },
+      {
+        name: "Web & Application Development",
+        services: [
+          {
+            name: "Website & App Development",
+            slug: "website-app-development",
+          },
+          {
+            name: "Applications & Integrations",
+            slug: "applications-integrations",
+          },
+          {
+            name: "UI/UX Optimization",
+            slug: "ui-ux-optimization",
+          },
+          {
+            name: "Mobile Commerce (mCommerce)",
+            slug: "mobile-commerce-mcommerce",
+          },
+        ],
+      },
+      {
+        name: "Cloud & Infrastructure",
+        services: [
+          {
+            name: "Cloud Migration & Setup",
+            slug: "cloud-migration-setup",
+          },
+          {
+            name: "Cloud Backup & Restore",
+            slug: "cloud-backup-restore",
+          },
+          {
+            name: "Network Infrastructure Support",
+            slug: "network-infrastructure-support",
+          },
+          {
+            name: "Enterprise Infrastructure",
+            slug: "enterprise-infrastructure",
+          },
+        ],
+      },
+      {
+        name: "Cybersecurity & Data",
+        services: [
+          {
+            name: "Cybersecurity Solutions",
+            slug: "cybersecurity-solutions",
+          },
+          {
+            name: "Data Protection & Privacy",
+            slug: "data-protection-privacy",
+          },
+          {
+            name: "Security Audits & Compliance",
+            slug: "security-audits-compliance",
+          },
+          {
+            name: "Disaster Recovery Planning",
+            slug: "disaster-recovery-planning",
+          },
+        ],
+      },
+      {
+        name: "Hardware & IoT",
+        services: [
+          {
+            name: "Hardware Device Integration",
+            slug: "hardware-device-integration",
+          },
+          {
+            name: "IoT Solutions",
+            slug: "iot-solutions",
+          },
+          {
+            name: "Smart Device Management",
+            slug: "smart-device-management",
+          },
+          {
+            name: "Hardware Procurement",
+            slug: "hardware-procurement",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Healthcare & Compliance",
+    subcategories: [
+      {
+        name: "Pharmaceuticals & Health Products",
+        services: [
+          {
+            name: "Product Formulation & Development",
+            slug: "product-formulation-development",
+          },
+          {
+            name: "Pharmaceutical Manufacturing",
+            slug: "pharmaceutical-manufacturing",
+          },
+          {
+            name: "API Development & Supply",
+            slug: "api-development-supply",
+          },
+          {
+            name: "Regulatory Submissions",
+            slug: "regulatory-submissions",
+          },
+        ],
+      },
+      {
+        name: "Testing & Certifications",
+        services: [
+          {
+            name: "Quality Control Testing",
+            slug: "quality-control-testing",
+          },
+          {
+            name: "Safety & Efficacy Testing",
+            slug: "safety-efficacy-testing",
+          },
+          {
+            name: "GMP/GLP Certifications",
+            slug: "gmp-glp-certifications",
+          },
+          {
+            name: "International Standards Compliance",
+            slug: "international-standards-compliance",
+          },
+        ],
+      },
+      {
+        name: "Production & Manufacturing",
+        services: [
+          {
+            name: "Production Setup & Optimization",
+            slug: "production-setup-optimization",
+          },
+          {
+            name: "Labeling & Packaging",
+            slug: "labeling-packaging",
+          },
+          {
+            name: "Manufacturing Units Setup",
+            slug: "manufacturing-units-setup",
+          },
+          {
+            name: "Supply Chain Management",
+            slug: "supply-chain-management",
+          },
+        ],
+      },
+      {
+        name: "Industry Specializations",
+        services: [
+          {
+            name: "Medical Centers",
+            slug: "medical-centers",
+          },
+          {
+            name: "Health & Wellness Products",
+            slug: "health-wellness-products",
+          },
+          {
+            name: "Skincare & Haircare",
+            slug: "skincare-haircare",
+          },
+          {
+            name: "Supplements & Nutraceuticals",
+            slug: "supplements-nutraceuticals",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "StartUps & Entrepreneurs",
+    subcategories: [
+      {
+        name: "Startup Guidance & Support",
+        services: [
+          {
+            name: "Business Startup Guidance",
+            slug: "business-startup-guidance",
+          },
+          {
+            name: "Entrepreneur Mentorship Programs",
+            slug: "entrepreneur-mentorship-programs",
+          },
+          {
+            name: "Funding & Investment Guidance",
+            slug: "funding-investment-guidance",
+          },
+          {
+            name: "Business Plan Development",
+            slug: "business-plan-development",
+          },
+        ],
+      },
+      {
+        name: "Influencer & Personal Branding",
+        services: [
+          {
+            name: "Influencer Support Programs",
+            slug: "influencer-support-programs",
+          },
+          {
+            name: "Personal Brand Development",
+            slug: "personal-brand-development",
+          },
+          {
+            name: "Social Media Strategy for Influencers",
+            slug: "social-media-strategy-influencers",
+          },
+          {
+            name: "Monetization Strategies",
+            slug: "monetization-strategies",
+          },
+        ],
+      },
+      {
+        name: "Brand Development",
+        services: [
+          {
+            name: "Brand Identity Development",
+            slug: "brand-identity-development",
+          },
+          {
+            name: "Brand Building & Compliance",
+            slug: "brand-building-compliance",
+          },
+          {
+            name: "Logo & Visual Identity Design",
+            slug: "logo-visual-identity-design",
+          },
+          {
+            name: "Brand Positioning Strategy",
+            slug: "brand-positioning-strategy",
+          },
+        ],
+      },
+      {
+        name: "Growth & Scaling",
+        services: [
+          {
+            name: "Business Growth Strategies",
+            slug: "business-growth-strategies",
+          },
+          {
+            name: "Market Entry Support",
+            slug: "market-entry-support",
+          },
+          {
+            name: "Partnership Development",
+            slug: "partnership-development",
+          },
+          {
+            name: "International Expansion",
+            slug: "international-expansion",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Ecommerce & Marketplace",
+    subcategories: [
+      {
+        name: "Marketplace Setup & Management",
+        services: [
+          {
+            name: "Amazon Store Setup & Management",
+            slug: "amazon-store-setup-management",
+          },
+          {
+            name: "Walmart Marketplace Integration",
+            slug: "walmart-marketplace-integration",
+          },
+          {
+            name: "Multi-Platform Marketplace Management",
+            slug: "multi-platform-marketplace-management",
+          },
+          {
+            name: "Platform Setup & Integration",
+            slug: "platform-setup-integration",
+          },
+        ],
+      },
+      {
+        name: "Sales & Channel Management",
+        services: [
+          {
+            name: "Sales Channel Setup",
+            slug: "sales-channel-setup",
+          },
+          {
+            name: "Channel Optimization",
+            slug: "channel-optimization",
+          },
+          {
+            name: "Sales Analytics & Reporting",
+            slug: "sales-analytics-reporting",
+          },
+          {
+            name: "Multi-channel Inventory Management",
+            slug: "multi-channel-inventory-management",
+          },
+        ],
+      },
+      {
+        name: "Fulfillment & Distribution",
+        services: [
+          {
+            name: "Order Fulfillment Systems",
+            slug: "order-fulfillment-systems",
+          },
+          {
+            name: "Warehousing Solutions",
+            slug: "warehousing-solutions",
+          },
+          {
+            name: "Shipping & Logistics Setup",
+            slug: "shipping-logistics-setup",
+          },
+          {
+            name: "Dropshipping Fulfillment",
+            slug: "dropshipping-fulfillment",
+          },
+        ],
+      },
+      {
+        name: "Ecommerce Optimization",
+        services: [
+          {
+            name: "Digital Shelf Management",
+            slug: "digital-shelf-management",
+          },
+          {
+            name: "Product Listing & Cataloging",
+            slug: "product-listing-cataloging",
+          },
+          {
+            name: "Inventory & Order Management",
+            slug: "inventory-order-management",
+          },
+          {
+            name: "Partner Enablement",
+            slug: "partner-enablement",
+          },
+        ],
+      },
+      {
+        name: "Distribution Networks",
+        services: [
+          {
+            name: "Local Distribution Setup",
+            slug: "local-distribution-setup",
+          },
+          {
+            name: "Wholesale Distributors Network",
+            slug: "wholesale-distributors-network",
+          },
+          {
+            name: "Distribution Channel Design",
+            slug: "distribution-channel-design",
+          },
+          {
+            name: "Last-Mile Delivery Solutions",
+            slug: "last-mile-delivery-solutions",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Branding & Marketing",
+    subcategories: [
+      {
+        name: "Brand Identity & Design",
+        services: [
+          {
+            name: "Brand Identity Development",
+            slug: "brand-identity-development",
+          },
+          {
+            name: "Logo & Visual Design",
+            slug: "logo-visual-design",
+          },
+          {
+            name: "Packaging Design",
+            slug: "packaging-design",
+          },
+          {
+            name: "Brand Guidelines",
+            slug: "brand-guidelines",
+          },
+        ],
+      },
+      {
+        name: "Digital Marketing & SEO",
+        services: [
+          {
+            name: "Search Engine Optimization (SEO)",
+            slug: "search-engine-optimization-seo",
+          },
+          {
+            name: "Pay-Per-Click (PPC) Advertising",
+            slug: "pay-per-click-ppc-advertising",
+          },
+          {
+            name: "Content Marketing Strategy",
+            slug: "content-marketing-strategy",
+          },
+          {
+            name: "Email Marketing Automation",
+            slug: "email-marketing-automation",
+          },
+        ],
+      },
+      {
+        name: "Social Media & Content",
+        services: [
+          {
+            name: "Social Media Strategy",
+            slug: "social-media-strategy",
+          },
+          {
+            name: "Social Media Management",
+            slug: "social-media-management",
+          },
+          {
+            name: "Content Creation & Curation",
+            slug: "content-creation-curation",
+          },
+          {
+            name: "Influencer Marketing",
+            slug: "influencer-marketing",
+          },
+        ],
+      },
+      {
+        name: "Marketing Campaign Management",
+        services: [
+          {
+            name: "Digital Marketing Campaigns",
+            slug: "digital-marketing-campaigns",
+          },
+          {
+            name: "Marketing & PR Launch Support",
+            slug: "marketing-pr-launch-support",
+          },
+          {
+            name: "Brand Awareness Campaigns",
+            slug: "brand-awareness-campaigns",
+          },
+          {
+            name: "Performance Analytics & Optimization",
+            slug: "performance-analytics-optimization",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: "Industries & Solutions",
+    subcategories: [
+      {
+        name: "Industry Specializations",
+        services: [
+          {
+            name: "Pharmaceuticals",
+            slug: "pharmaceuticals",
+          },
+          {
+            name: "Healthcare & Medical Centers",
+            slug: "healthcare-medical-centers",
+          },
+          {
+            name: "Construction",
+            slug: "construction",
+          },
+          {
+            name: "Enterprise Organizations",
+            slug: "enterprise-organizations",
+          },
+        ],
+      },
+      {
+        name: "Customer Segments",
+        services: [
+          {
+            name: "Startups & Entrepreneurs",
+            slug: "startups-entrepreneurs",
+          },
+          {
+            name: "Medical Professionals",
+            slug: "medical-professionals",
+          },
+          {
+            name: "Beauticians & Wellness Practitioners",
+            slug: "beauticians-wellness-practitioners",
+          },
+          {
+            name: "Enterprise Clients",
+            slug: "enterprise-clients",
+          },
+        ],
+      },
+      {
+        name: "Success Stories",
+        services: [
+          {
+            name: "Case Studies",
+            slug: "case-studies",
+          },
+          {
+            name: "Real Client Stories",
+            slug: "real-client-stories",
+          },
+          {
+            name: "Before & After Transformations",
+            slug: "before-after-transformations",
+          },
+          {
+            name: "Metrics & Results",
+            slug: "metrics-results",
+          },
+        ],
+      },
+      {
+        name: "Specialized Solutions",
+        services: [
+          {
+            name: "Industry-Specific Solutions",
+            slug: "industry-specific-solutions",
+          },
+          {
+            name: "Custom Solution Development",
+            slug: "custom-solution-development",
+          },
+          {
+            name: "Integration Services",
+            slug: "integration-services",
+          },
+          {
+            name: "Ongoing Support & Maintenance",
+            slug: "ongoing-support-maintenance",
+          },
+        ],
+      },
+    ],
+  },
+];
+
 export const serviceData = {
-  "enterprise-software-development": {
-    title: "Enterprise Software Development",
-    description: "Unlock Scalable, Secure, and Smart Business Solutions",
+  // Business Solutions Services
+  "strategic-planning-business-strategy": {
+    title: "Strategic Planning & Business Strategy",
     content: [
       {
         heading: "Strategic Planning & Business Strategy",
-        paragraphs: [
-          "Comprehensive business roadmap development for healthcare and pharmaceutical companies entering new markets or optimizing existing operations.",
-        ],
+        paragraphs: ["Comprehensive business roadmap development for healthcare and pharmaceutical companies entering new markets or optimizing existing operations."],
       },
     ],
     mobileCards: {
-      heading: "How We Can Help You To Offer And Build",
+      heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "ic:baseline-rocket-launch",
-          title: "Product launch feasibility studies",
+          icon: "📊",
+          title: "Market entry strategies for healthcare startups",
+          description: "Deep market research and competitive analysis to inform strategic decisions.",
         },
         {
-          icon: "ic:round-business",
-          title: "Market size and opportunity assessment",
+          icon: "🎯",
+          title: "Business expansion planning for medical practices",
+          description: "Design and optimize business models for sustainable growth and profitability.",
         },
         {
-          icon: "ic:outline-analytics",
-          title: "Customer demographics and behavior analysis",
+          icon: "📈",
+          title: "Competitive positioning for pharmaceutical companies",
+          description: "Develop comprehensive growth strategies aligned with your business objectives.",
         },
         {
-          icon: "ic:outline-landscape",
-          title: "Regulatory landscape evaluation",
+          icon: "📈",
+          title: "Long-term growth planning for wellness brands",
+          description: "Develop comprehensive growth strategies aligned with your business objectives.",
         },
+
         {
-          icon: "ic:twotone-groups-3",
-          title: "Competitive intelligence gathering",
+          icon: "📈",
+          title: "Risk assessment and mitigation strategies",
+          description: "Develop comprehensive growth strategies aligned with your business objectives.",
         },
       ],
     },
     featureSection: {
-      heading: "How It's Benefitted Our Clients",
+      heading: "How It's Benefitted Our Clients:",
       features: [
         {
           icon: "material-symbols-light:stacked-line-chart-rounded",
-          title: "Reduced Market Risk",
-          description:
-            "Data-driven strategies minimize investment risks and maximize success probability",
+          title: "Reduced market risk",
+          description: "Make informed decisions with comprehensive market intelligence and analytics.",
         },
         {
           icon: "material-symbols-light:shutter-speed",
-          title: "Faster Time-to-Market",
-          description:
-            "Streamlined planning accelerates product and service launches",
+          title: "Faster time-to-market",
+          description: "Quick turnaround on strategic plans with actionable recommendations.",
         },
         {
           icon: "material-symbols-light:briefcase-meal-outline",
-          title: "Competitive Advantag",
-          description:
-            "Deep market analysis reveals opportunities competitors miss",
+          title: "Competitive advantage",
+          description: "Deep knowledge of healthcare and pharmaceutical industry dynamics.",
         },
         {
-          icon: "material-symbols-light:finance-mode-outline-rounded",
-          title: "Sustainable Growth",
-          description:
-            "Long-term strategies ensure scalable, profitable business development",
+          icon: "material-symbols-light:growth",
+          title: "Sustainable growth",
+          description: "Long-term strategies ensure scalable, profitable business development",
         },
         {
-          icon: "material-symbols-light:atr",
-          title: "Informed Decision-Making",
-          description:
-            "Comprehensive market intelligence supports strategic choices2",
+          icon: "material-symbols-light:analytics",
+          title: "Informed decision-making",
+          description: "Comprehensive market intelligence supports strategic choices",
         },
       ],
     },
   },
-  "custom-web-application-development": {
-    title: "Custom Web Application Development",
-    description: "Tailored Digital Solutions for Modern Businesses",
+  "market-research-feasibility-analysis": {
+    title: "Market Research & Feasibility Analysis",
     content: [
       {
-        heading: "Build Smart, Scalable & Purpose-Driven Web Solutions",
-        paragraphs: [
-          "At VTechEdge, we specialize in Custom Web Application Development that transforms your unique business requirements into powerful, user-friendly, and scalable digital solutions. Whether you need a customer portal, internal business tool, or a fully integrated web platform, we design and develop applications that align perfectly with your goals. Unlike off-the-shelf products, our custom web applications are built from the ground up—ensuring that every feature, workflow, and integration reflects your operational needs and brand identity. We combine strategic planning, modern UI/UX design, secure architecture, and cutting-edge technologies to create web apps that deliver performance, reliability, and long-term value. From startups to enterprises, we help organizations streamline processes, enhance user engagement, and achieve digital efficiency through bespoke web applications that scale as you grow. Partner with VTechEdge to build custom web applications that empower your business and drive digital transformation.",
-        ],
+        heading: "Market Research & Feasibility Analysis",
+        paragraphs: ["In-depth market analysis and viability assessment for healthcare and wellness products, services, and business concepts."],
       },
     ],
     mobileCards: {
-      heading: "Our Custom Web App Services",
+      heading: "How We Can Help You To Offer And Build:",
       cards: [
-        {
-          icon: "☁️",
-          title: "Business Web Applications",
-          description:
-            "Streamline operations with tailored internal tools—dashboards, portals, and workflow systems built for your exact business needs.",
-        },
-        {
-          icon: "🛡️",
-          title: "Customer Web Portals",
-          description:
-            "Create fast, responsive, and user-friendly platforms for your clients—perfect for e-commerce, service portals, or booking systems.",
-        },
-        {
-          icon: "📈",
-          title: "Progressive Web Apps (PWAs)",
-          description:
-            "Deliver app-like experiences on the web with offline access, push notifications, and fast load times across all devices.",
-        },
-      ],
-    },
-    featureSection: {
-      heading: "Our Development Approach",
-      image: "/images/bg-2.jpg",
-      features: [
-        {
-          title: "Discover & Plan",
-          description:
-            "We begin with a deep dive into your business needs, user expectations, and technical goals—turning them into a clear development roadmap.",
-        },
-        {
-          title: "Design & Build",
-          description:
-            "Using agile methodology, we create responsive, secure, and scalable web applications—built with clean code and modern technologies.",
-        },
-        {
-          title: "Test, Deploy & Support",
-          description:
-            "Before launch, we rigorously test your application for performance, security, and usability. Post-deployment, we provide continuous support and optimization.",
-        },
-      ],
-    },
-    multiPhaseSection: {
-      heading: "Why Choose VTechEdge for Custom Web App Development?",
-      subheading:
-        "Here’s why businesses choose VTechEdge to build their custom web applications:",
-      items: [
-        {
-          icon: "🔒",
-          title: "Tailored to Your Business",
-          description:
-            "We don’t offer one-size-fits-all solutions. Every application is custom-built to match your exact workflows, goals, and user needs.",
-        },
-        {
-          icon: "📈",
-          title: "Scalable & Future-Ready",
-          description:
-            "Our web apps are designed to grow with your business—flexible architectures that support new features, users, and integrations over time.",
-        },
-        {
-          icon: "⚡",
-          title: "Fast & Secure Development",
-          description:
-            "We follow best practices in security, performance, and agile delivery to ensure you get a high-quality product—on time and on budget.",
-        },
-        {
-          icon: "🔄",
-          title: "Ongoing Support & Optimization",
-          description:
-            "Beyond launch, we're here to help with updates, enhancements, and technical support to keep your application running at its best.",
-        },
-      ],
-    },
-  },
-  "mobile-app-development": {
-    title: "Mobile App Development Services",
-    description: "Innovative Mobile Solutions for a Connected World",
-    content: [
-      {
-        heading: "Build Engaging, Scalable & Future-Ready Mobile Experiences",
-        paragraphs: [
-          "At VTechEdge, we specialize in building powerful, intuitive, and high-performing mobile applications tailored to your business goals. Whether you're a startup, enterprise, or growing business, our mobile app development services help you connect with your audience, streamline operations, and unlock new revenue streams—right from the palm of their hand. We design and develop both native and cross-platform mobile apps that deliver seamless user experiences across iOS, Android, and hybrid environments. Our team combines modern design principles, scalable architecture, and agile development practices to ensure your app is not only functional—but future-proof. From idea validation and prototyping to deployment and post-launch support, we partner with you at every stage to bring your mobile vision to life. With a strong focus on user experience, security, and performance, VTechEdge delivers mobile apps that drive real business impact in today's digital-first world.",
-        ],
-      },
-    ],
-    mobileCards: {
-      heading: "Our Mobile App Services",
-      cards: [
-        {
-          icon: "📱",
-          title: "Native App Development",
-          description:
-            "High-performance apps built specifically for iOS and Android to deliver the best speed, usability, and platform experience.",
-        },
-        {
-          icon: "🔄",
-          title: "Cross-Platform Development",
-          description:
-            "Single-codebase apps using Flutter or React Native—ideal for faster launch, lower cost, and consistent performance across devices.",
-        },
-        {
-          icon: "🏢",
-          title: "Enterprise Mobile Solutions",
-          description:
-            "Secure, scalable apps for internal business use—integrated with your systems to boost productivity and mobility.",
-        },
-      ],
-    },
-    featureSection: {
-      heading: "Our Development Approach",
-      image: "/images/bg-3.jpg",
-      features: [
-        {
-          title: "Discovery & Strategy",
-          description:
-            "We start by understanding your goals, target users, and business model to define a clear mobile strategy and app roadmap.",
-        },
-        {
-          title: "Design & Development",
-          description:
-            "Our team designs intuitive interfaces and develops robust, scalable mobile apps using the latest technologies and best practices.",
-        },
-        {
-          title: "Testing, Launch & Support",
-          description:
-            "We ensure smooth performance with thorough testing, assist with app store deployment, and provide ongoing support for updates and enhancements.",
-        },
-      ],
-    },
-    multiPhaseSection: {
-      heading: "Why Choose VTechEdge for Mobile App Development?",
-      subheading: "Your Trusted Partner for Mobile Innovation",
-      items: [
-        {
-          icon: "🎨",
-          title: "USER-FIRST DESIGN",
-          description:
-            "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
-        },
-        {
-          icon: "🔄",
-          title: "END-TO-END EXPERTISE",
-          description:
-            "From concept to launch and beyond, we manage the entire app lifecycle with a dedicated team of strategists, designers, and developers.",
-        },
-        {
-          icon: "🛡️",
-          title: "SCALABLE & SECURE SOLUTIONS",
-          description:
-            "Our apps are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
-        },
-        {
-          icon: "⚡",
-          title: "FAST DELIVERY & ONGOING SUPPORT",
-          description:
-            "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your mobile solution.",
-        },
-      ],
-    },
-  },
-  "business-intelligence-and-process-automation": {
-    title: "Business Intelligence and Process Automation",
-    description:
-      "Turn Data Into Strategy. Transform Processes Into Intelligent Automation.",
-    content: [
-      {
-        heading: "Unlocking the Power of Data & Efficiency",
-        paragraphs: [
-          "In the modern business world, success depends on smart decisions and streamlined operations. Companies are producing more data than ever—but without the right tools to understand it, that data becomes a burden, not a benefit. At the same time, manual tasks and outdated workflows waste valuable time and increase operational costs. VTechEdge helps you overcome both challenges with a powerful combination of Business Intelligence (BI) and Process Automation services. We enable your organization to make data-driven decisions in real time and to automate repetitive, time-consuming tasks—freeing up your team for higher-impact work.",
-        ],
-      },
-    ],
-    mobileCards: {
-      heading: "What Is Business Intelligence?",
-      cards: [
-        {
-          icon: "🎯",
-          title: "What Is Business Intelligence?",
-          description:
-            "Business Intelligence (BI) is the practice of collecting, analyzing, and presenting data to help organizations make informed decisions. It involves using data to identify trends, patterns, and insights that can inform strategic business decisions.",
-        },
-        {
-          icon: "📋",
-          title: "What Is Process Automation?",
-          description:
-            "Process automation is the use of technology to automate repetitive, time-consuming tasks and workflows. It involves using software and other tools to streamline and optimize business processes, reducing manual effort and increasing efficiency.",
-        },
-        {
-          icon: "🚀",
-          title:
-            "Why Choose VTechEdge for Business Intelligence and Process Automation?",
-          description:
-            "At VTechEdge, we specialize in helping businesses leverage data and automation to drive growth and efficiency.",
-        },
-      ],
-    },
-    featureSection: {
-      heading: "Our Business Intelligence and Process Automation Approach",
-      image: "/images/bg-2.jpg",
-      features: [
-        {
-          title: "Discovery & Strategy",
-          description:
-            "We start by understanding your business needs, challenges, and goals. Through in-depth consultation, we develop a clear strategy that aligns with your objectives and integrates seamlessly with your existing systems.",
-        },
-        {
-          title: "Design & Development",
-          description:
-            "Our team designs and develops scalable, secure, and user-friendly solutions that integrate with your existing infrastructure. We use the latest technologies and best practices to ensure your business intelligence and automation solutions are high-performing, efficient, and future-ready.",
-        },
-        {
-          title: "Testing & Deployment",
-          description:
-            "We rigorously test your solutions to ensure they perform optimally and meet your business requirements. After deployment, we provide ongoing support and optimization to keep your solutions running smoothly and efficiently.",
-        },
-      ],
-    },
-    multiPhaseSection: {
-      heading:
-        "Why Choose VTechEdge for Business Intelligence and Process Automation?",
-      subheading: "Your Trusted Partner for Data-Driven Growth",
-      items: [
-        {
-          icon: "🧑‍💼",
-          title: "EXPERT GUIDANCE",
-          description:
-            "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
-        },
         {
           icon: "📊",
-          title: "RISK ASSESSMENT",
-          description:
-            "We provide comprehensive BI services, including data warehousing, analytics, and reporting, to help you make informed decisions and gain a competitive edge.",
+          title: "Product launch feasibility studies",
+          description: "Validate concepts with in-depth feasibility and demand analysis.",
         },
         {
-          icon: "🛠️",
-          title: "IMPLEMENTATION SUPPORT",
-          description:
-            "Our process automation solutions are designed to streamline operations, reduce costs, and improve productivity—ensuring your business runs smoothly and efficiently.",
+          icon: "📈",
+          title: "Market size and opportunity assessment",
+          description: "Identify growth opportunities and evaluate market potential.",
         },
         {
-          icon: "🔄",
-          title: "CONTINUOUS IMPROVEMENT",
-          description:
-            "With a focus on innovation, scalability, and security, VTechEdge helps you transform your data into actionable insights and automate processes to stay ahead in today's fast-paced business environment.",
+          icon: "👥",
+          title: "Customer demographics and behavior analysis",
+          description: "Understand your target audience to align product-market fit.",
         },
-      ],
-    },
-  },
-  "ai-software-development": {
-    title: "AI Software Development",
-    description: "Building Smarter Systems to Power the Future of Business",
-    content: [
-      {
-        heading: "Embrace the Future with Intelligent AI Solutions",
-        paragraphs: [
-          "Artificial Intelligence (AI) is no longer a futuristic concept—it's today's competitive advantage. Businesses across all industries are using AI to automate tasks, personalize customer experiences, optimize operations, and drive innovation. At VTechEdge, we help organizations design, develop, and deploy custom AI-powered software tailored to their unique needs. From machine learning models and intelligent automation to natural language processing (NLP) and predictive analytics, we build scalable solutions that think, learn, and improve—just like a human (but faster).",
-        ],
-      },
-    ],
-    mobileCards: {
-      heading: "Our AI Software Development Services",
-      cards: [
         {
-          icon: "🛡️",
-          title: "Machine Learning & AI Models",
-          description:
-            "Build custom machine learning models and AI agents that can learn, adapt, and make decisions based on your data.",
+          icon: "⚖️",
+          title: "Regulatory landscape evaluation",
+          description: "Assess compliance requirements for safe and legal market entry.",
         },
         {
           icon: "🔍",
-          title: "Natural Language Processing (NLP)",
-          description:
-            "Develop intelligent chatbots and voice assistants that understand and respond to natural language queries.",
-        },
-        {
-          icon: "📚",
-          title: "Predictive Analytics",
-          description:
-            "Build predictive models that can forecast trends, identify risks, and optimize business operations.",
+          title: "Competitive intelligence gathering",
+          description: "Gain insights into competitors to build a winning strategy.",
         },
       ],
     },
     featureSection: {
-      heading: "Comprehensive Cybersecurity",
-      image: "/images/bg-3.jpg",
+      heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          title: "Risk Assessment",
-          description:
-            "Identify vulnerabilities and assess your security posture.Identify vulnerabilities and assess your security posture.Identify vulnerabilities and assess your security posture.",
+          icon: "material-symbols-light:check-circle",
+          title: "Validated Business Concepts",
+          description: "Thorough research confirms market demand before investment.",
         },
         {
-          title: "Threat Mitigation",
-          description:
-            "Implement solutions to prevent, detect, and respond to threats.Implement solutions to prevent, detect, and respond to threats.Implement solutions to prevent, detect, and respond to threats.",
+          icon: "material-symbols-light:rocket-launch",
+          title: "Optimized Product Development",
+          description: "Market insights guide product features and positioning.",
         },
         {
-          title: "Compliance Guidance",
-          description:
-            "Ensure your business meets industry security standards.Ensure your business meets industry security standards.Ensure your business meets industry security standards.",
-        },
-      ],
-    },
-    multiPhaseSection: {
-      heading: "Why Choose VTechEdge for AI Software Development?",
-      subheading: "Your Trusted Partner for Intelligent Automation",
-      items: [
-        {
-          icon: "🔬",
-          title: "EXPERT GUIDANCE",
-          description:
-            "Our team of experts combines deep industry knowledge with cutting-edge technology to deliver tailored solutions that align with your business goals.",
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Early identification of challenges prevents costly mistakes.",
         },
         {
-          icon: "🛡️",
-          title: "RISK ASSESSMENT",
-          description:
-            "We provide comprehensive BI services, including data warehousing, analytics, and reporting, to help you make informed decisions and gain a competitive edge.",
+          icon: "material-symbols-light:account-balance",
+          title: "Investment Confidence",
+          description: "Detailed feasibility reports support funding and investor presentations.",
         },
         {
-          icon: "📈",
-          title: "IMPLEMENTATION SUPPORT",
-          description:
-            "Our process automation solutions are designed to streamline operations, reduce costs, and improve productivity—ensuring your business runs smoothly and efficiently.",
-        },
-        {
-          icon: "📚",
-          title: "CONTINUOUS IMPROVEMENT",
-          description:
-            "With a focus on innovation, scalability, and security, VTechEdge helps you transform your data into actionable insights and automate processes to stay ahead in today's fast-paced business environment.",
+          icon: "material-symbols-light:insights",
+          title: "Market Positioning",
+          description: "Understanding competition enables superior positioning strategies.",
         },
       ],
     },
   },
 
-  "graphic-design": {
-    title: "Graphic Design",
-    description: "Creating Visual Identities That Speak Louder Than Words",
+  "business-consultation-advisory": {
+    title: "Business Consultation & Advisory",
     content: [
       {
-        heading: "Design That Connects, Communicates & Converts",
-        paragraphs: [
-          "Great design isn't just about looking good—it's about making an impression, telling your story, and guiding your audience to action. At VTechEdge, we offer full-spectrum graphic design services that blend creativity, strategy, and functionality. Whether you're building a new brand, refreshing your visual identity, or launching a campaign, our team turns ideas into stunning visuals that elevate your brand and engage your audience.",
-        ],
+        heading: "Business Consultation & Advisory",
+        paragraphs: ["Expert advisory services for healthcare entrepreneurs, medical professionals, and wellness companies seeking strategic guidance."],
       },
     ],
     mobileCards: {
-      heading: "Our Graphic Design Services",
+      heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
+          icon: "🧑‍💼",
+          title: "Executive advisory for healthcare startups",
+          description: "Guidance from industry experts for scaling new ventures.",
+        },
+        {
+          icon: "🎯",
+          title: "Strategic decision support for medical practices",
+          description: "Data-driven support for critical practice management decisions.",
+        },
+        {
           icon: "📊",
-          title: "Brand Identity & Logo Design",
-          description:
-            "Your logo is more than a symbol—it’s your brand’s first impression. We craft logos and brand assets that are original, timeless, and aligned with your business vision.",
+          title: "Business model optimization for pharmaceutical companies",
+          description: "Enhance profitability and streamline operations with effective models.",
         },
         {
-          icon: "🔮",
-          title: "Marketing & Advertising Design",
-          description:
-            "From eye-catching social media graphics to high-converting ad creatives, we design visual content that stops the scroll and drives results.",
+          icon: "⚙️",
+          title: "Operational efficiency consulting for wellness brands",
+          description: "Improve workflows and reduce inefficiencies for sustainable growth.",
         },
         {
-          icon: "📈",
-          title: "Corporate & Business Design",
-          description:
-            "Professional design that supports your communication and enhances your brand image across all corporate touchpoints.",
+          icon: "🔄",
+          title: "Change management for healthcare organizations",
+          description: "Support smooth transitions and adoption of new strategies.",
         },
       ],
     },
     featureSection: {
-      heading: "Our Graphic Design Approach",
-      image: "/images/bg-2.jpg",
+      heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          title: "Discovery & Strategy",
-          description:
-            "We begin by understanding your brand, audience, and goals. Through in-depth research and analysis, we develop a clear design strategy that aligns with your business objectives.",
+          icon: "material-symbols-light:person",
+          title: "Expert Guidance",
+          description: "Access to seasoned healthcare industry professionals.",
         },
         {
-          title: "Design & Development",
-          description:
-            "Our team creates visually stunning designs that are not only aesthetically pleasing but also strategically aligned with your brand identity and communication goals.",
+          icon: "material-symbols-light:visibility",
+          title: "Objective Perspective",
+          description: "External viewpoint reveals internal blind spots.",
         },
         {
-          title: "Testing & Deployment",
-          description:
-            "We rigorously test your designs for performance, usability, and brand consistency. After launch, we provide ongoing support and updates to ensure your visual identity remains fresh and impactful.",
-        },
-      ],
-    },
-    multiPhaseSection: {
-      heading: "Why Choose VTechEdge for Graphic Design?",
-      subheading: "Your Trusted Partner for Visual Storytelling",
-      items: [
-        {
-          icon: "🎨",
-          title: "USER-FIRST DESIGN",
-          description:
-            "We prioritize intuitive, engaging interfaces that deliver exceptional user experiences across all devices and platforms.",
+          icon: "material-symbols-light:bolt",
+          title: "Accelerated Problem-Solving",
+          description: "Experienced advisors provide proven solutions.",
         },
         {
-          icon: "�",
-          title: "END-TO-END EXPERTISE",
-          description:
-            "From concept to launch and beyond, we manage the entire design lifecycle with a dedicated team of strategists, designers, and developers.",
+          icon: "material-symbols-light:hub",
+          title: "Network Access",
+          description: "Connections to industry experts, partners, and opportunities.",
         },
         {
-          icon: "�️",
-          title: "SCALABLE & SECURE SOLUTIONS",
-          description:
-            "Our designs are built to grow with your business—designed for performance, security, and seamless integration with your systems.",
-        },
-        {
-          icon: "⚡",
-          title: "FAST DELIVERY & ONGOING SUPPORT",
-          description:
-            "With agile development and continuous support, we ensure timely launches, regular updates, and long-term success for your visual identity.",
+          icon: "material-symbols-light:sync",
+          title: "Continuous Support",
+          description: "Ongoing advisory relationship ensures sustained success.",
         },
       ],
     },
   },
-  "digital-marketing": {
-    title: "Digital Marketing",
-    description: "Driving Growth with Strategic Digital Marketing Solutions",
+
+  "competitive-analysis-benchmarking": {
+    title: "Competitive Analysis & Benchmarking",
     content: [
       {
-        heading: "Why Choose Our Digital Marketing Services?",
-        paragraphs: [
-          "In today's digital landscape, having a strong online presence is crucial for business success. Our comprehensive digital marketing services combine data-driven strategies with creative excellence to help your brand stand out, engage your audience, and drive measurable results. From SEO optimization to social media management, we create tailored campaigns that deliver real business impact.",
-        ],
+        heading: "Competitive Analysis & Benchmarking",
+        paragraphs: ["Comprehensive competitor assessment and industry benchmarking for healthcare and pharmaceutical businesses."],
       },
     ],
     mobileCards: {
-      heading: "Comprehensive Digital Marketing Solutions",
+      heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔍",
-          title: "Search Engine Optimization (SEO)",
-          description:
-            "Improve your website's visibility and rank higher in search results.",
+          icon: "📊",
+          title: "Competitor product and pricing analysis",
+          description: "Evaluate competitor offerings to identify strengths and weaknesses.",
         },
         {
-          icon: "📱",
-          title: "Social Media Marketing",
-          description:
-            "Build brand awareness and engage with your audience across platforms.",
+          icon: "🎯",
+          title: "Market positioning evaluation",
+          description: "Understand current standing and optimize brand positioning.",
         },
         {
-          icon: "📧",
-          title: "Email Marketing",
-          description:
-            "Drive conversions with targeted email campaigns and automation.",
+          icon: "🏆",
+          title: "Industry best practices identification",
+          description: "Leverage proven strategies for operational excellence.",
+        },
+        {
+          icon: "📈",
+          title: "Performance benchmarking against peers",
+          description: "Measure business performance against industry standards.",
+        },
+        {
+          icon: "💡",
+          title: "Strategic opportunity identification",
+          description: "Discover new opportunities for growth and differentiation.",
         },
       ],
     },
     featureSection: {
-      heading: "Our Digital Marketing Process",
-      image: "/images/bg-2.jpg",
+      heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          title: "Strategy & Research",
-          description:
-            "We analyze your market, competitors, and target audience to develop a comprehensive digital marketing strategy that aligns with your business goals and budget.",
+          icon: "material-symbols-light:target",
+          title: "Strategic Positioning",
+          description: "Understanding competitor weaknesses enables superior market positioning.",
         },
         {
-          title: "Campaign Execution",
-          description:
-            "Our team implements multi-channel campaigns across SEO, PPC, social media, and content marketing, ensuring consistent messaging and optimal performance.",
+          icon: "material-symbols-light:payments",
+          title: "Pricing Optimization",
+          description: "Competitive pricing analysis maximizes profitability while maintaining market competitiveness.",
         },
         {
-          title: "Analysis & Optimization",
-          description:
-            "We continuously monitor campaign performance, analyze data, and optimize strategies to maximize ROI and achieve sustainable growth for your business.",
+          icon: "material-symbols-light:lightbulb",
+          title: "Innovation Opportunities",
+          description: "Identifying market gaps reveals new product and service opportunities.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Performance Improvement",
+          description: "Benchmarking highlights areas for operational enhancement.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Market Differentiation",
+          description: "Clear understanding of competition enables unique value proposition development.",
         },
       ],
     },
-    multiPhaseSection: {
-      heading: "Why Choose VTechEdge for Digital Marketing?",
-      subheading: "Your Partner for Digital Growth and Success",
-      items: [
+  },
+  "business-registration-canada": {
+    title: "Business Registration (Canada)",
+    content: [
+      {
+        heading: "Business Registration (Canada)",
+        paragraphs: ["Complete business incorporation and registration services for healthcare and pharmaceutical companies in Canada."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏢",
+          title: "Healthcare startup incorporation",
+          description: "Incorporation services tailored for healthcare startups.",
+        },
+        {
+          icon: "🏥",
+          title: "Medical practice establishment",
+          description: "Support in setting up compliant medical practices.",
+        },
+        {
+          icon: "💊",
+          title: "Pharmaceutical company registration",
+          description: "Guidance for registering pharmaceutical businesses.",
+        },
+        {
+          icon: "🧘",
+          title: "Wellness business formation",
+          description: "Legal setup for wellness-focused businesses.",
+        },
+        {
+          icon: "⚖️",
+          title: "Corporate structure optimization",
+          description: "Design structures that support tax and legal efficiency.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Legal Compliance",
+          description: "Proper registration ensures full legal protection and regulatory compliance.",
+        },
+        {
+          icon: "material-symbols-light:account-balance-wallet",
+          title: "Tax Optimization",
+          description: "Appropriate business structure minimizes tax burden and maximizes financial efficiency.",
+        },
+        {
+          icon: "material-symbols-light:badge",
+          title: "Professional Credibility",
+          description: "Proper incorporation enhances business credibility with partners and customers.",
+        },
+        {
+          icon: "material-symbols-light:shield",
+          title: "Liability Protection",
+          description: "Corporate structure protects personal assets from business risks.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Growth Foundation",
+          description: "Scalable business structure supports future expansion and investment.",
+        },
+      ],
+    },
+  },
+
+  "licenses-permits": {
+    title: "Licenses & Permits",
+    content: [
+      {
+        heading: "Licenses & Permits",
+        paragraphs: ["Comprehensive licensing and permit acquisition for healthcare, pharmaceutical, and wellness businesses across multiple jurisdictions."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🇨🇦",
+          title: "Health Canada licensing applications",
+          description: "Navigate Health Canada’s regulatory licensing process.",
+        },
+        {
+          icon: "📜",
+          title: "Provincial healthcare permits",
+          description: "Acquire necessary permits for provincial healthcare operations.",
+        },
+        {
+          icon: "🇺🇸",
+          title: "FDA registration for US market entry",
+          description: "Facilitate FDA approval for healthcare and pharmaceutical businesses.",
+        },
+        {
+          icon: "👩‍⚕️",
+          title: "Professional practice licenses",
+          description: "Support licensing for medical and healthcare professionals.",
+        },
+        {
+          icon: "🌍",
+          title: "Import/export permits for pharmaceutical products",
+          description: "Assist in securing permits for international pharmaceutical trade.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:balance",
+          title: "Regulatory Compliance",
+          description: "Proper licensing ensures legal operation and avoids penalties.",
+        },
+        {
+          icon: "material-symbols-light:shopping-cart",
+          title: "Market Access",
+          description: "Required permits enable product sales and service delivery.",
+        },
+        {
+          icon: "material-symbols-light:verified-user",
+          title: "Professional Standards",
+          description: "Licensed operations build customer trust and credibility.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Compliance reduces legal and financial risks.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "International Expansion",
+          description: "Multi-jurisdictional licensing supports global growth.",
+        },
+      ],
+    },
+  },
+
+  "corporate-structure-setup": {
+    title: "Corporate Structure Setup",
+    content: [
+      {
+        heading: "Corporate Structure Setup",
+        paragraphs: ["Strategic corporate structure design and implementation for healthcare and pharmaceutical businesses."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏛️",
+          title: "Holding company establishment",
+          description: "Create structures to centralize ownership and management.",
+        },
+        {
+          icon: "📂",
+          title: "Subsidiary structure creation",
+          description: "Set up subsidiaries to optimize business operations.",
+        },
+        {
+          icon: "🤝",
+          title: "Partnership agreements",
+          description: "Design partnership agreements aligned with business goals.",
+        },
+        {
+          icon: "🔗",
+          title: "Joint venture formation",
+          description: "Establish collaborations with clear agreements and protections.",
+        },
+        {
+          icon: "💡",
+          title: "Intellectual property holding structures",
+          description: "Protect and manage intellectual property assets effectively.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:account-balance",
+          title: "Tax Efficiency",
+          description: "Optimized structure minimizes tax liability and maximizes profit retention.",
+        },
+        {
+          icon: "material-symbols-light:lock",
+          title: "Asset Protection",
+          description: "Strategic structuring protects valuable assets and intellectual property.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Investment Readiness",
+          description: "Professional structure attracts investors and facilitates funding.",
+        },
+        {
+          icon: "material-symbols-light:sync-alt",
+          title: "Operational Flexibility",
+          description: "Scalable structure adapts to changing business needs.",
+        },
+        {
+          icon: "material-symbols-light:health-and-safety",
+          title: "Risk Management",
+          description: "Proper structuring limits liability exposure across business units.",
+        },
+      ],
+    },
+  },
+
+  "legal-documentation": {
+    title: "Legal Documentation",
+    content: [
+      {
+        heading: "Legal Documentation",
+        paragraphs: ["Comprehensive legal document preparation and review for healthcare and pharmaceutical businesses."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🤝",
+          title: "Partnership and shareholder agreements",
+          description: "Draft and review agreements to protect partner interests.",
+        },
+        {
+          icon: "📝",
+          title: "Employment and consulting contracts",
+          description: "Develop contracts to define clear roles and responsibilities.",
+        },
+        {
+          icon: "💡",
+          title: "Intellectual property documentation",
+          description: "Secure intellectual property rights with proper legal documentation.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory compliance documentation",
+          description: "Ensure adherence to healthcare and pharmaceutical regulations.",
+        },
+        {
+          icon: "📑",
+          title: "Commercial agreements and contracts",
+          description: "Prepare business agreements to support operations and growth.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:shield",
+          title: "Legal Protection",
+          description: "Proper documentation protects business interests and relationships.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Dispute Prevention",
+          description: "Clear agreements prevent misunderstandings and conflicts.",
+        },
+        {
+          icon: "material-symbols-light:rule",
+          title: "Compliance Assurance",
+          description: "Legal documents ensure regulatory and industry compliance.",
+        },
+        {
+          icon: "material-symbols-light:workspace-premium",
+          title: "Professional Standards",
+          description: "Quality documentation enhances business credibility.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Comprehensive contracts minimize legal and financial exposure.",
+        },
+      ],
+    },
+  },
+  "regulatory-guidance-navigation": {
+    title: "Regulatory Guidance & Navigation",
+    content: [
+      {
+        heading: "Regulatory Guidance & Navigation",
+        paragraphs: ["Expert guidance through complex healthcare and pharmaceutical regulatory landscapes across multiple countries."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🇨🇦",
+          title: "Health Canada regulatory navigation",
+          description: "Expert support navigating Health Canada’s regulatory processes.",
+        },
+        {
+          icon: "🇺🇸",
+          title: "FDA compliance guidance",
+          description: "Ensure FDA compliance for healthcare and pharmaceutical products.",
+        },
+        {
+          icon: "🇪🇺",
+          title: "European medicines regulation",
+          description: "Navigate EMA requirements for medicines and therapies.",
+        },
+        {
+          icon: "🌍",
+          title: "International pharmaceutical standards",
+          description: "Comply with global pharmaceutical regulations and standards.",
+        },
+        {
+          icon: "🩺",
+          title: "Medical device regulatory pathways",
+          description: "Guidance for approval and compliance of medical devices.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Regulatory Expertise",
+          description: "Access to specialized knowledge prevents costly compliance mistakes.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Faster Approvals",
+          description: "Expert guidance accelerates regulatory approval processes.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Reduction",
+          description: "Efficient navigation reduces regulatory costs and delays.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Proper compliance prevents penalties and market access issues.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Access",
+          description: "Multi-jurisdictional expertise enables international expansion.",
+        },
+      ],
+    },
+  },
+
+  "industry-standards-compliance": {
+    title: "Industry Standards Compliance",
+    content: [
+      {
+        heading: "Industry Standards Compliance",
+        paragraphs: ["Comprehensive compliance services for healthcare industry standards including GMP, GLP, and quality management systems."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏭",
+          title: "Good Manufacturing Practices (GMP) implementation",
+          description: "Establish GMP-compliant systems for healthcare manufacturing.",
+        },
+        {
+          icon: "🔬",
+          title: "Good Laboratory Practices (GLP) compliance",
+          description: "Support in implementing GLP standards for laboratories.",
+        },
         {
           icon: "📊",
-          title: "DATA-DRIVEN APPROACH",
-          description:
-            "Make informed decisions with comprehensive analytics and performance tracking across all campaigns.",
+          title: "ISO quality management systems",
+          description: "Implement ISO-based quality management frameworks.",
         },
         {
-          icon: "🎯",
-          title: "TARGETED STRATEGIES",
-          description:
-            "Reach your ideal customers with precision-targeted campaigns and personalized messaging.",
+          icon: "✅",
+          title: "Healthcare quality standards",
+          description: "Achieve compliance with industry-wide healthcare quality requirements.",
         },
         {
-          icon: "📈",
-          title: "MEASURABLE RESULTS",
-          description:
-            "Track real-time performance and ROI with detailed reporting and transparent analytics.",
+          icon: "🌍",
+          title: "International compliance harmonization",
+          description: "Align operations with international healthcare compliance standards.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Quality Assurance",
+          description: "Standards compliance ensures consistent product and service quality.",
+        },
+        {
+          icon: "material-symbols-light:workspace-premium",
+          title: "Market Credibility",
+          description: "Certified compliance enhances customer and partner confidence.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Reduction",
+          description: "Standards adherence minimizes quality-related risks and liabilities.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Quality systems improve operational effectiveness and reduce waste.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Access",
+          description: "International standards compliance enables worldwide market entry.",
+        },
+      ],
+    },
+  },
+
+  "international-compliance-support": {
+    title: "International Compliance Support",
+    content: [
+      {
+        heading: "International Compliance Support",
+        paragraphs: ["Multi-jurisdictional compliance support for healthcare and pharmaceutical businesses expanding globally."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🌐",
+          title: "Multi-country regulatory strategy",
+          description: "Develop strategies to manage compliance across multiple countries.",
+        },
+        {
+          icon: "⚖️",
+          title: "International standards harmonization",
+          description: "Align operations with global compliance frameworks.",
+        },
+        {
+          icon: "🔗",
+          title: "Cross-border compliance coordination",
+          description: "Coordinate compliance efforts across international teams.",
         },
         {
           icon: "🚀",
-          title: "SCALABLE GROWTH",
-          description:
-            "Scale your marketing efforts efficiently as your business grows with flexible, adaptive strategies.",
+          title: "Global market entry compliance",
+          description: "Prepare businesses for smooth entry into international markets.",
+        },
+        {
+          icon: "🌍",
+          title: "Regional regulatory adaptation",
+          description: "Adapt business practices to meet regional regulatory requirements.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Access",
+          description: "Comprehensive compliance enables entry into multiple international markets.",
+        },
+        {
+          icon: "material-symbols-light:checklist",
+          title: "Regulatory Efficiency",
+          description: "Coordinated approach reduces duplicate efforts across jurisdictions.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Strategic compliance planning minimizes international regulatory costs.",
+        },
+        {
+          icon: "material-symbols-light:health-and-safety",
+          title: "Risk Management",
+          description: "Multi-jurisdictional expertise prevents compliance failures.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Global compliance capability differentiates from local competitors.",
+        },
+      ],
+    },
+  },
+
+  "ongoing-compliance-monitoring": {
+    title: "Ongoing Compliance Monitoring",
+    content: [
+      {
+        heading: "Ongoing Compliance Monitoring",
+        paragraphs: ["Continuous compliance monitoring and maintenance services for healthcare and pharmaceutical operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📡",
+          title: "Regulatory change monitoring",
+          description: "Track and adapt to changing healthcare regulations.",
+        },
+        {
+          icon: "📝",
+          title: "Compliance audit preparation",
+          description: "Prepare businesses for successful regulatory audits.",
+        },
+        {
+          icon: "📂",
+          title: "Documentation maintenance",
+          description: "Ensure compliance documentation is always up-to-date.",
+        },
+        {
+          icon: "🎓",
+          title: "Training and education programs",
+          description: "Provide ongoing compliance education for teams.",
+        },
+        {
+          icon: "⚡",
+          title: "Corrective action implementation",
+          description: "Address compliance issues proactively with corrective measures.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:autorenew",
+          title: "Continuous Compliance",
+          description: "Ongoing monitoring ensures sustained regulatory adherence.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Proactive Risk Management",
+          description: "Early warning systems prevent compliance issues.",
+        },
+        {
+          icon: "material-symbols-light:fact-check",
+          title: "Audit Readiness",
+          description: "Continuous preparation reduces audit stress and improves outcomes.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Efficiency",
+          description: "Preventive approach reduces costs compared to reactive compliance.",
+        },
+        {
+          icon: "material-symbols-light:sentiment-satisfied",
+          title: "Peace of Mind",
+          description: "Professional monitoring allows focus on core business activities.",
+        },
+      ],
+    },
+  },
+
+  "inventory-management-automation": {
+    title: "Inventory Management Automation",
+    content: [
+      {
+        heading: "Inventory Management Automation",
+        paragraphs: ["AI-powered automated inventory management systems for pharmacies, medical centers, and healthcare facilities."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📦", title: "Real-time pharmacy inventory tracking", description: "Monitor inventory levels across pharmacies in real time." },
+        { icon: "🔄", title: "Automated reorder point management", description: "Automatically trigger reorders based on usage and thresholds." },
+        { icon: "⏰", title: "Expiration date monitoring and alerts", description: "Track expiry dates and receive alerts to prevent waste." },
+        { icon: "🏥", title: "Multi-location inventory synchronization", description: "Keep stock data consistent across multiple facilities." },
+        { icon: "📊", title: "Demand forecasting and optimization", description: "Use AI to predict demand and optimize inventory levels." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Reduction",
+          description: "Automated inventory reduces carrying costs and minimizes waste from expired products.",
+        },
+        { icon: "material-symbols-light:check-circle", title: "Improved Accuracy", description: "AI systems eliminate human errors in inventory counting and management." },
+        { icon: "material-symbols-light:bolt", title: "Enhanced Efficiency", description: "24/7 automated monitoring frees staff for patient care activities." },
+        { icon: "material-symbols-light:health-and-safety", title: "Better Patient Safety", description: "Automated tracking prevents stockouts of critical medications." },
+        { icon: "material-symbols-light:analytics", title: "Data-Driven Insights", description: "Advanced analytics optimize inventory levels and purchasing decisions." },
+      ],
+    },
+  },
+
+  "patient-scheduling-systems": {
+    title: "Patient Scheduling Systems",
+    content: [
+      {
+        heading: "Patient Scheduling Systems",
+        paragraphs: ["Intelligent AI-powered patient scheduling and appointment management systems for healthcare providers."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📅", title: "Automated appointment booking and reminders", description: "Simplify scheduling with automated bookings and notifications." },
+        { icon: "👩‍⚕️", title: "Multi-provider schedule coordination", description: "Coordinate appointments across multiple doctors and staff." },
+        { icon: "⚙️", title: "Resource allocation optimization", description: "Maximize utilization of rooms, staff, and equipment." },
+        { icon: "🚦", title: "Patient flow management", description: "Ensure smooth patient flow through scheduling systems." },
+        { icon: "⏱", title: "Emergency scheduling adaptation", description: "Quickly adjust schedules in case of emergencies." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:trending-up", title: "Increased Revenue", description: "Optimized scheduling reduces no-shows and maximizes appointment utilization." },
+        {
+          icon: "material-symbols-light:sentiment-satisfied",
+          title: "Improved Patient Experience",
+          description: "Seamless booking and timely reminders enhance patient satisfaction.",
+        },
+        { icon: "material-symbols-light:groups", title: "Staff Efficiency", description: "Automated scheduling reduces administrative burden on healthcare staff." },
+        { icon: "material-symbols-light:insights", title: "Resource Optimization", description: "AI algorithms maximize utilization of rooms, equipment, and providers." },
+        { icon: "material-symbols-light:update", title: "Real-Time Adaptability", description: "System automatically adjusts for cancellations and emergency situations." },
+      ],
+    },
+  },
+
+  "production-workflow-automation": {
+    title: "Production Workflow Automation",
+    content: [
+      {
+        heading: "Production Workflow Automation",
+        paragraphs: ["AI-driven automation solutions for pharmaceutical and healthcare product manufacturing workflows."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🏭", title: "Manufacturing process automation", description: "Automate production processes for efficiency and quality." },
+        { icon: "✅", title: "Quality control workflow management", description: "Ensure consistent quality with automated checks." },
+        { icon: "📋", title: "Batch tracking and documentation", description: "Track batches and maintain complete documentation." },
+        { icon: "🛠", title: "Equipment maintenance scheduling", description: "Automate preventive maintenance for critical equipment." },
+        { icon: "📑", title: "Compliance reporting automation", description: "Generate regulatory reports automatically." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:check-circle", title: "Quality Consistency", description: "Automated workflows ensure consistent product quality and reduce variability." },
+        { icon: "material-symbols-light:fact-check", title: "Regulatory Compliance", description: "Automated documentation ensures complete regulatory compliance." },
+        { icon: "material-symbols-light:savings", title: "Cost Efficiency", description: "Streamlined processes reduce manufacturing costs and improve margins." },
+        { icon: "material-symbols-light:speed", title: "Faster Production", description: "Optimized workflows accelerate production cycles and time-to-market." },
+        { icon: "material-symbols-light:warning", title: "Risk Reduction", description: "Automated quality control minimizes product recalls and safety issues." },
+      ],
+    },
+  },
+
+  "customer-service-bots": {
+    title: "Customer Service Bots",
+    content: [
+      {
+        heading: "Customer Service Bots",
+        paragraphs: ["AI-powered chatbots and virtual assistants for healthcare and pharmaceutical customer service."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🤖", title: "24/7 patient inquiry handling", description: "Provide round-the-clock responses to patient queries." },
+        { icon: "💊", title: "Prescription refill automation", description: "Automate refill requests for medications." },
+        { icon: "📑", title: "Insurance verification assistance", description: "Help patients with insurance checks and approvals." },
+        { icon: "📘", title: "Health information guidance", description: "Offer accurate and consistent health information." },
+        { icon: "📅", title: "Appointment scheduling support", description: "Assist patients in booking appointments easily." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:schedule", title: "24/7 Availability", description: "Round-the-clock service improves patient satisfaction and accessibility." },
+        { icon: "material-symbols-light:money-off", title: "Cost Reduction", description: "Automated responses reduce staffing needs and operational costs." },
+        { icon: "material-symbols-light:thunderstorm", title: "Faster Response Times", description: "Instant responses improve patient experience and satisfaction." },
+        { icon: "material-symbols-light:rule", title: "Consistent Information", description: "Standardized responses ensure accurate and compliant information delivery." },
+        { icon: "material-symbols-light:group", title: "Staff Focus", description: "Automation allows staff to focus on complex patient care needs." },
+      ],
+    },
+  },
+
+  "data-ai-platform-development": {
+    title: "Data and AI Platform Development",
+    content: [
+      {
+        heading: "Data and AI Platform Development",
+        paragraphs: ["Custom AI platform development and data analytics solutions for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📊", title: "Healthcare data analytics platforms", description: "Enable advanced analytics tailored for healthcare decision-making." },
+        { icon: "🔮", title: "Predictive modeling for patient outcomes", description: "Forecast and improve patient health outcomes with AI models." },
+        { icon: "💊", title: "Drug discovery AI platforms", description: "Accelerate drug discovery with AI-driven insights and analysis." },
+        { icon: "🧪", title: "Clinical trial optimization systems", description: "Streamline clinical trials using AI optimization tools." },
+        { icon: "🌍", title: "Population health management tools", description: "Support large-scale healthcare management through AI platforms." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:analytics", title: "Data-Driven Decisions", description: "Advanced analytics provide actionable insights for better decision-making." },
+        { icon: "material-symbols-light:health-metrics", title: "Improved Outcomes", description: "Predictive models help optimize patient care and treatment protocols." },
+        {
+          icon: "material-symbols-light:military-tech",
+          title: "Competitive Advantage",
+          description: "Custom AI solutions provide unique capabilities unavailable to competitors.",
+        },
+        { icon: "material-symbols-light:workflow", title: "Operational Efficiency", description: "Automated data processing reduces manual work and improves accuracy." },
+        { icon: "material-symbols-light:expand", title: "Scalable Solutions", description: "Platform-based approach grows with organizational needs." },
+      ],
+    },
+  },
+
+  "generative-ai-solutions": {
+    title: "Generative AI Solutions",
+    content: [
+      {
+        heading: "Generative AI Solutions",
+        paragraphs: ["Advanced generative AI applications for healthcare content creation, drug discovery, and personalized medicine."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📝", title: "Medical content generation and summarization", description: "Generate accurate healthcare documents and summaries with AI." },
+        { icon: "🧬", title: "Drug molecule design and optimization", description: "Design and optimize molecules to accelerate drug discovery." },
+        { icon: "👩‍⚕️", title: "Personalized treatment plan creation", description: "Develop AI-powered personalized treatment plans for patients." },
+        { icon: "📑", title: "Clinical documentation automation", description: "Automate and streamline clinical paperwork processes." },
+        { icon: "🎓", title: "Patient education material generation", description: "Produce personalized, easy-to-understand patient education materials." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:bolt", title: "Innovation Acceleration", description: "Generative AI accelerates research and development processes." },
+        { icon: "material-symbols-light:favorite", title: "Personalized Care", description: "AI-generated solutions enable truly personalized patient care." },
+        { icon: "material-symbols-light:content-copy", title: "Content Efficiency", description: "Automated content creation reduces time and costs for documentation." },
+        { icon: "material-symbols-light:science", title: "Research Enhancement", description: "AI assists in discovering new treatment approaches and drug compounds." },
+        { icon: "material-symbols-light:verified", title: "Compliance Support", description: "Generated content ensures consistency with regulatory requirements." },
+      ],
+    },
+  },
+
+  "google-cloud-gen-ai-integration": {
+    title: "Google Cloud Gen AI Integration",
+    content: [
+      {
+        heading: "Google Cloud Gen AI Integration",
+        paragraphs: ["Integration of Google Cloud generative AI services with healthcare and pharmaceutical systems."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "☁️", title: "Healthcare data processing with Vertex AI", description: "Leverage Google Vertex AI for secure healthcare data processing." },
+        { icon: "🩻", title: "Medical image analysis and diagnosis", description: "Use AI for accurate medical image interpretation and diagnosis." },
+        { icon: "💬", title: "Natural language processing for clinical notes", description: "Analyze and structure clinical notes using advanced NLP models." },
+        { icon: "🔬", title: "AI-powered research and development", description: "Support medical R&D with Google Cloud AI capabilities." },
+        { icon: "🚀", title: "Cloud-based AI model deployment", description: "Deploy AI models at scale using Google Cloud infrastructure." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:security", title: "Enterprise-Grade Security", description: "Google Cloud ensures HIPAA compliance and data protection." },
+        { icon: "material-symbols-light:stack", title: "Scalable Performance", description: "Cloud infrastructure handles varying workloads efficiently." },
+        { icon: "material-symbols-light:attach-money", title: "Cost Optimization", description: "Pay-as-you-use model reduces AI implementation costs." },
+        { icon: "material-symbols-light:rocket-launch", title: "Rapid Deployment", description: "Pre-built AI services accelerate time-to-implementation." },
+        { icon: "material-symbols-light:lightbulb", title: "Continuous Innovation", description: "Access to latest Google AI advancements and updates." },
+      ],
+    },
+  },
+
+  "custom-ai-model-development": {
+    title: "Custom AI Model Development",
+    content: [
+      {
+        heading: "Custom AI Model Development",
+        paragraphs: ["Bespoke AI model development for specific healthcare and pharmaceutical applications."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🧠", title: "Disease prediction models", description: "Develop AI models that predict diseases and improve prevention." },
+        { icon: "💊", title: "Drug efficacy prediction algorithms", description: "Assess and forecast drug effectiveness with AI algorithms." },
+        { icon: "🩺", title: "Medical image recognition systems", description: "Create AI models for accurate interpretation of medical images." },
+        { icon: "⚕️", title: "Clinical outcome optimization models", description: "Enhance treatment outcomes using predictive optimization models." },
+        { icon: "📏", title: "Personalized dosing algorithms", description: "Design AI algorithms for tailored medication dosing." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:target", title: "Tailored Solutions", description: "Custom models address specific organizational needs and challenges." },
+        { icon: "material-symbols-light:emoji-events", title: "Competitive Differentiation", description: "Proprietary AI models provide unique market advantages." },
+        { icon: "material-symbols-light:rocket", title: "Optimal Performance", description: "Purpose-built models outperform generic solutions." },
+        { icon: "material-symbols-light:copyright", title: "Intellectual Property", description: "Custom models become valuable organizational assets." },
+        { icon: "material-symbols-light:refresh", title: "Continuous Improvement", description: "Models evolve with organizational data and needs." },
+      ],
+    },
+  },
+  "process-assessment-design": {
+    title: "Process Assessment & Design",
+    content: [
+      {
+        heading: "Process Assessment & Design",
+        paragraphs: ["Comprehensive evaluation and design of robotic process automation opportunities in healthcare organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📋", title: "Healthcare workflow analysis", description: "Evaluate healthcare workflows to identify automation opportunities." },
+        { icon: "🔍", title: "Automation opportunity identification", description: "Pinpoint processes with high potential for automation benefits." },
+        { icon: "⚙️", title: "Process redesign and optimization", description: "Restructure workflows to improve efficiency before automation." },
+        { icon: "💰", title: "ROI assessment and planning", description: "Analyze financial impact and returns of automation projects." },
+        { icon: "🛣️", title: "Implementation roadmap development", description: "Build clear roadmaps to guide automation execution." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:trending-up", title: "Maximized ROI", description: "Thorough assessment ensures highest-value automation opportunities are prioritized." },
+        { icon: "material-symbols-light:settings", title: "Optimized Processes", description: "Redesigned workflows improve efficiency beyond simple automation." },
+        { icon: "material-symbols-light:warning", title: "Risk Mitigation", description: "Careful planning prevents automation failures and disruptions." },
+        { icon: "material-symbols-light:flag", title: "Strategic Alignment", description: "Automation roadmap aligns with organizational goals and priorities." },
+        { icon: "material-symbols-light:groups", title: "Change Management", description: "Structured approach ensures smooth adoption and user acceptance." },
+      ],
+    },
+  },
+
+  "bot-development-deployment": {
+    title: "Bot Development & Deployment",
+    content: [
+      {
+        heading: "Bot Development & Deployment",
+        paragraphs: ["Custom RPA bot development and deployment for healthcare and pharmaceutical operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "💼", title: "Insurance claim processing automation", description: "Automate insurance claim workflows to reduce processing time." },
+        { icon: "🧾", title: "Patient data entry and verification", description: "Automate patient information entry and validation for accuracy." },
+        { icon: "📊", title: "Regulatory reporting automation", description: "Generate and file reports automatically to meet compliance standards." },
+        { icon: "🧪", title: "Laboratory result processing", description: "Streamline lab results handling with automation tools." },
+        { icon: "📦", title: "Supply chain automation", description: "Automate supply chain processes for efficiency and accuracy." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:schedule", title: "Operational Efficiency", description: "Bots work 24/7 without breaks, dramatically increasing productivity." },
+        { icon: "material-symbols-light:fact-check", title: "Error Reduction", description: "Automated processes eliminate human errors in data entry and processing." },
+        { icon: "material-symbols-light:attach-money", title: "Cost Savings", description: "Reduced labor costs and improved efficiency deliver rapid ROI." },
+        { icon: "material-symbols-light:verified", title: "Compliance Improvement", description: "Consistent automated processes ensure regulatory compliance." },
+        {
+          icon: "material-symbols-light:sentiment-satisfied",
+          title: "Staff Satisfaction",
+          description: "Automation of repetitive tasks allows staff to focus on meaningful work.",
+        },
+      ],
+    },
+  },
+
+  "performance-monitoring-analytics": {
+    title: "Performance Monitoring & Analytics",
+    content: [
+      {
+        heading: "Performance Monitoring & Analytics",
+        paragraphs: ["Continuous monitoring and analytics for RPA implementations in healthcare environments."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📈", title: "Bot performance tracking and optimization", description: "Monitor and enhance bot performance for consistent results." },
+        { icon: "📊", title: "Process efficiency measurement", description: "Track efficiency levels to identify areas of improvement." },
+        { icon: "❗", title: "Error detection and correction", description: "Automatically detect and fix process errors quickly." },
+        { icon: "📑", title: "Usage analytics and reporting", description: "Generate reports to analyze automation effectiveness." },
+        { icon: "💹", title: "ROI measurement and validation", description: "Validate ROI through accurate performance data and reporting." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:refresh", title: "Continuous Improvement", description: "Ongoing monitoring identifies optimization opportunities." },
+        { icon: "material-symbols-light:bug-report", title: "Proactive Issue Resolution", description: "Early detection prevents automation failures and downtime." },
+        { icon: "material-symbols-light:check-circle", title: "ROI Validation", description: "Clear metrics demonstrate automation value and success." },
+        { icon: "material-symbols-light:rocket-launch", title: "Performance Optimization", description: "Analytics-driven adjustments maximize automation benefits." },
+        { icon: "material-symbols-light:lightbulb", title: "Strategic Planning", description: "Performance data informs future automation investments." },
+      ],
+    },
+  },
+
+  "maintenance-optimization": {
+    title: "Maintenance & Optimization",
+    content: [
+      {
+        heading: "Maintenance & Optimization",
+        paragraphs: ["Ongoing maintenance, updates, and optimization services for healthcare RPA implementations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🛠️", title: "Bot maintenance and updates", description: "Ensure bots remain updated and functional at all times." },
+        { icon: "⚡", title: "Process optimization and enhancement", description: "Continuously improve automated processes for better outcomes." },
+        { icon: "🔗", title: "System integration maintenance", description: "Maintain seamless integration with other healthcare systems." },
+        { icon: "📜", title: "Regulatory compliance updates", description: "Keep automation processes aligned with regulatory requirements." },
+        { icon: "📈", title: "Performance tuning and scaling", description: "Optimize and scale bots to handle increased workloads." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:settings", title: "Sustained Performance", description: "Regular maintenance ensures continued optimal operation." },
+        { icon: "material-symbols-light:shield", title: "Compliance Assurance", description: "Updates maintain regulatory compliance as requirements change." },
+        { icon: "material-symbols-light:trending-up", title: "Technology Evolution", description: "Ongoing optimization incorporates new capabilities and improvements." },
+        { icon: "material-symbols-light:warning", title: "Risk Mitigation", description: "Proactive maintenance prevents system failures and disruptions." },
+        { icon: "material-symbols-light:savings", title: "Cost Optimization", description: "Continuous optimization maximizes ROI over time." },
+      ],
+    },
+  },
+  "industrial-robots": {
+    title: "Industrial Robots",
+    content: [
+      {
+        heading: "Industrial Robots",
+        paragraphs: ["Implementation of industrial robotics solutions for pharmaceutical manufacturing and healthcare facilities."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📦", title: "Pharmaceutical packaging automation", description: "Automate drug packaging processes for consistency and speed." },
+        { icon: "🧪", title: "Laboratory sample handling", description: "Robots manage and process lab samples with precision." },
+        { icon: "🧼", title: "Clean room operations", description: "Ensure sterile conditions with robotic clean room handling." },
+        { icon: "✅", title: "Quality control automation", description: "Automated inspections improve accuracy and reduce defects." },
+        { icon: "🚚", title: "Material handling and logistics", description: "Streamline logistics with robotic material transport." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:precision-manufacturing",
+          title: "Precision Manufacturing",
+          description: "Robotic precision ensures consistent product quality and reduces defects.",
+        },
+        { icon: "material-symbols-light:health-and-safety", title: "Contamination Prevention", description: "Automated handling reduces human contact and contamination risks." },
+        { icon: "material-symbols-light:trending-up", title: "Increased Throughput", description: "24/7 robotic operation dramatically increases production capacity." },
+        { icon: "material-symbols-light:safety-check", title: "Worker Safety", description: "Robots handle hazardous materials and operate in dangerous environments." },
+        { icon: "material-symbols-light:attach-money", title: "Cost Efficiency", description: "Reduced labor costs and improved efficiency deliver strong ROI." },
+      ],
+    },
+  },
+
+  "healthcare-robotics": {
+    title: "Healthcare Robotics",
+    content: [
+      {
+        heading: "Healthcare Robotics",
+        paragraphs: ["Advanced robotics solutions specifically designed for healthcare delivery and patient care."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🔪", title: "Surgical assistance robots", description: "Enhance precision in surgeries with robotic assistance." },
+        { icon: "🤖", title: "Patient mobility assistance", description: "Provide robotic support for patient movement and rehabilitation." },
+        { icon: "💊", title: "Medication dispensing automation", description: "Automated systems ensure accurate and timely medication dispensing." },
+        { icon: "🦾", title: "Rehabilitation therapy robots", description: "Assist patients with robotic rehabilitation therapies." },
+        { icon: "📹", title: "Telemedicine robotics", description: "Enable remote consultations through robotic telepresence." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:favorite", title: "Improved Patient Outcomes", description: "Robotic precision enhances treatment accuracy and success rates." },
+        { icon: "material-symbols-light:health-and-safety", title: "Enhanced Safety", description: "Consistent robotic operation reduces human error and patient risk." },
+        { icon: "material-symbols-light:accessibility", title: "Increased Accessibility", description: "Robotic assistance makes care available to more patients." },
+        { icon: "material-symbols-light:group", title: "Staff Efficiency", description: "Robots handle routine tasks, allowing staff to focus on patient care." },
+        { icon: "material-symbols-light:payments", title: "Cost-Effective Care", description: "Automation reduces long-term healthcare delivery costs." },
+      ],
+    },
+  },
+
+  "smart-manufacturing-systems": {
+    title: "Smart Manufacturing Systems",
+    content: [
+      {
+        heading: "Smart Manufacturing Systems",
+        paragraphs: ["Integrated smart manufacturing solutions for pharmaceutical and medical device production."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🏭", title: "Automated production lines", description: "Set up fully automated pharmaceutical and device production lines." },
+        { icon: "🔍", title: "Real-time quality monitoring", description: "Monitor production quality continuously with AI-driven systems." },
+        { icon: "⚡", title: "Predictive maintenance systems", description: "Detect and prevent equipment failures with predictive analytics." },
+        { icon: "🔗", title: "Supply chain integration", description: "Integrate supply chain systems for smoother operations." },
+        { icon: "🖥️", title: "Digital twin manufacturing", description: "Simulate production processes for optimization and testing." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:manufacturing", title: "Production Optimization", description: "Smart systems continuously optimize manufacturing efficiency." },
+        { icon: "material-symbols-light:verified", title: "Quality Assurance", description: "Real-time monitoring ensures consistent product quality." },
+        { icon: "material-symbols-light:build", title: "Predictive Maintenance", description: "AI-driven maintenance prevents costly equipment failures." },
+        { icon: "material-symbols-light:rule", title: "Regulatory Compliance", description: "Automated documentation ensures complete compliance." },
+        { icon: "material-symbols-light:rocket-launch", title: "Competitive Advantage", description: "Advanced manufacturing capabilities differentiate from competitors." },
+      ],
+    },
+  },
+
+  "iot-integration": {
+    title: "IoT Integration",
+    content: [
+      {
+        heading: "IoT Integration",
+        paragraphs: ["Internet of Things integration for connected healthcare and pharmaceutical systems."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📡", title: "Connected medical device networks", description: "Integrate medical devices into connected IoT networks." },
+        { icon: "🌡️", title: "Environmental monitoring systems", description: "Track environmental conditions in real-time with IoT sensors." },
+        { icon: "📍", title: "Asset tracking and management", description: "Manage healthcare assets with smart IoT tracking systems." },
+        { icon: "🏥", title: "Remote patient monitoring", description: "Enable real-time patient monitoring through IoT-enabled devices." },
+        { icon: "🚛", title: "Supply chain visibility", description: "Gain complete visibility of supply chains with IoT solutions." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:visibility", title: "Real-Time Visibility", description: "IoT provides comprehensive visibility into operations and assets." },
+        { icon: "material-symbols-light:analytics", title: "Predictive Analytics", description: "Connected data enables predictive insights and optimization." },
+        { icon: "material-symbols-light:monitor-heart", title: "Remote Monitoring", description: "IoT allows monitoring of patients and equipment from anywhere." },
+        { icon: "material-symbols-light:bolt", title: "Operational Efficiency", description: "Connected systems optimize resource utilization and workflows." },
+        { icon: "material-symbols-light:data-thresholding", title: "Data-Driven Decisions", description: "Rich IoT data enables better decision-making across the organization." },
+      ],
+    },
+  },
+  "it-infrastructure-setup": {
+    title: "IT Infrastructure Setup",
+    content: [
+      {
+        heading: "IT Infrastructure Setup",
+        paragraphs: ["Comprehensive IT infrastructure design and implementation for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "💻", title: "Healthcare network infrastructure", description: "Design and implement robust healthcare networks." },
+        { icon: "🖥️", title: "Data center design and implementation", description: "Create secure, scalable data centers." },
+        { icon: "💾", title: "Server and storage solutions", description: "Reliable server and storage systems for healthcare operations." },
+        { icon: "🔄", title: "Backup and disaster recovery systems", description: "Ensure data safety and business continuity." },
+        { icon: "🛡️", title: "HIPAA-compliant infrastructure", description: "Maintain compliance with healthcare regulations." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:verified", title: "Reliable Operations", description: "Robust infrastructure ensures consistent system availability and performance." },
+        { icon: "material-symbols-light:timeline", title: "Scalable Growth", description: "Flexible infrastructure accommodates organizational growth and changing needs." },
+        { icon: "material-symbols-light:lock", title: "Security Compliance", description: "HIPAA-compliant systems protect sensitive patient and business data." },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Right-sized infrastructure minimizes costs while meeting performance requirements.",
+        },
+        { icon: "material-symbols-light:settings", title: "Business Continuity", description: "Redundant systems and disaster recovery ensure continuous operations." },
+      ],
+    },
+  },
+
+  "it-modernization": {
+    title: "IT Modernization",
+    content: [
+      {
+        heading: "IT Modernization",
+        paragraphs: ["Legacy system modernization and digital transformation services for healthcare organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🔁", title: "Legacy system migration", description: "Seamlessly migrate outdated systems to modern platforms." },
+        { icon: "☁️", title: "Cloud transformation initiatives", description: "Move workloads to secure, scalable cloud environments." },
+        { icon: "📋", title: "Electronic health record implementation", description: "Implement EHR solutions for better patient care management." },
+        { icon: "⚡", title: "Digital workflow optimization", description: "Streamline processes to reduce manual tasks and inefficiencies." },
+        { icon: "🛠️", title: "Technology stack modernization", description: "Upgrade technology stack to support future-ready operations." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:flash_on", title: "Improved Efficiency", description: "Modern systems streamline workflows and reduce manual processes." },
+        { icon: "material-symbols-light:security", title: "Enhanced Security", description: "Updated systems provide better security and compliance capabilities." },
+        { icon: "material-symbols-light:money", title: "Cost Reduction", description: "Modernized infrastructure reduces maintenance and operational costs." },
+        {
+          icon: "material-symbols-light:integration_instructions",
+          title: "Better Integration",
+          description: "Modern systems integrate more easily with new technologies and partners.",
+        },
+        { icon: "material-symbols-light:trending_up", title: "Competitive Advantage", description: "Updated technology enables new capabilities and service offerings." },
+      ],
+    },
+  },
+
+  "digital-workspace-solutions": {
+    title: "Digital Workspace Solutions",
+    content: [
+      {
+        heading: "Digital Workspace Solutions",
+        paragraphs: ["Modern digital workplace implementations including collaboration tools and remote work capabilities."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "📧", title: "Microsoft 365 healthcare implementations", description: "Deploy Microsoft 365 tailored for healthcare teams." },
+        { icon: "🌐", title: "Google Workspace medical configurations", description: "Implement Google Workspace for secure medical collaboration." },
+        { icon: "🔑", title: "Secure remote access solutions", description: "Enable staff to securely access systems remotely." },
+        { icon: "🤝", title: "Collaboration platform deployment", description: "Deploy tools for seamless team collaboration." },
+        { icon: "📱", title: "Mobile device management", description: "Manage and secure mobile devices across the organization." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:group", title: "Enhanced Collaboration", description: "Digital tools improve communication and teamwork across healthcare teams." },
+        { icon: "material-symbols-light:home", title: "Remote Work Capability", description: "Flexible work options improve staff satisfaction and retention." },
+        { icon: "material-symbols-light:trending_up", title: "Productivity Improvement", description: "Modern tools streamline workflows and reduce administrative burden." },
+        { icon: "material-symbols-light:attach_money", title: "Cost Efficiency", description: "Cloud-based solutions reduce IT infrastructure and maintenance costs." },
+        { icon: "material-symbols-light:swap_horiz", title: "Scalable Solutions", description: "Digital workspace grows with organizational needs and changes." },
+      ],
+    },
+  },
+  "it-procurement": {
+    title: "IT Procurement",
+    content: [
+      {
+        heading: "IT Procurement",
+        paragraphs: ["Strategic IT procurement and vendor management services for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🏢", title: "Healthcare technology vendor selection", description: "Choose the right technology vendors for healthcare operations." },
+        { icon: "✍️", title: "Contract negotiation and management", description: "Negotiate favorable contracts and manage vendor agreements." },
+        { icon: "📅", title: "Technology lifecycle planning", description: "Plan for the entire lifecycle of technology assets." },
+        { icon: "💰", title: "Cost optimization strategies", description: "Optimize procurement costs through strategic planning." },
+        { icon: "🤝", title: "Vendor relationship management", description: "Manage vendors for reliable delivery and support." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:attach_money",
+          title: "Cost Savings",
+          description: "Expert procurement reduces technology costs through better negotiations and vendor selection.",
+        },
+        { icon: "material-symbols-light:shield", title: "Risk Mitigation", description: "Professional vendor management reduces procurement risks and compliance issues." },
+        {
+          icon: "material-symbols-light:insights",
+          title: "Technology Optimization",
+          description: "Strategic planning ensures technology investments align with organizational goals.",
+        },
+        { icon: "material-symbols-light:access_time", title: "Time Savings", description: "Outsourced procurement allows focus on core healthcare activities." },
+        {
+          icon: "material-symbols-light:account_tree",
+          title: "Vendor Accountability",
+          description: "Professional management ensures vendors meet performance and service commitments.",
+        },
+      ],
+    },
+  },
+
+  "website-app-development": {
+    title: "Website & App Development",
+    content: [
+      {
+        heading: "Website & App Development",
+        paragraphs: ["Custom website and mobile application development for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🌐", title: "Healthcare practice websites", description: "Design and develop responsive websites for medical practices." },
+        { icon: "📱", title: "Patient portal development", description: "Create user-friendly patient portals for better engagement." },
+        { icon: "📲", title: "Medical mobile applications", description: "Develop apps for healthcare services, telemedicine, and patient care." },
+        { icon: "💻", title: "Telemedicine platforms", description: "Build platforms enabling remote consultations and care." },
+        { icon: "🛒", title: "Pharmaceutical e-commerce sites", description: "Develop e-commerce solutions for pharmacies and medical products." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:sentiment_satisfied",
+          title: "Enhanced Patient Experience",
+          description: "User-friendly websites and apps improve patient engagement and satisfaction.",
+        },
+        { icon: "material-symbols-light:public", title: "Increased Accessibility", description: "Digital platforms make healthcare services more accessible to patients." },
+        { icon: "material-symbols-light:trending_up", title: "Operational Efficiency", description: "Automated features reduce administrative burden on staff." },
+        { icon: "material-symbols-light:stars", title: "Competitive Differentiation", description: "Custom solutions provide unique capabilities and user experiences." },
+        { icon: "material-symbols-light:attach_money", title: "Revenue Growth", description: "E-commerce and booking capabilities generate new revenue streams." },
+      ],
+    },
+  },
+
+  "applications-integrations": {
+    title: "Applications & Integrations",
+    content: [
+      {
+        heading: "Applications & Integrations",
+        paragraphs: ["Custom application development and system integration services for healthcare environments."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        { icon: "🔗", title: "Electronic health record integrations", description: "Integrate EHR systems for seamless patient data flow." },
+        { icon: "⚙️", title: "Practice management system connections", description: "Connect practice management software with other tools." },
+        { icon: "🧪", title: "Laboratory information system interfaces", description: "Integrate lab systems for faster, accurate results." },
+        { icon: "💊", title: "Pharmacy management integrations", description: "Ensure pharmacy systems communicate effectively with other platforms." },
+        { icon: "📊", title: "Medical device data integration", description: "Connect medical devices to IT systems for real-time data." },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        { icon: "material-symbols-light:sync_alt", title: "Seamless Workflows", description: "Integrated systems eliminate data silos and streamline processes." },
+        { icon: "material-symbols-light:check_circle", title: "Improved Accuracy", description: "Automated data exchange reduces errors and improves data quality." },
+        { icon: "material-symbols-light:trending_up", title: "Enhanced Productivity", description: "Integrated systems reduce duplicate data entry and manual processes." },
+        { icon: "material-symbols-light:insights", title: "Better Decision Making", description: "Unified data provides comprehensive insights for clinical decisions." },
+        { icon: "material-symbols-light:shield", title: "Compliance Assurance", description: "Proper integrations maintain data security and regulatory compliance." },
+      ],
+    },
+  },
+
+  "ui-ux-optimization": {
+    title: "UI/UX Optimization",
+    content: [
+      {
+        heading: "UI/UX Optimization",
+        paragraphs: ["User interface and user experience optimization for healthcare applications and websites."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👥",
+          title: "Patient portal usability improvement",
+          description: "Enhance patient portal design for better user experience and engagement.",
+        },
+        {
+          icon: "📱",
+          title: "Medical application interface design",
+          description: "Create intuitive interfaces for medical applications and software.",
+        },
+        {
+          icon: "🌐",
+          title: "Healthcare website optimization",
+          description: "Optimize healthcare websites for better user experience and conversion.",
+        },
+        {
+          icon: "📲",
+          title: "Mobile health app user experience",
+          description: "Design exceptional mobile experiences for health and wellness apps.",
+        },
+        {
+          icon: "⚙️",
+          title: "Clinical workflow interface design",
+          description: "Streamline clinical workflows through optimized interface design.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:group",
+          title: "Improved User Adoption",
+          description: "Intuitive interfaces increase user satisfaction and system adoption.",
+        },
+        {
+          icon: "material-symbols-light:school",
+          title: "Reduced Training Costs",
+          description: "User-friendly designs minimize training requirements for staff.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Enhanced Productivity",
+          description: "Optimized workflows reduce time spent on system navigation.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Better Patient Engagement",
+          description: "Improved patient portal design increases usage and satisfaction.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Superior user experience differentiates from competitors.",
+        },
+      ],
+    },
+  },
+
+  "mobile-commerce-mcommerce": {
+    title: "Mobile Commerce (mCommerce)",
+    content: [
+      {
+        heading: "Mobile Commerce (mCommerce)",
+        paragraphs: ["Mobile commerce solutions for healthcare and pharmaceutical e-commerce operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "💊",
+          title: "Pharmaceutical mobile shopping apps",
+          description: "Develop mobile apps for pharmaceutical product sales and management.",
+        },
+        {
+          icon: "🛒",
+          title: "Health product e-commerce platforms",
+          description: "Create comprehensive e-commerce platforms for health and wellness products.",
+        },
+        {
+          icon: "🔄",
+          title: "Prescription refill mobile solutions",
+          description: "Build mobile solutions for convenient prescription refills and management.",
+        },
+        {
+          icon: "💳",
+          title: "Telehealth payment processing",
+          description: "Implement secure payment processing for telehealth services.",
+        },
+        {
+          icon: "🩺",
+          title: "Medical device mobile ordering",
+          description: "Enable mobile ordering and management of medical devices and equipment.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Increased Sales",
+          description: "Mobile commerce captures growing mobile shopping trends.",
+        },
+        {
+          icon: "material-symbols-light:sentiment-satisfied",
+          title: "Improved Customer Experience",
+          description: "Convenient mobile shopping enhances customer satisfaction.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Expanded Market Reach",
+          description: "Mobile platforms reach customers across diverse demographics.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Enhanced Loyalty",
+          description: "Mobile apps provide direct customer communication and engagement.",
+        },
+        {
+          icon: "material-symbols-light:rocket-launch",
+          title: "Competitive Positioning",
+          description: "Mobile-first approach positions ahead of competitors.",
+        },
+      ],
+    },
+  },
+
+  "cloud-migration-setup": {
+    title: "Cloud Migration & Setup",
+    content: [
+      {
+        heading: "Cloud Migration & Setup",
+        paragraphs: ["Comprehensive cloud migration and setup services for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏥",
+          title: "Healthcare data migration to cloud",
+          description: "Securely migrate healthcare data to cloud platforms with full compliance.",
+        },
+        {
+          icon: "📋",
+          title: "Electronic health record cloud deployment",
+          description: "Deploy EHR systems on cloud infrastructure for scalability and accessibility.",
+        },
+        {
+          icon: "🧪",
+          title: "Pharmaceutical research cloud infrastructure",
+          description: "Set up cloud infrastructure for pharmaceutical research and development.",
+        },
+        {
+          icon: "☁️",
+          title: "Multi-cloud strategy implementation",
+          description: "Implement multi-cloud strategies for optimal performance and redundancy.",
+        },
+        {
+          icon: "🔗",
+          title: "Hybrid cloud architecture design",
+          description: "Design hybrid cloud architectures combining on-premises and cloud resources.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Reduction",
+          description: "Cloud infrastructure reduces capital expenses and operational costs.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Scalability",
+          description: "Cloud resources scale automatically with changing demands.",
+        },
+        {
+          icon: "material-symbols-light:shield",
+          title: "Enhanced Security",
+          description: "Enterprise cloud platforms provide advanced security capabilities.",
+        },
+        {
+          icon: "material-symbols-light:group",
+          title: "Improved Collaboration",
+          description: "Cloud enables secure access and collaboration from anywhere.",
+        },
+        {
+          icon: "material-symbols-light:backup",
+          title: "Business Continuity",
+          description: "Cloud infrastructure provides built-in disaster recovery and redundancy.",
+        },
+      ],
+    },
+  },
+
+  "cloud-backup-restore": {
+    title: "Cloud Backup & Restore",
+    content: [
+      {
+        heading: "Cloud Backup & Restore",
+        paragraphs: ["Comprehensive cloud backup and disaster recovery solutions for healthcare organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👥",
+          title: "Patient data backup and recovery",
+          description: "Secure backup and recovery solutions for patient health information.",
+        },
+        {
+          icon: "📋",
+          title: "Electronic health record backup",
+          description: "Comprehensive backup strategies for EHR systems and data.",
+        },
+        {
+          icon: "🩻",
+          title: "Medical imaging data protection",
+          description: "Protect and backup medical imaging data with high availability.",
+        },
+        {
+          icon: "🧪",
+          title: "Pharmaceutical research data backup",
+          description: "Secure backup solutions for critical research and development data.",
+        },
+        {
+          icon: "📊",
+          title: "Automated backup monitoring",
+          description: "Continuous monitoring and alerting for backup system health.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:security",
+          title: "Data Protection",
+          description: "Automated backups protect against data loss from various threats.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Proper backup procedures meet healthcare data retention requirements.",
+        },
+        {
+          icon: "material-symbols-light:restore",
+          title: "Business Continuity",
+          description: "Fast recovery capabilities minimize downtime and service disruption.",
+        },
+        {
+          icon: "material-symbols-light:savings",
+          title: "Cost Efficiency",
+          description: "Cloud backup reduces infrastructure costs compared to traditional methods.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Peace of Mind",
+          description: "Automated monitoring ensures backup systems are always functioning properly.",
+        },
+      ],
+    },
+  },
+
+  "network-infrastructure-support": {
+    title: "Network Infrastructure Support",
+    content: [
+      {
+        heading: "Network Infrastructure Support",
+        paragraphs: ["Comprehensive network infrastructure support and management for healthcare facilities."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏥",
+          title: "Healthcare network design and implementation",
+          description: "Design and implement robust networks for healthcare facilities.",
+        },
+        {
+          icon: "🩺",
+          title: "Medical device network connectivity",
+          description: "Connect and manage medical devices on secure healthcare networks.",
+        },
+        {
+          icon: "📶",
+          title: "Wireless infrastructure for hospitals",
+          description: "Deploy reliable wireless networks for hospital environments.",
+        },
+        {
+          icon: "🔒",
+          title: "Network security monitoring",
+          description: "Continuous monitoring and protection of healthcare network infrastructure.",
+        },
+        {
+          icon: "⚡",
+          title: "Performance optimization",
+          description: "Optimize network performance for healthcare applications and systems.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:wifi",
+          title: "Reliable Connectivity",
+          description: "Robust networks ensure consistent access to critical healthcare systems.",
+        },
+        {
+          icon: "material-symbols-light:security",
+          title: "Enhanced Security",
+          description: "Professional network management provides advanced security monitoring.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Improved Performance",
+          description: "Optimized networks deliver faster access to patient data and applications.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Reduced Downtime",
+          description: "Proactive monitoring and maintenance prevent network failures.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Growth",
+          description: "Professional design accommodates future expansion and technology additions.",
+        },
+      ],
+    },
+  },
+
+  "enterprise-infrastructure": {
+    title: "Enterprise Infrastructure",
+    content: [
+      {
+        heading: "Enterprise Infrastructure",
+        paragraphs: ["Enterprise-grade infrastructure solutions for large healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏢",
+          title: "Multi-site healthcare network design",
+          description: "Design and implement networks connecting multiple healthcare facilities.",
+        },
+        {
+          icon: "🏗️",
+          title: "Enterprise data center consolidation",
+          description: "Consolidate and optimize data center infrastructure across the organization.",
+        },
+        {
+          icon: "☁️",
+          title: "Large-scale cloud infrastructure",
+          description: "Deploy and manage enterprise-scale cloud infrastructure solutions.",
+        },
+        {
+          icon: "🌍",
+          title: "Global pharmaceutical IT infrastructure",
+          description: "Build IT infrastructure supporting global pharmaceutical operations.",
+        },
+        {
+          icon: "🛡️",
+          title: "Enterprise security architecture",
+          description: "Design comprehensive security architectures for large organizations.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:rule",
+          title: "Standardized Operations",
+          description: "Consistent infrastructure across multiple locations improves efficiency.",
+        },
+        {
+          icon: "material-symbols-light:center-focus-strong",
+          title: "Centralized Management",
+          description: "Unified infrastructure management reduces complexity and costs.",
+        },
+        {
+          icon: "material-symbols-light:security",
+          title: "Enhanced Security",
+          description: "Enterprise-grade security protects against sophisticated threats.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Improved Collaboration",
+          description: "Standardized systems enable better collaboration across the organization.",
+        },
+        {
+          icon: "material-symbols-light:flag",
+          title: "Strategic Alignment",
+          description: "Infrastructure aligns with long-term organizational goals and growth plans.",
+        },
+      ],
+    },
+  },
+
+  "cybersecurity-solutions": {
+    title: "Cybersecurity Solutions",
+    content: [
+      {
+        heading: "Cybersecurity Solutions",
+        paragraphs: ["Comprehensive cybersecurity solutions specifically designed for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🛡️",
+          title: "HIPAA compliance security implementation",
+          description: "Implement comprehensive security measures to ensure HIPAA compliance.",
+        },
+        {
+          icon: "🔐",
+          title: "Healthcare data encryption",
+          description: "Encrypt sensitive healthcare data at rest and in transit.",
+        },
+        {
+          icon: "📡",
+          title: "Network security monitoring",
+          description: "Monitor network traffic and detect security threats in real-time.",
+        },
+        {
+          icon: "🩺",
+          title: "Endpoint protection for medical devices",
+          description: "Secure medical devices and endpoints against cyber threats.",
+        },
+        {
+          icon: "🎓",
+          title: "Security awareness training",
+          description: "Train staff on cybersecurity best practices and threat recognition.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:security",
+          title: "Data Protection",
+          description: "Advanced security measures protect sensitive patient and business data.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Security solutions ensure compliance with HIPAA and other regulations.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Proactive security reduces the risk of costly data breaches.",
+        },
+        {
+          icon: "material-symbols-light:backup",
+          title: "Business Continuity",
+          description: "Strong security prevents disruptions from cyber attacks.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Patient Trust",
+          description: "Robust security builds patient confidence in healthcare organizations.",
+        },
+      ],
+    },
+  },
+
+  "data-protection-privacy": {
+    title: "Data Protection & Privacy",
+    content: [
+      {
+        heading: "Data Protection & Privacy",
+        paragraphs: ["Specialized data protection and privacy services for healthcare organizations handling sensitive information."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👥",
+          title: "Patient data privacy compliance",
+          description: "Ensure patient data handling meets all privacy regulations and requirements.",
+        },
+        {
+          icon: "📋",
+          title: "Healthcare data governance",
+          description: "Implement comprehensive data governance frameworks for healthcare organizations.",
+        },
+        {
+          icon: "🚫",
+          title: "Data loss prevention systems",
+          description: "Deploy systems to prevent unauthorized data access and loss.",
+        },
+        {
+          icon: "🔍",
+          title: "Privacy impact assessments",
+          description: "Conduct assessments to evaluate privacy risks and compliance requirements.",
+        },
+        {
+          icon: "✅",
+          title: "Consent management systems",
+          description: "Manage patient consent for data collection and processing activities.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Comprehensive privacy measures ensure compliance with healthcare regulations.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Reduction",
+          description: "Proper data protection reduces legal and financial risks from privacy violations.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Patient Trust",
+          description: "Strong privacy protections build patient confidence and loyalty.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Automated privacy controls reduce manual compliance efforts.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Superior privacy practices differentiate from competitors.",
+        },
+      ],
+    },
+  },
+
+  "security-audits-compliance": {
+    title: "Security Audits & Compliance",
+    content: [
+      {
+        heading: "Security Audits & Compliance",
+        paragraphs: ["Comprehensive security audits and compliance assessments for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📋",
+          title: "HIPAA compliance audits",
+          description: "Conduct thorough audits to ensure HIPAA compliance across all systems.",
+        },
+        {
+          icon: "🔍",
+          title: "Penetration testing for healthcare systems",
+          description: "Test security defenses through controlled penetration testing.",
+        },
+        {
+          icon: "📜",
+          title: "Security policy development",
+          description: "Develop comprehensive security policies and procedures.",
+        },
+        {
+          icon: "⚠️",
+          title: "Vulnerability assessments",
+          description: "Identify and assess security vulnerabilities in healthcare systems.",
+        },
+        {
+          icon: "📊",
+          title: "Compliance gap analysis",
+          description: "Analyze gaps between current state and regulatory requirements.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Compliance Assurance",
+          description: "Regular audits ensure ongoing compliance with healthcare regulations.",
+        },
+        {
+          icon: "material-symbols-light:bug-report",
+          title: "Risk Identification",
+          description: "Assessments identify vulnerabilities before they can be exploited.",
+        },
+        {
+          icon: "material-symbols-light:security",
+          title: "Improved Security Posture",
+          description: "Audit findings guide security improvements and investments.",
+        },
+        {
+          icon: "material-symbols-light:fact-check",
+          title: "Regulatory Preparedness",
+          description: "Regular audits prepare organizations for regulatory inspections.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Avoidance",
+          description: "Preventing security incidents avoids costly breaches and penalties.",
+        },
+      ],
+    },
+  },
+
+  "disaster-recovery-planning": {
+    title: "Disaster Recovery Planning",
+    content: [
+      {
+        heading: "Disaster Recovery Planning",
+        paragraphs: ["Comprehensive disaster recovery and business continuity planning for healthcare organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏥",
+          title: "Healthcare business continuity planning",
+          description: "Develop comprehensive business continuity plans for healthcare operations.",
+        },
+        {
+          icon: "🚨",
+          title: "Emergency response procedures",
+          description: "Create detailed emergency response procedures for various scenarios.",
+        },
+        {
+          icon: "💾",
+          title: "Data recovery planning",
+          description: "Plan for rapid data recovery and system restoration after disasters.",
+        },
+        {
+          icon: "🔄",
+          title: "System failover strategies",
+          description: "Implement failover strategies to maintain critical system availability.",
+        },
+        {
+          icon: "🧪",
+          title: "Recovery testing and validation",
+          description: "Test and validate recovery procedures to ensure they work effectively.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:backup",
+          title: "Business Continuity",
+          description: "Comprehensive planning ensures continued operations during emergencies.",
+        },
+        {
+          icon: "material-symbols-light:health-and-safety",
+          title: "Patient Care Continuity",
+          description: "Recovery plans maintain access to critical patient care systems.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Proper planning meets healthcare regulatory requirements for continuity.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Prepared organizations recover faster and with less impact from disasters.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Stakeholder Confidence",
+          description: "Strong recovery plans build confidence among patients, staff, and partners.",
+        },
+      ],
+    },
+  },
+
+  "hardware-device-integration": {
+    title: "Hardware Device Integration",
+    content: [
+      {
+        heading: "Hardware Device Integration",
+        paragraphs: ["Integration of medical devices and healthcare equipment with existing IT systems and networks."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🩺",
+          title: "Medical device network connectivity",
+          description: "Connect medical devices to secure healthcare networks for data sharing.",
+        },
+        {
+          icon: "📋",
+          title: "Electronic health record device integration",
+          description: "Integrate medical devices directly with EHR systems for seamless data flow.",
+        },
+        {
+          icon: "🧪",
+          title: "Laboratory equipment data integration",
+          description: "Connect lab equipment to IT systems for automated result processing.",
+        },
+        {
+          icon: "📊",
+          title: "Monitoring device connectivity",
+          description: "Connect patient monitoring devices for real-time data collection.",
+        },
+        {
+          icon: "📱",
+          title: "Mobile device management",
+          description: "Manage and secure mobile devices used in healthcare settings.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:workflow",
+          title: "Improved Workflows",
+          description: "Integrated devices streamline clinical workflows and reduce manual data entry.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Enhanced Accuracy",
+          description: "Direct device integration eliminates transcription errors.",
+        },
+        {
+          icon: "material-symbols-light:monitor-heart",
+          title: "Better Patient Monitoring",
+          description: "Connected devices provide real-time patient data and alerts.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Automated data collection reduces staff workload.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Proper integration maintains audit trails and compliance requirements.",
+        },
+      ],
+    },
+  },
+
+  "iot-solutions": {
+    title: "IoT Solutions",
+    content: [
+      {
+        heading: "IoT Solutions",
+        paragraphs: ["Internet of Things solutions for healthcare facilities and pharmaceutical operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📍",
+          title: "Asset tracking and management",
+          description: "Track and manage healthcare assets with IoT-enabled systems.",
+        },
+        {
+          icon: "🌡️",
+          title: "Environmental monitoring systems",
+          description: "Monitor environmental conditions in real-time with IoT sensors.",
+        },
+        {
+          icon: "👥",
+          title: "Patient monitoring IoT devices",
+          description: "Deploy IoT devices for continuous patient monitoring and care.",
+        },
+        {
+          icon: "🚛",
+          title: "Supply chain visibility",
+          description: "Gain complete visibility of supply chains with IoT solutions.",
+        },
+        {
+          icon: "🔧",
+          title: "Equipment maintenance monitoring",
+          description: "Monitor equipment health and predict maintenance needs with IoT.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Real-Time Visibility",
+          description: "IoT provides comprehensive visibility into assets, patients, and operations.",
+        },
+        {
+          icon: "material-symbols-light:analytics",
+          title: "Predictive Analytics",
+          description: "Connected data enables predictive insights and proactive management.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "IoT data helps optimize resource utilization and reduce waste.",
+        },
+        {
+          icon: "material-symbols-light:health-and-safety",
+          title: "Improved Safety",
+          description: "Continuous monitoring enhances patient and staff safety.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "IoT capabilities provide differentiation in the healthcare market.",
+        },
+      ],
+    },
+  },
+
+  "smart-device-management": {
+    title: "Smart Device Management",
+    content: [
+      {
+        heading: "Smart Device Management",
+        paragraphs: ["Comprehensive management solutions for smart devices and connected equipment in healthcare settings."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📱",
+          title: "Mobile device management for healthcare",
+          description: "Manage and secure mobile devices used by healthcare staff.",
+        },
+        {
+          icon: "🩺",
+          title: "Smart medical device administration",
+          description: "Administer and manage smart medical devices across the organization.",
+        },
+        {
+          icon: "🔒",
+          title: "IoT device security management",
+          description: "Secure and manage IoT devices to prevent security vulnerabilities.",
+        },
+        {
+          icon: "🔄",
+          title: "Device lifecycle management",
+          description: "Manage the complete lifecycle of devices from procurement to disposal.",
+        },
+        {
+          icon: "📊",
+          title: "Remote device monitoring",
+          description: "Monitor device health and performance remotely for proactive maintenance.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:security",
+          title: "Enhanced Security",
+          description: "Centralized management ensures consistent security across all devices.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Automated management reduces IT administration overhead.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Control",
+          description: "Lifecycle management optimizes device refresh cycles and costs.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Compliance Assurance",
+          description: "Managed devices maintain compliance with healthcare regulations.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Improved Reliability",
+          description: "Proactive monitoring prevents device failures and downtime.",
+        },
+      ],
+    },
+  },
+
+  "hardware-procurement": {
+    title: "Hardware Procurement",
+    content: [
+      {
+        heading: "Hardware Procurement",
+        paragraphs: ["Strategic hardware procurement and vendor management for healthcare and pharmaceutical organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🩺",
+          title: "Medical equipment procurement",
+          description: "Source and procure medical equipment from reliable vendors.",
+        },
+        {
+          icon: "💻",
+          title: "IT hardware vendor selection",
+          description: "Select the best IT hardware vendors for healthcare organizations.",
+        },
+        {
+          icon: "📝",
+          title: "Contract negotiation and management",
+          description: "Negotiate favorable contracts and manage vendor relationships.",
+        },
+        {
+          icon: "📅",
+          title: "Hardware lifecycle planning",
+          description: "Plan for hardware refresh cycles and technology upgrades.",
+        },
+        {
+          icon: "📊",
+          title: "Vendor performance management",
+          description: "Monitor and manage vendor performance and service delivery.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Savings",
+          description: "Expert procurement reduces hardware costs through better negotiations.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Quality Assurance",
+          description: "Professional vendor selection ensures reliable, high-quality equipment.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Proper procurement processes reduce vendor and performance risks.",
+        },
+        {
+          icon: "material-symbols-light:schedule",
+          title: "Time Savings",
+          description: "Outsourced procurement allows focus on core healthcare activities.",
+        },
+        {
+          icon: "material-symbols-light:flag",
+          title: "Strategic Planning",
+          description: "Lifecycle planning ensures optimal timing for equipment refresh.",
+        },
+      ],
+    },
+  },
+
+  "product-formulation-development": {
+    title: "Product Formulation & Development",
+    content: [
+      {
+        heading: "Product Formulation & Development",
+        paragraphs: ["Comprehensive pharmaceutical and health product formulation services from concept to market-ready products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "💊",
+          title: "Pharmaceutical drug formulation",
+          description: "Develop safe and effective pharmaceutical drug formulations.",
+        },
+        {
+          icon: "🌿",
+          title: "Nutraceutical product development",
+          description: "Create high-quality nutraceutical and dietary supplement products.",
+        },
+        {
+          icon: "✨",
+          title: "Cosmetic and skincare formulation",
+          description: "Formulate innovative cosmetic and skincare products.",
+        },
+        {
+          icon: "🌱",
+          title: "Herbal and natural product development",
+          description: "Develop herbal and natural health products with scientific backing.",
+        },
+        {
+          icon: "🧪",
+          title: "API (Active Pharmaceutical Ingredient) formulation",
+          description: "Formulate and develop active pharmaceutical ingredients.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:science",
+          title: "Expert Formulation Science",
+          description: "Access to experienced formulation scientists and R&D capabilities.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Formulations designed to meet Health Canada, FDA, and international standards.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost-Effective Development",
+          description: "Efficient formulation processes reduce time and costs to market.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Rigorous testing ensures product safety, efficacy, and stability.",
+        },
+        {
+          icon: "material-symbols-light:copyright",
+          title: "Intellectual Property Protection",
+          description: "Proprietary formulations provide competitive advantages.",
+        },
+      ],
+    },
+  },
+
+  "pharmaceutical-manufacturing": {
+    title: "Pharmaceutical Manufacturing",
+    content: [
+      {
+        heading: "Pharmaceutical Manufacturing",
+        paragraphs: ["Complete pharmaceutical manufacturing services including production planning, quality control, and regulatory compliance."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏭",
+          title: "Small batch pharmaceutical production",
+          description: "Manufacture small batches of pharmaceutical products for testing and trials.",
+        },
+        {
+          icon: "📦",
+          title: "Large-scale drug manufacturing",
+          description: "Produce large volumes of pharmaceutical products for commercial distribution.",
+        },
+        {
+          icon: "🤝",
+          title: "Contract manufacturing services",
+          description: "Provide contract manufacturing services for pharmaceutical companies.",
+        },
+        {
+          icon: "🏷️",
+          title: "Private label pharmaceutical production",
+          description: "Manufacture private label pharmaceutical products for retailers.",
+        },
+        {
+          icon: "⚙️",
+          title: "Custom formulation manufacturing",
+          description: "Manufacture custom formulations according to specific requirements.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "GMP Compliance",
+          description: "Manufacturing facilities meet Good Manufacturing Practice standards.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Rigorous quality control ensures consistent product quality.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Scalable Production",
+          description: "Flexible manufacturing accommodates varying production volumes.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Efficiency",
+          description: "Shared manufacturing resources reduce capital investment requirements.",
+        },
+        {
+          icon: "material-symbols-light:description",
+          title: "Regulatory Support",
+          description: "Manufacturing documentation supports regulatory submissions.",
+        },
+      ],
+    },
+  },
+
+  "api-development-supply": {
+    title: "API Development & Supply",
+    content: [
+      {
+        heading: "API Development & Supply",
+        paragraphs: ["Active Pharmaceutical Ingredient development, sourcing, and supply chain management services."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🧬",
+          title: "Custom API synthesis",
+          description: "Synthesize custom active pharmaceutical ingredients for specific needs.",
+        },
+        {
+          icon: "💊",
+          title: "Generic API development",
+          description: "Develop generic APIs for cost-effective pharmaceutical production.",
+        },
+        {
+          icon: "🔍",
+          title: "API sourcing and qualification",
+          description: "Source and qualify APIs from reliable suppliers worldwide.",
+        },
+        {
+          icon: "🚛",
+          title: "Supply chain management",
+          description: "Manage complete API supply chains for reliable delivery.",
+        },
+        {
+          icon: "✅",
+          title: "Quality assurance and testing",
+          description: "Ensure API quality through comprehensive testing and validation.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:inventory",
+          title: "Reliable Supply",
+          description: "Secure supply chains ensure consistent API availability.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Comprehensive testing ensures API meets all specifications.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Strategic sourcing reduces API costs while maintaining quality.",
+        },
+        {
+          icon: "material-symbols-light:description",
+          title: "Regulatory Support",
+          description: "API documentation supports drug registration and approval.",
+        },
+        {
+          icon: "material-symbols-light:science",
+          title: "Technical Expertise",
+          description: "Access to experienced API development and manufacturing specialists.",
+        },
+      ],
+    },
+  },
+
+  "regulatory-submissions": {
+    title: "Regulatory Submissions",
+    content: [
+      {
+        heading: "Regulatory Submissions",
+        paragraphs: ["Complete regulatory submission services for pharmaceutical and health product approvals across multiple jurisdictions."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🇨🇦",
+          title: "Health Canada drug submissions",
+          description: "Prepare and submit drug applications to Health Canada for approval.",
+        },
+        {
+          icon: "🇺🇸",
+          title: "FDA pharmaceutical applications",
+          description: "Submit pharmaceutical applications to the US Food and Drug Administration.",
+        },
+        {
+          icon: "🇪🇺",
+          title: "European medicines registration",
+          description: "Register pharmaceutical products with European regulatory authorities.",
+        },
+        {
+          icon: "🌍",
+          title: "International drug approvals",
+          description: "Obtain drug approvals in multiple international markets.",
+        },
+        {
+          icon: "📊",
+          title: "Post-market surveillance support",
+          description: "Provide ongoing regulatory support after product approval.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Regulatory Expertise",
+          description: "Experienced regulatory professionals navigate complex approval processes.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Faster Approvals",
+          description: "Expert preparation and submission accelerates approval timelines.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Compliance Assurance",
+          description: "Submissions meet all regulatory requirements and standards.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Efficiency",
+          description: "Professional preparation reduces delays and resubmission costs.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Access",
+          description: "Multi-jurisdictional expertise enables international expansion.",
+        },
+      ],
+    },
+  },
+
+  "quality-control-testing": {
+    title: "Quality Control Testing",
+    content: [
+      {
+        heading: "Quality Control Testing",
+        paragraphs: ["Comprehensive quality control testing services for pharmaceutical, nutraceutical, and healthcare products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "💊",
+          title: "Pharmaceutical product testing",
+          description: "Comprehensive testing of pharmaceutical products for quality and safety.",
+        },
+        {
+          icon: "🧪",
+          title: "Raw material analysis",
+          description: "Analyze raw materials to ensure quality and purity standards.",
+        },
+        {
+          icon: "⏰",
+          title: "Stability testing studies",
+          description: "Conduct stability studies to determine product shelf life and storage conditions.",
+        },
+        {
+          icon: "🔬",
+          title: "Microbiological testing",
+          description: "Test products for microbial contamination and sterility.",
+        },
+        {
+          icon: "⚠️",
+          title: "Heavy metals and contaminants analysis",
+          description: "Analyze products for heavy metals and other harmful contaminants.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Testing ensures products meet all regulatory requirements.",
+        },
+        {
+          icon: "material-symbols-light:health-and-safety",
+          title: "Product Safety",
+          description: "Comprehensive testing confirms product safety for consumers.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Consistent testing maintains product quality and efficacy.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Testing identifies potential issues before market release.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Market Confidence",
+          description: "Third-party testing results build customer and regulatory confidence.",
+        },
+      ],
+    },
+  },
+
+  "safety-efficacy-testing": {
+    title: "Safety & Efficacy Testing",
+    content: [
+      {
+        heading: "Safety & Efficacy Testing",
+        paragraphs: ["Specialized safety and efficacy testing services for pharmaceutical and health products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👥",
+          title: "Clinical trial support",
+          description: "Provide comprehensive support for clinical trial design and execution.",
+        },
+        {
+          icon: "🧬",
+          title: "Toxicology studies",
+          description: "Conduct toxicology studies to assess product safety profiles.",
+        },
+        {
+          icon: "💊",
+          title: "Bioavailability testing",
+          description: "Test how effectively active ingredients are absorbed and utilized.",
+        },
+        {
+          icon: "📊",
+          title: "Pharmacokinetic studies",
+          description: "Study how drugs are absorbed, distributed, metabolized, and eliminated.",
+        },
+        {
+          icon: "🛡️",
+          title: "Safety assessment studies",
+          description: "Comprehensive safety assessments for pharmaceutical products.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Regulatory Approval Support",
+          description: "Testing data supports regulatory submissions and approvals.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Product Validation",
+          description: "Studies confirm product safety and efficacy claims.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Assessment",
+          description: "Comprehensive testing identifies potential safety concerns.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Market Differentiation",
+          description: "Efficacy data provides competitive advantages.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Consumer Confidence",
+          description: "Published safety and efficacy data builds consumer trust.",
+        },
+      ],
+    },
+  },
+
+  "gmp-glp-certifications": {
+    title: "GMP/GLP Certifications",
+    content: [
+      {
+        heading: "GMP/GLP Certifications",
+        paragraphs: ["Good Manufacturing Practice and Good Laboratory Practice certification support and consulting services."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏭",
+          title: "GMP facility certification",
+          description: "Help facilities achieve Good Manufacturing Practice certification.",
+        },
+        {
+          icon: "🔬",
+          title: "GLP laboratory accreditation",
+          description: "Support laboratories in achieving Good Laboratory Practice accreditation.",
+        },
+        {
+          icon: "⚙️",
+          title: "Quality system implementation",
+          description: "Implement comprehensive quality management systems.",
+        },
+        {
+          icon: "📋",
+          title: "Audit preparation and support",
+          description: "Prepare facilities for regulatory audits and inspections.",
+        },
+        {
+          icon: "📊",
+          title: "Continuous compliance monitoring",
+          description: "Ongoing monitoring to maintain certification and compliance.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Certifications ensure compliance with pharmaceutical regulations.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Access",
+          description: "Certified facilities can manufacture for global markets.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "GMP/GLP systems ensure consistent quality and reliability.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Certifications differentiate from non-certified competitors.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Reduction",
+          description: "Systematic approaches reduce quality and compliance risks.",
+        },
+      ],
+    },
+  },
+
+  "international-standards-compliance": {
+    title: "International Standards Compliance",
+    content: [
+      {
+        heading: "International Standards Compliance",
+        paragraphs: ["Compliance services for international pharmaceutical and healthcare standards across multiple jurisdictions."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🌍",
+          title: "ISO standard implementation",
+          description: "Implement ISO standards for quality management and compliance.",
+        },
+        {
+          icon: "📋",
+          title: "ICH guideline compliance",
+          description: "Ensure compliance with International Council for Harmonisation guidelines.",
+        },
+        {
+          icon: "🔗",
+          title: "International harmonization",
+          description: "Harmonize practices across different international markets.",
+        },
+        {
+          icon: "🗺️",
+          title: "Multi-country compliance strategy",
+          description: "Develop strategies for compliance across multiple countries.",
+        },
+        {
+          icon: "⚙️",
+          title: "Global quality system alignment",
+          description: "Align quality systems with international standards globally.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Access",
+          description: "International compliance enables market entry worldwide.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Regulatory Efficiency",
+          description: "Harmonized systems reduce duplicate compliance efforts.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Consistency",
+          description: "International standards ensure consistent quality globally.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Standardized approaches reduce compliance costs.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Positioning",
+          description: "International compliance provides global competitive advantages.",
+        },
+      ],
+    },
+  },
+
+  "production-setup-optimization": {
+    title: "Production Setup & Optimization",
+    content: [
+      {
+        heading: "Production Setup & Optimization",
+        paragraphs: ["Complete production facility setup and optimization services for pharmaceutical and healthcare product manufacturing."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏭",
+          title: "Manufacturing facility design",
+          description: "Design efficient manufacturing facilities for pharmaceutical production.",
+        },
+        {
+          icon: "⚙️",
+          title: "Production line setup",
+          description: "Set up complete production lines for pharmaceutical manufacturing.",
+        },
+        {
+          icon: "📈",
+          title: "Process optimization",
+          description: "Optimize manufacturing processes for maximum efficiency and quality.",
+        },
+        {
+          icon: "🔧",
+          title: "Equipment selection and validation",
+          description: "Select and validate manufacturing equipment for optimal performance.",
+        },
+        {
+          icon: "📋",
+          title: "Workflow design and implementation",
+          description: "Design and implement efficient manufacturing workflows.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:settings",
+          title: "Efficient Operations",
+          description: "Optimized production processes maximize efficiency and minimize waste.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Proper setup ensures consistent product quality.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Facility design meets all regulatory requirements.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Efficient processes reduce manufacturing costs.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Scalable Growth",
+          description: "Flexible setup accommodates future expansion and growth.",
+        },
+      ],
+    },
+  },
+
+  "labeling-packaging": {
+    title: "Labeling & Packaging",
+    content: [
+      {
+        heading: "Labeling & Packaging",
+        paragraphs: ["Complete labeling and packaging services for pharmaceutical and healthcare products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📋",
+          title: "Regulatory compliant labeling",
+          description: "Create labels that meet all regulatory requirements and standards.",
+        },
+        {
+          icon: "📦",
+          title: "Pharmaceutical packaging design",
+          description: "Design professional packaging for pharmaceutical products.",
+        },
+        {
+          icon: "🔒",
+          title: "Anti-counterfeiting measures",
+          description: "Implement advanced security features to prevent counterfeiting.",
+        },
+        {
+          icon: "🌍",
+          title: "Multi-language labeling",
+          description: "Create labels in multiple languages for global distribution.",
+        },
+        {
+          icon: "📊",
+          title: "Serialization and track-and-trace",
+          description: "Implement serialization for complete product traceability.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Labeling meets all Health Canada, FDA, and international requirements.",
+        },
+        {
+          icon: "material-symbols-light:security",
+          title: "Brand Protection",
+          description: "Advanced packaging features protect against counterfeiting.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Market Differentiation",
+          description: "Professional packaging design enhances brand appeal.",
+        },
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Supply Chain Visibility",
+          description: "Serialization enables complete product traceability.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Ready",
+          description: "Multi-language labeling supports international distribution.",
+        },
+      ],
+    },
+  },
+
+  "manufacturing-units-setup": {
+    title: "Manufacturing Units Setup",
+    content: [
+      {
+        heading: "Manufacturing Units Setup",
+        paragraphs: ["Complete manufacturing unit establishment services for pharmaceutical and healthcare companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏗️",
+          title: "Turnkey manufacturing facility setup",
+          description: "Complete turnkey setup of manufacturing facilities from design to operation.",
+        },
+        {
+          icon: "🔧",
+          title: "Equipment procurement and installation",
+          description: "Source, procure, and install all necessary manufacturing equipment.",
+        },
+        {
+          icon: "👥",
+          title: "Staff training and certification",
+          description: "Train and certify staff for pharmaceutical manufacturing operations.",
+        },
+        {
+          icon: "📋",
+          title: "Regulatory approval support",
+          description: "Support regulatory approval processes for manufacturing facilities.",
+        },
+        {
+          icon: "🔄",
+          title: "Technology transfer services",
+          description: "Transfer manufacturing technology and processes to new facilities.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:speed",
+          title: "Rapid Market Entry",
+          description: "Turnkey solutions accelerate time to manufacturing capability.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Readiness",
+          description: "Setup includes all necessary regulatory approvals.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Efficiency",
+          description: "Comprehensive packages reduce overall setup costs.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Professional setup ensures manufacturing quality from start.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Ongoing Support",
+          description: "Continued support ensures sustained manufacturing success.",
+        },
+      ],
+    },
+  },
+
+  "supply-chain-management": {
+    title: "Supply Chain Management",
+    content: [
+      {
+        heading: "Supply Chain Management",
+        paragraphs: ["Comprehensive supply chain management services for pharmaceutical and healthcare organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Raw material sourcing and procurement",
+          description: "Source and procure high-quality raw materials for pharmaceutical production.",
+        },
+        {
+          icon: "🤝",
+          title: "Vendor qualification and management",
+          description: "Qualify and manage suppliers to ensure consistent quality and delivery.",
+        },
+        {
+          icon: "📊",
+          title: "Inventory optimization",
+          description: "Optimize inventory levels to balance cost and availability.",
+        },
+        {
+          icon: "🚛",
+          title: "Distribution network design",
+          description: "Design efficient distribution networks for global reach.",
+        },
+        {
+          icon: "❄️",
+          title: "Cold chain logistics",
+          description: "Manage temperature-controlled logistics for sensitive products.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:inventory",
+          title: "Reliable Supply",
+          description: "Professional management ensures consistent material availability.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Strategic sourcing and inventory management reduce costs.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Vendor qualification ensures consistent material quality.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Diversified supply chains reduce supply disruption risks.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Supply chain documentation supports regulatory requirements.",
+        },
+      ],
+    },
+  },
+
+  "medical-centers": {
+    title: "Medical Centers",
+    content: [
+      {
+        heading: "Medical Centers",
+        paragraphs: ["Specialized consulting and technology services designed specifically for medical centers and healthcare facilities."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📋",
+          title: "Electronic health record implementation",
+          description: "Implement and optimize EHR systems for medical centers.",
+        },
+        {
+          icon: "⚙️",
+          title: "Practice management optimization",
+          description: "Optimize practice management systems for efficiency and profitability.",
+        },
+        {
+          icon: "👥",
+          title: "Patient engagement platforms",
+          description: "Develop platforms to enhance patient engagement and satisfaction.",
+        },
+        {
+          icon: "🔄",
+          title: "Clinical workflow automation",
+          description: "Automate clinical workflows to improve efficiency and reduce errors.",
+        },
+        {
+          icon: "💰",
+          title: "Revenue cycle management",
+          description: "Optimize billing and revenue cycle management processes.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:health-and-safety",
+          title: "Improved Patient Care",
+          description: "Technology solutions enhance clinical decision-making and patient outcomes.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Streamlined workflows reduce administrative burden on staff.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Revenue Optimization",
+          description: "Efficient systems improve billing accuracy and reduce claim denials.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Solutions ensure compliance with healthcare regulations.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Differentiation",
+          description: "Advanced capabilities attract patients and referral sources.",
+        },
+      ],
+    },
+  },
+
+  "health-wellness-products": {
+    title: "Health & Wellness Products",
+    content: [
+      {
+        heading: "Health & Wellness Products",
+        paragraphs: ["Comprehensive development and market entry services for health and wellness product companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🌿",
+          title: "Natural health product development",
+          description: "Develop natural health products with scientific backing.",
+        },
+        {
+          icon: "💊",
+          title: "Wellness product formulation",
+          description: "Formulate effective wellness products for various health needs.",
+        },
+        {
+          icon: "📋",
+          title: "Regulatory approval support",
+          description: "Support regulatory approval processes for health products.",
+        },
+        {
+          icon: "🎯",
+          title: "Market entry strategy",
+          description: "Develop comprehensive market entry strategies for wellness products.",
+        },
+        {
+          icon: "🏷️",
+          title: "Brand development and marketing",
+          description: "Create strong brands and marketing strategies for wellness products.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:science",
+          title: "Product Innovation",
+          description: "Expert formulation creates effective, market-ready products.",
+        },
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Regulatory Navigation",
+          description: "Professional support ensures compliance with health product regulations.",
+        },
+        {
+          icon: "material-symbols-light:rocket-launch",
+          title: "Market Success",
+          description: "Strategic planning and marketing support accelerate market penetration.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Brand Building",
+          description: "Professional branding creates strong market presence.",
+        },
+        {
+          icon: "material-symbols-light:emoji-events",
+          title: "Competitive Advantage",
+          description: "Comprehensive support provides advantages over competitors.",
+        },
+      ],
+    },
+  },
+
+  "skincare-haircare": {
+    title: "Skincare & Haircare",
+    content: [
+      {
+        heading: "Skincare & Haircare",
+        paragraphs: ["Specialized formulation, development, and marketing services for skincare and haircare product companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "✨",
+          title: "Cosmetic product formulation",
+          description: "Formulate innovative cosmetic products for beauty and personal care.",
+        },
+        {
+          icon: "🧴",
+          title: "Skincare product development",
+          description: "Develop effective skincare products for various skin types and concerns.",
+        },
+        {
+          icon: "💇",
+          title: "Haircare product innovation",
+          description: "Create innovative haircare products for different hair types and needs.",
+        },
+        {
+          icon: "📋",
+          title: "Regulatory compliance for cosmetics",
+          description: "Ensure compliance with cosmetic regulations and safety standards.",
+        },
+        {
+          icon: "🎨",
+          title: "Beauty brand development",
+          description: "Develop comprehensive beauty brands from concept to market.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:lightbulb",
+          title: "Product Innovation",
+          description: "Expert formulation creates effective, appealing products.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Professional guidance ensures compliance with cosmetic regulations.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Market Differentiation",
+          description: "Unique formulations and branding create competitive advantages.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Quality Assurance",
+          description: "Rigorous testing ensures product safety and efficacy.",
+        },
+        {
+          icon: "material-symbols-light:rocket-launch",
+          title: "Brand Success",
+          description: "Comprehensive support from formulation to market launch.",
+        },
+      ],
+    },
+  },
+
+  "supplements-nutraceuticals": {
+    title: "Supplements & Nutraceuticals",
+    content: [
+      {
+        heading: "Supplements & Nutraceuticals",
+        paragraphs: ["Complete development and commercialization services for supplement and nutraceutical companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "💊",
+          title: "Supplement formulation and development",
+          description: "Formulate and develop effective dietary supplements.",
+        },
+        {
+          icon: "🧬",
+          title: "Nutraceutical product innovation",
+          description: "Create innovative nutraceutical products with health benefits.",
+        },
+        {
+          icon: "🇨🇦",
+          title: "Health Canada NHP licensing",
+          description: "Support Health Canada Natural Health Product licensing process.",
+        },
+        {
+          icon: "👥",
+          title: "Clinical trial support",
+          description: "Provide support for clinical trials and efficacy studies.",
+        },
+        {
+          icon: "🏷️",
+          title: "Supplement brand development",
+          description: "Develop comprehensive supplement brands and marketing strategies.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:science",
+          title: "Scientific Formulation",
+          description: "Evidence-based formulations ensure product efficacy.",
+        },
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Regulatory Approval",
+          description: "Expert guidance navigates complex supplement regulations.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Market Credibility",
+          description: "Professional development builds consumer and retailer confidence.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Positioning",
+          description: "Unique formulations and claims create market advantages.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Business Growth",
+          description: "Comprehensive support accelerates market success and expansion.",
+        },
+      ],
+    },
+  },
+
+  "business-startup-guidance": {
+    title: "Business Startup Guidance",
+    content: [
+      {
+        heading: "Business Startup Guidance",
+        paragraphs: ["Comprehensive startup guidance and mentorship for healthcare and wellness entrepreneurs."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📋",
+          title: "Business plan development",
+          description: "Develop comprehensive business plans for healthcare startups.",
+        },
+        {
+          icon: "🔍",
+          title: "Market validation and research",
+          description: "Validate market opportunities through thorough research and analysis.",
+        },
+        {
+          icon: "🎯",
+          title: "Startup strategy consulting",
+          description: "Provide strategic consulting for healthcare startup development.",
+        },
+        {
+          icon: "💰",
+          title: "Funding and investment preparation",
+          description: "Prepare startups for funding rounds and investment opportunities.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory planning for healthcare startups",
+          description: "Plan regulatory compliance strategies for healthcare ventures.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:warning",
+          title: "Reduced Failure Risk",
+          description: "Expert guidance helps avoid common startup mistakes.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Accelerated Growth",
+          description: "Professional support speeds up development and market entry.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Access to Networks",
+          description: "Connections to investors, partners, and industry experts.",
+        },
+        {
+          icon: "material-symbols-light:flag",
+          title: "Strategic Focus",
+          description: "Clear planning ensures resources are allocated effectively.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Readiness",
+          description: "Early compliance planning prevents costly delays.",
+        },
+      ],
+    },
+  },
+
+  "entrepreneur-mentorship-programs": {
+    title: "Entrepreneur Mentorship Programs",
+    content: [
+      {
+        heading: "Entrepreneur Mentorship Programs",
+        paragraphs: ["Structured mentorship programs connecting healthcare entrepreneurs with experienced industry professionals."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👤",
+          title: "One-on-one entrepreneur mentoring",
+          description: "Provide personalized mentoring for individual entrepreneurs.",
+        },
+        {
+          icon: "👥",
+          title: "Group mentorship sessions",
+          description: "Facilitate group mentoring sessions for peer learning.",
+        },
+        {
+          icon: "🎓",
+          title: "Industry expert advisory panels",
+          description: "Connect entrepreneurs with industry expert advisory panels.",
+        },
+        {
+          icon: "🤝",
+          title: "Peer networking opportunities",
+          description: "Create networking opportunities among entrepreneur peers.",
+        },
+        {
+          icon: "📚",
+          title: "Skill development workshops",
+          description: "Conduct workshops to develop entrepreneurial skills.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:school",
+          title: "Accelerated Learning",
+          description: "Learn from experienced entrepreneurs who have built successful businesses.",
+        },
+        {
+          icon: "material-symbols-light:group",
+          title: "Network Expansion",
+          description: "Access to valuable industry connections and partnerships.",
+        },
+        {
+          icon: "material-symbols-light:lightbulb",
+          title: "Strategic Guidance",
+          description: "Experienced mentors provide strategic advice and decision support.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Skill Development",
+          description: "Targeted training improves entrepreneurial and business skills.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Emotional Support",
+          description: "Mentorship provides encouragement during challenging startup phases.",
+        },
+      ],
+    },
+  },
+
+  "funding-investment-guidance": {
+    title: "Funding & Investment Preparation",
+    content: [
+      {
+        heading: "Funding & Investment Preparation",
+        paragraphs: ["Investment readiness and funding preparation services for healthcare and pharmaceutical startups."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📊",
+          title: "Business plan and pitch deck development",
+          description: "Develop compelling business plans and pitch decks for investors.",
+        },
+        {
+          icon: "📈",
+          title: "Financial modeling and projections",
+          description: "Create detailed financial models and growth projections.",
+        },
+        {
+          icon: "📋",
+          title: "Due diligence preparation",
+          description: "Prepare comprehensive due diligence materials for investors.",
+        },
+        {
+          icon: "🤝",
+          title: "Investor network introductions",
+          description: "Connect startups with relevant healthcare investors.",
+        },
+        {
+          icon: "💼",
+          title: "Valuation analysis and negotiation support",
+          description: "Provide valuation analysis and negotiation support for funding rounds.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Investment Readiness",
+          description: "Professional preparation increases chances of securing funding.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Higher Valuations",
+          description: "Proper preparation and positioning can improve valuation outcomes.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Investor Connections",
+          description: "Access to relevant investors interested in healthcare ventures.",
+        },
+        {
+          icon: "material-symbols-light:gavel",
+          title: "Negotiation Support",
+          description: "Expert guidance through investment terms and negotiations.",
+        },
+        {
+          icon: "material-symbols-light:flag",
+          title: "Strategic Planning",
+          description: "Investment preparation clarifies business strategy and growth plans.",
+        },
+      ],
+    },
+  },
+
+  "business-plan-development": {
+    title: "Business Plan Development",
+    content: [
+      {
+        heading: "Business Plan Development",
+        paragraphs: ["Professional business plan development services specifically for healthcare and pharmaceutical ventures."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📝",
+          title: "Comprehensive business plan writing",
+          description: "Write detailed business plans for healthcare and pharmaceutical ventures.",
+        },
+        {
+          icon: "📊",
+          title: "Financial modeling and projections",
+          description: "Develop financial models and growth projections for business plans.",
+        },
+        {
+          icon: "🔍",
+          title: "Market analysis and competitive research",
+          description: "Conduct thorough market analysis and competitive research.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory strategy development",
+          description: "Develop regulatory strategies for healthcare business plans.",
+        },
+        {
+          icon: "🚀",
+          title: "Go-to-market planning",
+          description: "Create comprehensive go-to-market strategies and plans.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Strategic Clarity",
+          description: "Professional planning clarifies business vision and strategy.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Investment Attraction",
+          description: "High-quality business plans attract investors and partners.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Thorough planning identifies and addresses potential challenges.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Resource Allocation",
+          description: "Clear plans guide efficient resource allocation and priorities.",
+        },
+        {
+          icon: "material-symbols-light:analytics",
+          title: "Performance Measurement",
+          description: "Detailed plans provide benchmarks for tracking progress.",
+        },
+      ],
+    },
+  },
+
+  "influencer-support-programs": {
+    title: "Influencer Support Programs",
+    content: [
+      {
+        heading: "Influencer Support Programs",
+        paragraphs: ["Comprehensive support programs for healthcare and wellness influencers building their personal brands and businesses."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "⭐",
+          title: "Influencer brand development",
+          description: "Develop strong personal brands for healthcare and wellness influencers.",
+        },
+        {
+          icon: "📝",
+          title: "Content strategy and creation",
+          description: "Create comprehensive content strategies and high-quality content.",
+        },
+        {
+          icon: "💰",
+          title: "Monetization strategy development",
+          description: "Develop multiple revenue streams for influencer businesses.",
+        },
+        {
+          icon: "🚀",
+          title: "Product development and launches",
+          description: "Support product development and successful product launches.",
+        },
+        {
+          icon: "📜",
+          title: "Compliance and regulatory guidance",
+          description: "Ensure compliance with healthcare and advertising regulations.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:star",
+          title: "Brand Differentiation",
+          description: "Professional branding helps influencers stand out in crowded markets.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Revenue Diversification",
+          description: "Multiple monetization strategies reduce dependence on single income sources.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Professional Credibility",
+          description: "Quality branding and compliance build audience trust.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Growth",
+          description: "Strategic planning enables sustainable business expansion.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Management",
+          description: "Compliance guidance protects against regulatory and legal issues.",
+        },
+      ],
+    },
+  },
+
+  "personal-brand-development": {
+    title: "Personal Brand Development",
+    content: [
+      {
+        heading: "Personal Brand Development",
+        paragraphs: ["Complete personal brand development services for healthcare professionals and wellness experts."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🎯",
+          title: "Personal brand strategy development",
+          description: "Develop comprehensive personal brand strategies for healthcare professionals.",
+        },
+        {
+          icon: "🌐",
+          title: "Professional website and portfolio creation",
+          description: "Create professional websites and portfolios to showcase expertise.",
+        },
+        {
+          icon: "📱",
+          title: "Social media presence optimization",
+          description: "Optimize social media presence across all relevant platforms.",
+        },
+        {
+          icon: "📝",
+          title: "Content development and management",
+          description: "Develop and manage high-quality content for personal brands.",
+        },
+        {
+          icon: "🎓",
+          title: "Thought leadership positioning",
+          description: "Position professionals as thought leaders in their fields.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Professional Recognition",
+          description: "Strong personal brands increase visibility and recognition in the industry.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Business Opportunities",
+          description: "Well-developed brands attract speaking, consulting, and partnership opportunities.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Audience Trust",
+          description: "Authentic branding builds trust and credibility with target audiences.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Revenue Growth",
+          description: "Personal brands can be monetized through various channels and products.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Career Advancement",
+          description: "Strong personal brands open doors to new career opportunities.",
+        },
+      ],
+    },
+  },
+
+  "social-media-strategy-influencers": {
+    title: "Social Media Strategy for Influencers",
+    content: [
+      {
+        heading: "Social Media Strategy for Influencers",
+        paragraphs: ["Specialized social media strategy and management services for healthcare and wellness influencers."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📱",
+          title: "Platform-specific content strategies",
+          description: "Develop tailored content strategies for each social media platform.",
+        },
+        {
+          icon: "👥",
+          title: "Audience growth and engagement tactics",
+          description: "Implement strategies to grow followers and increase engagement.",
+        },
+        {
+          icon: "📅",
+          title: "Content calendar development",
+          description: "Create comprehensive content calendars for consistent posting.",
+        },
+        {
+          icon: "🤝",
+          title: "Influencer collaboration strategies",
+          description: "Develop strategies for effective influencer collaborations.",
+        },
+        {
+          icon: "📊",
+          title: "Performance analytics and optimization",
+          description: "Analyze performance and optimize strategies for better results.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Audience Growth",
+          description: "Strategic approaches consistently grow follower base and engagement.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Content Efficiency",
+          description: "Planning and systems streamline content creation and posting.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Engagement Quality",
+          description: "Strategies focus on building meaningful connections with audiences.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Monetization Optimization",
+          description: "Content strategies support various monetization objectives.",
+        },
+        {
+          icon: "material-symbols-light:schedule",
+          title: "Time Management",
+          description: "Systematic approaches reduce time spent on social media management.",
+        },
+      ],
+    },
+  },
+
+  "monetization-strategies": {
+    title: "Monetization Strategies",
+    content: [
+      {
+        heading: "Monetization Strategies",
+        paragraphs: ["Comprehensive monetization strategy development for healthcare and wellness influencers and professionals."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🚀",
+          title: "Product development and launches",
+          description: "Develop and launch products that align with personal brands.",
+        },
+        {
+          icon: "📚",
+          title: "Course and educational content creation",
+          description: "Create educational courses and content for monetization.",
+        },
+        {
+          icon: "🔗",
+          title: "Affiliate marketing strategies",
+          description: "Develop effective affiliate marketing strategies and partnerships.",
+        },
+        {
+          icon: "🤝",
+          title: "Sponsored content and partnerships",
+          description: "Secure and manage sponsored content and brand partnerships.",
+        },
+        {
+          icon: "💼",
+          title: "Consulting and coaching services",
+          description: "Develop consulting and coaching services for monetization.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Diverse Revenue Streams",
+          description: "Multiple monetization methods reduce risk and increase income potential.",
+        },
+        {
+          icon: "material-symbols-light:autorenew",
+          title: "Passive Income Development",
+          description: "Products and courses generate ongoing revenue with minimal ongoing effort.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Business Models",
+          description: "Strategies that grow with audience size and influence.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Professional Growth",
+          description: "Monetization strategies position influencers as business professionals.",
+        },
+        {
+          icon: "material-symbols-light:check-circle",
+          title: "Long-term Sustainability",
+          description: "Diversified income creates sustainable long-term businesses.",
+        },
+      ],
+    },
+  },
+
+  "brand-identity-development": {
+    title: "Brand Identity Development",
+    content: [
+      {
+        heading: "Brand Identity Development",
+        paragraphs: ["Complete brand identity development services for healthcare and wellness businesses and professionals."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🎨",
+          title: "Logo design and visual identity",
+          description: "Create distinctive logos and comprehensive visual identity systems.",
+        },
+        {
+          icon: "💬",
+          title: "Brand messaging and positioning",
+          description: "Develop compelling brand messaging and positioning strategies.",
+        },
+        {
+          icon: "🎨",
+          title: "Color palette and typography selection",
+          description: "Select appropriate colors and typography that reflect brand personality.",
+        },
+        {
+          icon: "📋",
+          title: "Brand guidelines and standards",
+          description: "Create comprehensive brand guidelines for consistent application.",
+        },
+        {
+          icon: "📄",
+          title: "Brand application across all materials",
+          description: "Apply brand identity consistently across all marketing materials.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Professional Credibility",
+          description: "Strong brand identity builds trust and credibility with customers.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Market Differentiation",
+          description: "Unique branding helps businesses stand out from competitors.",
+        },
+        {
+          icon: "material-symbols-light:rule",
+          title: "Consistent Communication",
+          description: "Brand guidelines ensure consistent messaging across all touchpoints.",
+        },
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Customer Recognition",
+          description: "Distinctive branding improves brand recall and recognition.",
+        },
+        {
+          icon: "material-symbols-light:diamond",
+          title: "Premium Positioning",
+          description: "Professional branding supports premium pricing and positioning.",
+        },
+      ],
+    },
+  },
+
+  "brand-building-compliance": {
+    title: "Brand Building & Compliance",
+    content: [
+      {
+        heading: "Brand Building & Compliance",
+        paragraphs: ["Comprehensive brand building services with integrated compliance guidance for healthcare and pharmaceutical companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🎯",
+          title: "Brand strategy development",
+          description: "Develop comprehensive brand strategies for healthcare companies.",
+        },
+        {
+          icon: "📋",
+          title: "Marketing compliance review",
+          description: "Review all marketing materials for regulatory compliance.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory-compliant messaging",
+          description: "Create messaging that meets healthcare regulatory requirements.",
+        },
+        {
+          icon: "🚀",
+          title: "Brand launch campaigns",
+          description: "Execute compliant brand launch campaigns for healthcare products.",
+        },
+        {
+          icon: "🔄",
+          title: "Ongoing brand management",
+          description: "Provide ongoing brand management with compliance oversight.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Compliant Marketing",
+          description: "All branding meets healthcare and pharmaceutical regulatory requirements.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Compliance review prevents costly marketing violations.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Market Confidence",
+          description: "Compliant branding builds trust with customers and regulators.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Professional Standards",
+          description: "Adherence to regulations demonstrates professional standards.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Sustainable Growth",
+          description: "Compliant branding supports long-term business sustainability.",
+        },
+      ],
+    },
+  },
+
+  "logo-visual-identity-design": {
+    title: "Logo & Visual Identity Design",
+    content: [
+      {
+        heading: "Logo & Visual Identity Design",
+        paragraphs: ["Professional logo and visual identity design services for healthcare and wellness organizations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🎨",
+          title: "Logo design and development",
+          description: "Create professional logos that represent healthcare brands effectively.",
+        },
+        {
+          icon: "🖼️",
+          title: "Visual identity system creation",
+          description: "Develop comprehensive visual identity systems for consistent branding.",
+        },
+        {
+          icon: "🎨",
+          title: "Brand color and typography selection",
+          description: "Select colors and typography that convey trust and professionalism.",
+        },
+        {
+          icon: "💳",
+          title: "Business card and stationery design",
+          description: "Design professional business cards and stationery materials.",
+        },
+        {
+          icon: "📱",
+          title: "Digital and print application design",
+          description: "Apply visual identity across digital and print applications.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:star",
+          title: "Professional Appearance",
+          description: "High-quality design creates professional first impressions.",
+        },
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Brand Recognition",
+          description: "Memorable logos improve brand recall and recognition.",
+        },
+        {
+          icon: "material-symbols-light:emoji-events",
+          title: "Competitive Differentiation",
+          description: "Unique design helps businesses stand out in the market.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Versatile Applications",
+          description: "Designs work effectively across all media and applications.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Long-term Value",
+          description: "Quality design provides lasting value and reduces need for frequent updates.",
+        },
+      ],
+    },
+  },
+
+  "brand-positioning-strategy": {
+    title: "Brand Positioning Strategy",
+    content: [
+      {
+        heading: "Brand Positioning Strategy",
+        paragraphs: ["Strategic brand positioning services for healthcare and wellness companies seeking competitive differentiation."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Competitive analysis and positioning",
+          description: "Analyze competitors and develop unique positioning strategies.",
+        },
+        {
+          icon: "👥",
+          title: "Target audience research and profiling",
+          description: "Research and profile target audiences for precise positioning.",
+        },
+        {
+          icon: "💡",
+          title: "Unique value proposition development",
+          description: "Develop compelling unique value propositions for healthcare brands.",
+        },
+        {
+          icon: "💬",
+          title: "Brand messaging framework",
+          description: "Create comprehensive brand messaging frameworks.",
+        },
+        {
+          icon: "✅",
+          title: "Market positioning validation",
+          description: "Validate positioning strategies through market research and testing.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Clear positioning differentiates from competitors in crowded markets.",
+        },
+        {
+          icon: "material-symbols-light:favorite",
+          title: "Target Audience Connection",
+          description: "Precise positioning resonates with ideal customers.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Marketing Efficiency",
+          description: "Clear positioning improves marketing effectiveness and ROI.",
+        },
+        {
+          icon: "material-symbols-light:diamond",
+          title: "Premium Pricing",
+          description: "Strong positioning supports premium pricing strategies.",
+        },
+        {
+          icon: "material-symbols-light:flag",
+          title: "Business Focus",
+          description: "Clear positioning guides business decisions and priorities.",
+        },
+      ],
+    },
+  },
+
+  "business-growth-strategies": {
+    title: "Business Growth Strategies",
+    content: [
+      {
+        heading: "Business Growth Strategies",
+        paragraphs: ["Comprehensive growth strategy development and implementation for healthcare and wellness businesses."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📈",
+          title: "Growth opportunity analysis",
+          description: "Identify and analyze growth opportunities for healthcare businesses.",
+        },
+        {
+          icon: "🌍",
+          title: "Market expansion strategies",
+          description: "Develop strategies for expanding into new markets and segments.",
+        },
+        {
+          icon: "📦",
+          title: "Product line extension planning",
+          description: "Plan and execute product line extensions for growth.",
+        },
+        {
+          icon: "🤝",
+          title: "Partnership and acquisition strategies",
+          description: "Develop strategies for partnerships and acquisitions to drive growth.",
+        },
+        {
+          icon: "💻",
+          title: "Digital transformation for growth",
+          description: "Leverage digital transformation to accelerate business growth.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:speed",
+          title: "Accelerated Growth",
+          description: "Strategic approaches enable faster and more sustainable growth.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Expansion",
+          description: "Systematic expansion reduces risks and improves success rates.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Revenue Diversification",
+          description: "Multiple growth strategies reduce dependence on single revenue sources.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Positioning",
+          description: "Growth strategies improve market position relative to competitors.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Resource Optimization",
+          description: "Strategic planning ensures efficient allocation of growth investments.",
+        },
+      ],
+    },
+  },
+
+  "market-entry-support": {
+    title: "Market Entry Support",
+    content: [
+      {
+        heading: "Market Entry Support",
+        paragraphs: ["Complete market entry support services for healthcare and pharmaceutical companies expanding into new markets."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Market research and analysis",
+          description: "Conduct comprehensive market research for new market entry.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory requirements assessment",
+          description: "Assess regulatory requirements for entering new markets.",
+        },
+        {
+          icon: "🎯",
+          title: "Go-to-market strategy development",
+          description: "Develop comprehensive go-to-market strategies for new markets.",
+        },
+        {
+          icon: "🤝",
+          title: "Local partnership identification",
+          description: "Identify and evaluate local partnership opportunities.",
+        },
+        {
+          icon: "🚀",
+          title: "Launch campaign planning and execution",
+          description: "Plan and execute market launch campaigns for new markets.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:warning",
+          title: "Reduced Market Risk",
+          description: "Thorough research and planning minimize entry risks.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Faster Market Penetration",
+          description: "Strategic approaches accelerate market acceptance.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Expert guidance ensures compliance in new markets.",
+        },
+        {
+          icon: "material-symbols-light:insights",
+          title: "Local Market Understanding",
+          description: "Research provides insights into local customer needs and preferences.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Positioning",
+          description: "Strategic entry creates advantages over competitors.",
+        },
+      ],
+    },
+  },
+
+  "partnership-development": {
+    title: "Partnership Development",
+    content: [
+      {
+        heading: "Partnership Development",
+        paragraphs: ["Strategic partnership development services for healthcare and wellness companies seeking growth through collaboration."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Partnership opportunity identification",
+          description: "Identify strategic partnership opportunities for healthcare companies.",
+        },
+        {
+          icon: "📊",
+          title: "Partner evaluation and due diligence",
+          description: "Evaluate potential partners through comprehensive due diligence.",
+        },
+        {
+          icon: "🤝",
+          title: "Partnership negotiation and structuring",
+          description: "Negotiate and structure beneficial partnership agreements.",
+        },
+        {
+          icon: "🏢",
+          title: "Joint venture development",
+          description: "Develop and structure joint ventures for mutual growth.",
+        },
+        {
+          icon: "⚙️",
+          title: "Strategic alliance management",
+          description: "Manage ongoing strategic alliances for maximum benefit.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:speed",
+          title: "Accelerated Growth",
+          description: "Partnerships provide access to new markets and customers.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Resource Sharing",
+          description: "Collaborations reduce costs and risks while expanding capabilities.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Access",
+          description: "Partners provide entry into new markets and customer segments.",
+        },
+        {
+          icon: "material-symbols-light:science",
+          title: "Technology Access",
+          description: "Partnerships provide access to complementary technologies and expertise.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Shared risks and resources reduce individual company exposure.",
+        },
+      ],
+    },
+  },
+
+  "international-expansion": {
+    title: "International Expansion",
+    content: [
+      {
+        heading: "International Expansion",
+        paragraphs: ["Complete international expansion services for healthcare and pharmaceutical companies entering global markets."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🌍",
+          title: "International market research",
+          description: "Conduct comprehensive research for international market entry.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory compliance across countries",
+          description: "Ensure compliance with regulations across multiple countries.",
+        },
+        {
+          icon: "🚛",
+          title: "Distribution network development",
+          description: "Develop distribution networks for international markets.",
+        },
+        {
+          icon: "🌐",
+          title: "Cultural adaptation strategies",
+          description: "Develop strategies for cultural adaptation in new markets.",
+        },
+        {
+          icon: "📢",
+          title: "International marketing and branding",
+          description: "Create international marketing and branding strategies.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Market Access",
+          description: "Professional expansion services enable entry into international markets.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Expert guidance ensures compliance across multiple jurisdictions.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Cultural Adaptation",
+          description: "Local market knowledge improves acceptance and success.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Professional planning reduces international expansion risks.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "International presence provides advantages over domestic-only competitors.",
+        },
+      ],
+    },
+  },
+
+  "amazon-store-setup-management": {
+    title: "Amazon Store Setup & Management",
+    content: [
+      {
+        heading: "Amazon Store Setup & Management",
+        paragraphs: ["Complete Amazon marketplace setup and management services for healthcare and pharmaceutical product sellers."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏪",
+          title: "Amazon seller account setup and optimization",
+          description: "Set up and optimize Amazon seller accounts for healthcare products.",
+        },
+        {
+          icon: "📝",
+          title: "Product listing creation and optimization",
+          description: "Create and optimize product listings for maximum visibility and sales.",
+        },
+        {
+          icon: "📢",
+          title: "Amazon advertising campaigns management",
+          description: "Manage Amazon advertising campaigns to drive traffic and sales.",
+        },
+        {
+          icon: "📦",
+          title: "Inventory management and fulfillment",
+          description: "Manage inventory and fulfillment processes for Amazon sales.",
+        },
+        {
+          icon: "📊",
+          title: "Performance monitoring and optimization",
+          description: "Monitor performance and optimize for better results.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Increased Sales",
+          description: "Professional setup and optimization maximize sales potential on Amazon.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Reach",
+          description: "Access to Amazon's massive customer base expands market reach.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Streamlined processes reduce time and effort in managing Amazon presence.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Optimized listings and advertising outperform competitors.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Revenue Growth",
+          description: "Professional management consistently increases revenue and profitability.",
+        },
+      ],
+    },
+  },
+
+  "walmart-marketplace-integration": {
+    title: "Walmart Marketplace Integration",
+    content: [
+      {
+        heading: "Walmart Marketplace Integration",
+        paragraphs: ["Comprehensive Walmart marketplace setup and integration services for healthcare and wellness product retailers."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🏪",
+          title: "Walmart marketplace account setup",
+          description: "Set up Walmart marketplace accounts for healthcare product sellers.",
+        },
+        {
+          icon: "📋",
+          title: "Product catalog integration",
+          description: "Integrate product catalogs with Walmart marketplace systems.",
+        },
+        {
+          icon: "🔄",
+          title: "Inventory synchronization",
+          description: "Synchronize inventory across Walmart marketplace and other systems.",
+        },
+        {
+          icon: "📦",
+          title: "Order management automation",
+          description: "Automate order management processes for Walmart marketplace.",
+        },
+        {
+          icon: "📊",
+          title: "Performance analytics and optimization",
+          description: "Analyze performance and optimize Walmart marketplace operations.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Expanded Market Presence",
+          description: "Access to Walmart's large customer base increases sales opportunities.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Diversified Revenue",
+          description: "Additional marketplace reduces dependence on single sales channels.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Streamlined Operations",
+          description: "Automated integration reduces manual work and errors.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Positioning",
+          description: "Multi-platform presence provides advantages over single-channel competitors.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Improved Profitability",
+          description: "Professional management optimizes margins and reduces operational costs.",
+        },
+      ],
+    },
+  },
+
+  "multi-platform-marketplace-management": {
+    title: "Multi-Platform Marketplace Management",
+    content: [
+      {
+        heading: "Multi-Platform Marketplace Management",
+        paragraphs: ["Comprehensive management services across multiple e-commerce marketplaces for healthcare and pharmaceutical products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔄",
+          title: "Multi-platform inventory synchronization",
+          description: "Synchronize inventory across multiple e-commerce platforms.",
+        },
+        {
+          icon: "📦",
+          title: "Unified order management system",
+          description: "Manage orders from all platforms through a unified system.",
+        },
+        {
+          icon: "📢",
+          title: "Cross-platform advertising coordination",
+          description: "Coordinate advertising campaigns across multiple platforms.",
+        },
+        {
+          icon: "📊",
+          title: "Performance analytics across all platforms",
+          description: "Analyze performance metrics across all marketplace platforms.",
+        },
+        {
+          icon: "👥",
+          title: "Integrated customer service management",
+          description: "Manage customer service across all marketplace platforms.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Maximized Market Coverage",
+          description: "Presence across multiple platforms reaches diverse customer segments.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Unified management reduces complexity and improves efficiency.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Revenue Optimization",
+          description: "Strategic platform management maximizes revenue across all channels.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Diversified presence reduces dependence on single platforms.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Multi-platform expertise provides significant competitive benefits.",
+        },
+      ],
+    },
+  },
+
+  "platform-setup-integration": {
+    title: "Platform Setup & Integration",
+    content: [
+      {
+        heading: "Platform Setup & Integration",
+        paragraphs: ["Custom platform setup and integration services for healthcare e-commerce businesses entering online marketplaces."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🛒",
+          title: "E-commerce platform selection and setup",
+          description: "Select and set up appropriate e-commerce platforms for healthcare businesses.",
+        },
+        {
+          icon: "💳",
+          title: "Payment gateway integration",
+          description: "Integrate secure payment gateways for healthcare e-commerce.",
+        },
+        {
+          icon: "🚚",
+          title: "Shipping and logistics integration",
+          description: "Integrate shipping and logistics systems for order fulfillment.",
+        },
+        {
+          icon: "📦",
+          title: "Inventory management system setup",
+          description: "Set up comprehensive inventory management systems.",
+        },
+        {
+          icon: "👥",
+          title: "Customer relationship management integration",
+          description: "Integrate CRM systems for customer relationship management.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:speed",
+          title: "Rapid Market Entry",
+          description: "Professional setup accelerates time to online sales capability.",
+        },
+        {
+          icon: "material-symbols-light:sync",
+          title: "System Integration",
+          description: "Seamless integration eliminates operational silos and inefficiencies.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Infrastructure",
+          description: "Professional setup accommodates future growth and expansion.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Platform configurations ensure compliance with healthcare regulations.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Readiness",
+          description: "Professional setup provides immediate competitive advantages.",
+        },
+      ],
+    },
+  },
+
+  "sales-channel-setup": {
+    title: "Sales Channel Setup",
+    content: [
+      {
+        heading: "Sales Channel Setup",
+        paragraphs: ["Comprehensive sales channel development and setup services for healthcare and pharmaceutical companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👥",
+          title: "Direct-to-consumer channel development",
+          description: "Develop and establish direct-to-consumer sales channels for healthcare products.",
+        },
+        {
+          icon: "🏢",
+          title: "B2B sales channel establishment",
+          description: "Establish business-to-business sales channels for healthcare companies.",
+        },
+        {
+          icon: "🏪",
+          title: "Retail partnership channel setup",
+          description: "Set up retail partnership channels for healthcare product distribution.",
+        },
+        {
+          icon: "🛒",
+          title: "Online marketplace channel optimization",
+          description: "Optimize online marketplace channels for maximum sales performance.",
+        },
+        {
+          icon: "🌍",
+          title: "International sales channel development",
+          description: "Develop international sales channels for global market expansion.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Revenue Diversification",
+          description: "Multiple sales channels reduce risk and increase revenue potential.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Coverage",
+          description: "Various channels reach different customer segments effectively.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Growth Acceleration",
+          description: "Multiple channels accelerate overall business growth.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Diversified channels reduce dependence on single revenue sources.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Multi-channel approach provides advantages over single-channel competitors.",
+        },
+      ],
+    },
+  },
+
+  "channel-optimization": {
+    title: "Channel Optimization",
+    content: [
+      {
+        heading: "Channel Optimization",
+        paragraphs: ["Ongoing optimization services for existing sales channels to maximize performance and profitability."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📊",
+          title: "Channel performance analysis and optimization",
+          description: "Analyze and optimize existing sales channel performance.",
+        },
+        {
+          icon: "⚙️",
+          title: "Sales process improvement",
+          description: "Improve sales processes across all channels for better efficiency.",
+        },
+        {
+          icon: "🛤️",
+          title: "Customer journey optimization",
+          description: "Optimize customer journey across all sales channels.",
+        },
+        {
+          icon: "📈",
+          title: "Conversion rate improvement",
+          description: "Improve conversion rates across all sales channels.",
+        },
+        {
+          icon: "🤝",
+          title: "Channel partner relationship management",
+          description: "Manage and optimize relationships with channel partners.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Improved Performance",
+          description: "Optimization consistently improves sales and conversion rates.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Enhanced Profitability",
+          description: "Better channel efficiency increases profit margins.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Customer Satisfaction",
+          description: "Optimized channels provide better customer experiences.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Positioning",
+          description: "Superior channel performance creates competitive advantages.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Sustainable Growth",
+          description: "Continuous optimization ensures long-term channel success.",
+        },
+      ],
+    },
+  },
+
+  "sales-analytics-reporting": {
+    title: "Sales Analytics & Reporting",
+    content: [
+      {
+        heading: "Sales Analytics & Reporting",
+        paragraphs: ["Comprehensive sales analytics and reporting services for healthcare and pharmaceutical sales operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📊",
+          title: "Sales performance dashboard development",
+          description: "Develop comprehensive sales performance dashboards for real-time insights.",
+        },
+        {
+          icon: "👥",
+          title: "Customer behavior analysis",
+          description: "Analyze customer behavior patterns to improve sales strategies.",
+        },
+        {
+          icon: "📈",
+          title: "Revenue forecasting and projection",
+          description: "Create accurate revenue forecasting and projection models.",
+        },
+        {
+          icon: "📊",
+          title: "Channel performance comparison",
+          description: "Compare performance across different sales channels.",
+        },
+        {
+          icon: "💰",
+          title: "ROI measurement and optimization",
+          description: "Measure and optimize return on investment for sales activities.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:insights",
+          title: "Data-Driven Decisions",
+          description: "Comprehensive analytics enable informed strategic decisions.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Performance Improvement",
+          description: "Regular reporting identifies optimization opportunities.",
+        },
+        {
+          icon: "material-symbols-light:forecast",
+          title: "Forecasting Accuracy",
+          description: "Analytics improve sales forecasting and planning accuracy.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Resource Optimization",
+          description: "Data insights guide efficient resource allocation.",
+        },
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Competitive Intelligence",
+          description: "Analytics provide insights into market trends and opportunities.",
+        },
+      ],
+    },
+  },
+
+  "multi-channel-inventory-management": {
+    title: "Multi-channel Inventory Management",
+    content: [
+      {
+        heading: "Multi-channel Inventory Management",
+        paragraphs: ["Advanced inventory management systems for healthcare companies selling across multiple channels."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔄",
+          title: "Real-time inventory synchronization across channels",
+          description: "Synchronize inventory in real-time across all sales channels.",
+        },
+        {
+          icon: "⚙️",
+          title: "Automated reorder point management",
+          description: "Automate reorder point management to prevent stockouts.",
+        },
+        {
+          icon: "📊",
+          title: "Demand forecasting and planning",
+          description: "Forecast demand and plan inventory accordingly.",
+        },
+        {
+          icon: "🧠",
+          title: "Inventory optimization algorithms",
+          description: "Use advanced algorithms to optimize inventory levels.",
+        },
+        {
+          icon: "🔔",
+          title: "Stock level monitoring and alerts",
+          description: "Monitor stock levels and send alerts when needed.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:optimize",
+          title: "Inventory Optimization",
+          description: "Advanced management reduces carrying costs while preventing stockouts.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Automation eliminates manual inventory management tasks.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Customer Satisfaction",
+          description: "Consistent product availability improves customer experience.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Reduction",
+          description: "Optimized inventory levels reduce storage and carrying costs.",
+        },
+        {
+          icon: "material-symbols-light:shield",
+          title: "Revenue Protection",
+          description: "Preventing stockouts protects revenue and customer relationships.",
+        },
+      ],
+    },
+  },
+
+  "order-fulfillment-systems": {
+    title: "Order Fulfillment Systems",
+    content: [
+      {
+        heading: "Order Fulfillment Systems",
+        paragraphs: ["Complete order fulfillment system setup and management for healthcare and pharmaceutical e-commerce operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "⚙️",
+          title: "Automated order processing systems",
+          description: "Set up automated order processing systems for efficient fulfillment.",
+        },
+        {
+          icon: "📦",
+          title: "Pick, pack, and ship optimization",
+          description: "Optimize pick, pack, and ship processes for maximum efficiency.",
+        },
+        {
+          icon: "✅",
+          title: "Quality control and verification processes",
+          description: "Implement quality control and verification processes for accuracy.",
+        },
+        {
+          icon: "🔄",
+          title: "Return and exchange management",
+          description: "Manage returns and exchanges efficiently and professionally.",
+        },
+        {
+          icon: "📱",
+          title: "Customer notification automation",
+          description: "Automate customer notifications throughout the fulfillment process.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Automated systems dramatically improve fulfillment speed and accuracy.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Customer Satisfaction",
+          description: "Fast, accurate fulfillment enhances customer experience.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Operations",
+          description: "Systems accommodate growth without proportional staff increases.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Reduction",
+          description: "Automation reduces labor costs and operational expenses.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Quality Assurance",
+          description: "Systematic processes ensure consistent fulfillment quality.",
+        },
+      ],
+    },
+  },
+
+  "warehousing-solutions": {
+    title: "Warehousing Solutions",
+    content: [
+      {
+        heading: "Warehousing Solutions",
+        paragraphs: ["Comprehensive warehousing and storage solutions for healthcare and pharmaceutical products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🌡️",
+          title: "Temperature-controlled storage facilities",
+          description: "Provide temperature-controlled storage for sensitive healthcare products.",
+        },
+        {
+          icon: "📊",
+          title: "Inventory management and tracking",
+          description: "Implement comprehensive inventory management and tracking systems.",
+        },
+        {
+          icon: "🔒",
+          title: "Security and compliance monitoring",
+          description: "Ensure security and compliance monitoring for healthcare products.",
+        },
+        {
+          icon: "📦",
+          title: "Pick and pack services",
+          description: "Provide professional pick and pack services for order fulfillment.",
+        },
+        {
+          icon: "🔍",
+          title: "Quality control and inspection",
+          description: "Conduct quality control and inspection processes for stored products.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:verified",
+          title: "Product Integrity",
+          description: "Proper storage maintains product quality and efficacy.",
+        },
+        {
+          icon: "material-symbols-light:shield",
+          title: "Regulatory Compliance",
+          description: "Compliant warehousing meets healthcare and pharmaceutical standards.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Efficiency",
+          description: "Professional warehousing reduces operational costs and complexity.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Storage",
+          description: "Flexible warehousing accommodates seasonal and growth variations.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Secure, monitored storage protects valuable inventory.",
+        },
+      ],
+    },
+  },
+
+  "shipping-logistics-setup": {
+    title: "Shipping & Logistics Setup",
+    content: [
+      {
+        heading: "Shipping & Logistics Setup",
+        paragraphs: ["Complete shipping and logistics setup services for healthcare and pharmaceutical product distribution."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🚚",
+          title: "Carrier selection and negotiation",
+          description: "Select and negotiate with carriers for optimal shipping solutions.",
+        },
+        {
+          icon: "🗺️",
+          title: "Shipping zone optimization",
+          description: "Optimize shipping zones for cost-effective and efficient delivery.",
+        },
+        {
+          icon: "🌡️",
+          title: "Temperature-controlled shipping setup",
+          description: "Set up temperature-controlled shipping for sensitive products.",
+        },
+        {
+          icon: "🌍",
+          title: "International shipping compliance",
+          description: "Ensure compliance with international shipping regulations.",
+        },
+        {
+          icon: "📱",
+          title: "Tracking and delivery confirmation",
+          description: "Implement tracking and delivery confirmation systems.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Strategic carrier selection and negotiation reduce shipping costs.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Delivery Reliability",
+          description: "Professional setup ensures consistent, reliable delivery.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Customer Satisfaction",
+          description: "Fast, trackable shipping enhances customer experience.",
+        },
+        {
+          icon: "material-symbols-light:shield",
+          title: "Regulatory Compliance",
+          description: "Proper setup ensures compliance with shipping regulations.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Global Reach",
+          description: "International shipping capabilities enable market expansion.",
+        },
+      ],
+    },
+  },
+
+  "dropshipping-fulfillment": {
+    title: "Dropshipping Fulfillment",
+    content: [
+      {
+        heading: "Dropshipping Fulfillment",
+        paragraphs: ["Complete dropshipping fulfillment services for healthcare and wellness product retailers."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🤝",
+          title: "Supplier network development and management",
+          description: "Develop and manage a network of reliable suppliers for dropshipping.",
+        },
+        {
+          icon: "⚙️",
+          title: "Automated order routing and processing",
+          description: "Automate order routing and processing for efficient fulfillment.",
+        },
+        {
+          icon: "✅",
+          title: "Quality control and vendor management",
+          description: "Implement quality control and vendor management processes.",
+        },
+        {
+          icon: "👥",
+          title: "Customer service coordination",
+          description: "Coordinate customer service across the dropshipping network.",
+        },
+        {
+          icon: "📊",
+          title: "Performance monitoring and optimization",
+          description: "Monitor and optimize dropshipping performance continuously.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Low Investment Entry",
+          description: "Dropshipping eliminates inventory investment requirements.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Simplicity",
+          description: "Automated systems reduce operational complexity.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Growth",
+          description: "Easy addition of products and suppliers supports growth.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Reduction",
+          description: "Reduced inventory risk and lower operational overhead.",
+        },
+        {
+          icon: "material-symbols-light:science",
+          title: "Market Testing",
+          description: "Easy product testing without inventory commitments.",
+        },
+      ],
+    },
+  },
+
+  "digital-shelf-management": {
+    title: "Digital Shelf Management",
+    content: [
+      {
+        heading: "Digital Shelf Management",
+        paragraphs: ["Comprehensive digital shelf optimization services for healthcare and pharmaceutical products across online channels."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📱",
+          title: "Product content optimization across platforms",
+          description: "Optimize product content for maximum visibility across all digital platforms.",
+        },
+        {
+          icon: "🛍️",
+          title: "Digital merchandising and presentation",
+          description: "Create compelling digital merchandising and product presentation strategies.",
+        },
+        {
+          icon: "🔍",
+          title: "Search visibility optimization",
+          description: "Optimize search visibility to improve product discoverability.",
+        },
+        {
+          icon: "📊",
+          title: "Competitive analysis and positioning",
+          description: "Analyze competitors and position products for maximum advantage.",
+        },
+        {
+          icon: "📈",
+          title: "Performance monitoring and improvement",
+          description: "Monitor performance and continuously improve digital shelf presence.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:visibility",
+          title: "Increased Visibility",
+          description: "Optimized digital shelf presence improves product discoverability.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Higher Conversion Rates",
+          description: "Better product presentation increases sales conversion.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Superior digital merchandising outperforms competitors.",
+        },
+        {
+          icon: "material-symbols-light:sync",
+          title: "Brand Consistency",
+          description: "Consistent presentation across platforms strengthens brand image.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Revenue Growth",
+          description: "Improved digital shelf performance directly increases sales.",
+        },
+      ],
+    },
+  },
+
+  "product-listing-cataloging": {
+    title: "Product Listing & Cataloging",
+    content: [
+      {
+        heading: "Product Listing & Cataloging",
+        paragraphs: ["Professional product listing and catalog management services for healthcare e-commerce operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📝",
+          title: "SEO-optimized product descriptions",
+          description: "Create SEO-optimized product descriptions for better search visibility.",
+        },
+        {
+          icon: "📸",
+          title: "High-quality product photography",
+          description: "Provide professional product photography for compelling listings.",
+        },
+        {
+          icon: "📋",
+          title: "Detailed specification cataloging",
+          description: "Create detailed product specifications and catalog information.",
+        },
+        {
+          icon: "📜",
+          title: "Regulatory compliance information",
+          description: "Include proper regulatory compliance information in product listings.",
+        },
+        {
+          icon: "🔄",
+          title: "Multi-platform listing synchronization",
+          description: "Synchronize product listings across multiple platforms automatically.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:search",
+          title: "Improved Search Rankings",
+          description: "SEO-optimized listings improve organic search visibility.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Higher Conversion Rates",
+          description: "Professional listings increase customer confidence and purchases.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Systematic cataloging reduces listing management time.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Regulatory Compliance",
+          description: "Proper product information ensures regulatory adherence.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Professional Presentation",
+          description: "Quality listings enhance brand credibility and trust.",
+        },
+      ],
+    },
+  },
+
+  "inventory-order-management": {
+    title: "Inventory & Order Management",
+    content: [
+      {
+        heading: "Inventory & Order Management",
+        paragraphs: ["Integrated inventory and order management systems for healthcare e-commerce businesses."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📊",
+          title: "Real-time inventory tracking and management",
+          description: "Implement real-time inventory tracking and management systems.",
+        },
+        {
+          icon: "⚙️",
+          title: "Automated order processing and fulfillment",
+          description: "Automate order processing and fulfillment for efficiency.",
+        },
+        {
+          icon: "🔄",
+          title: "Multi-channel inventory synchronization",
+          description: "Synchronize inventory across multiple sales channels.",
+        },
+        {
+          icon: "📈",
+          title: "Demand forecasting and planning",
+          description: "Forecast demand and plan inventory accordingly.",
+        },
+        {
+          icon: "⚠️",
+          title: "Exception handling and problem resolution",
+          description: "Handle exceptions and resolve problems in inventory and orders.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:star",
+          title: "Operational Excellence",
+          description: "Integrated systems eliminate errors and improve efficiency.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Customer Satisfaction",
+          description: "Accurate inventory and fast processing enhance customer experience.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Control",
+          description: "Optimized inventory management reduces carrying costs.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Operations",
+          description: "Systems grow with business without proportional complexity increases.",
+        },
+        {
+          icon: "material-symbols-light:insights",
+          title: "Data-Driven Insights",
+          description: "Integrated systems provide valuable business intelligence.",
+        },
+      ],
+    },
+  },
+
+  "partner-enablement": {
+    title: "Partner Enablement",
+    content: [
+      {
+        heading: "Partner Enablement",
+        paragraphs: ["Comprehensive partner enablement services for healthcare companies working with distribution and sales partners."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🌐",
+          title: "Partner portal development and management",
+          description: "Develop and manage partner portals for seamless collaboration.",
+        },
+        {
+          icon: "🎓",
+          title: "Sales training and certification programs",
+          description: "Create comprehensive sales training and certification programs.",
+        },
+        {
+          icon: "📢",
+          title: "Marketing resource development",
+          description: "Develop marketing resources and materials for partners.",
+        },
+        {
+          icon: "📊",
+          title: "Performance monitoring and support",
+          description: "Monitor partner performance and provide ongoing support.",
+        },
+        {
+          icon: "🎁",
+          title: "Incentive program design and management",
+          description: "Design and manage incentive programs to motivate partners.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:star",
+          title: "Partner Success",
+          description: "Proper enablement increases partner sales performance.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Expansion",
+          description: "Effective partners expand market reach and coverage.",
+        },
+        {
+          icon: "material-symbols-light:sync",
+          title: "Consistent Messaging",
+          description: "Training ensures consistent brand representation.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Relationship Strength",
+          description: "Support and enablement strengthen partner relationships.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Revenue Growth",
+          description: "Successful partners drive increased revenue and market share.",
+        },
+      ],
+    },
+  },
+
+  "local-distribution-setup": {
+    title: "Local Distribution Setup",
+    content: [
+      {
+        heading: "Local Distribution Setup",
+        paragraphs: ["Local distribution network development and setup services for healthcare and pharmaceutical companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Regional distributor identification and evaluation",
+          description: "Identify and evaluate regional distributors for healthcare products.",
+        },
+        {
+          icon: "🤝",
+          title: "Distribution agreement negotiation",
+          description: "Negotiate distribution agreements with local partners.",
+        },
+        {
+          icon: "📜",
+          title: "Local market compliance and regulations",
+          description: "Ensure compliance with local market regulations and requirements.",
+        },
+        {
+          icon: "🗺️",
+          title: "Territory management and optimization",
+          description: "Manage and optimize distribution territories for maximum coverage.",
+        },
+        {
+          icon: "📊",
+          title: "Performance monitoring and support",
+          description: "Monitor distributor performance and provide ongoing support.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Penetration",
+          description: "Local distribution provides deeper market coverage.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Reduced Costs",
+          description: "Local distribution reduces shipping and logistics costs.",
+        },
+        {
+          icon: "material-symbols-light:speed",
+          title: "Faster Delivery",
+          description: "Regional distribution enables faster customer delivery.",
+        },
+        {
+          icon: "material-symbols-light:insights",
+          title: "Market Knowledge",
+          description: "Local distributors provide valuable market insights.",
+        },
+        {
+          icon: "material-symbols-light:handshake",
+          title: "Relationship Building",
+          description: "Local presence builds stronger customer relationships.",
+        },
+      ],
+    },
+  },
+
+  "wholesale-distributors-network": {
+    title: "Wholesale Distributors Network",
+    content: [
+      {
+        heading: "Wholesale Distributors Network",
+        paragraphs: ["Wholesale distribution network development and management for healthcare and pharmaceutical products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "👥",
+          title: "Wholesale distributor recruitment and qualification",
+          description: "Recruit and qualify wholesale distributors for healthcare products.",
+        },
+        {
+          icon: "📋",
+          title: "Distribution agreement development",
+          description: "Develop comprehensive distribution agreements with wholesale partners.",
+        },
+        {
+          icon: "💰",
+          title: "Pricing strategy and margin management",
+          description: "Develop pricing strategies and manage margins for wholesale distribution.",
+        },
+        {
+          icon: "🛡️",
+          title: "Territory protection and conflict resolution",
+          description: "Protect territories and resolve conflicts in wholesale distribution.",
+        },
+        {
+          icon: "📈",
+          title: "Performance measurement and optimization",
+          description: "Measure and optimize wholesale distributor performance.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Coverage",
+          description: "Wholesale networks provide extensive market reach.",
+        },
+        {
+          icon: "material-symbols-light:trending-up",
+          title: "Sales Volume",
+          description: "Wholesale relationships generate significant sales volume.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Efficiency",
+          description: "Wholesale distribution reduces direct sales costs.",
+        },
+        {
+          icon: "material-symbols-light:insights",
+          title: "Market Intelligence",
+          description: "Distributors provide valuable market feedback and insights.",
+        },
+        {
+          icon: "material-symbols-light:warning",
+          title: "Risk Mitigation",
+          description: "Diversified distribution reduces market risk.",
+        },
+      ],
+    },
+  },
+
+  "distribution-channel-design": {
+    title: "Distribution Channel Design",
+    content: [
+      {
+        heading: "Distribution Channel Design",
+        paragraphs: ["Strategic distribution channel design and optimization services for healthcare and pharmaceutical companies."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "📊",
+          title: "Channel strategy development and design",
+          description: "Develop comprehensive distribution channel strategies and designs.",
+        },
+        {
+          icon: "🏗️",
+          title: "Multi-tier distribution structure",
+          description: "Design multi-tier distribution structures for optimal market coverage.",
+        },
+        {
+          icon: "⚖️",
+          title: "Channel conflict resolution systems",
+          description: "Implement systems to resolve conflicts in distribution channels.",
+        },
+        {
+          icon: "📈",
+          title: "Performance measurement frameworks",
+          description: "Develop frameworks for measuring distribution channel performance.",
+        },
+        {
+          icon: "🔄",
+          title: "Continuous optimization processes",
+          description: "Implement continuous optimization processes for distribution channels.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:sync",
+          title: "Strategic Alignment",
+          description: "Well-designed channels align with business objectives.",
+        },
+        {
+          icon: "material-symbols-light:optimize",
+          title: "Market Optimization",
+          description: "Strategic design maximizes market coverage and penetration.",
+        },
+        {
+          icon: "material-symbols-light:settings",
+          title: "Operational Efficiency",
+          description: "Optimized channels reduce costs and improve effectiveness.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Superior channel design provides market advantages.",
+        },
+        {
+          icon: "material-symbols-light:expand",
+          title: "Scalable Growth",
+          description: "Strategic design accommodates future growth and expansion.",
+        },
+      ],
+    },
+  },
+
+  "last-mile-delivery-solutions": {
+    title: "Last-Mile Delivery",
+    content: [
+      {
+        heading: "Last-Mile Delivery",
+        paragraphs: ["Last-mile delivery solutions and optimization for healthcare and pharmaceutical products."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "🚚",
+          title: "Last-mile delivery network development",
+          description: "Develop comprehensive last-mile delivery networks for healthcare products.",
+        },
+        {
+          icon: "🗺️",
+          title: "Route optimization and planning",
+          description: "Optimize delivery routes and plan efficient last-mile delivery.",
+        },
+        {
+          icon: "🌡️",
+          title: "Temperature-controlled delivery options",
+          description: "Provide temperature-controlled delivery options for sensitive products.",
+        },
+        {
+          icon: "📱",
+          title: "Real-time tracking and communication",
+          description: "Implement real-time tracking and communication for delivery updates.",
+        },
+        {
+          icon: "✅",
+          title: "Quality assurance and compliance",
+          description: "Ensure quality assurance and compliance in last-mile delivery.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "material-symbols-light:star",
+          title: "Customer Satisfaction",
+          description: "Reliable last-mile delivery enhances customer experience.",
+        },
+        {
+          icon: "material-symbols-light:verified",
+          title: "Product Integrity",
+          description: "Proper handling maintains product quality during delivery.",
+        },
+        {
+          icon: "material-symbols-light:star",
+          title: "Competitive Advantage",
+          description: "Superior delivery service differentiates from competitors.",
+        },
+        {
+          icon: "material-symbols-light:attach-money",
+          title: "Cost Optimization",
+          description: "Efficient last-mile delivery reduces overall logistics costs.",
+        },
+        {
+          icon: "material-symbols-light:public",
+          title: "Market Expansion",
+          description: "Reliable delivery enables expansion into new geographic areas.",
         },
       ],
     },
