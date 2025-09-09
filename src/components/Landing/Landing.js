@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import AnimatedText from "@/utils/AnimatedText";
 import Clamp from "@/utils/Clamp";
 
 const Landing = () => {
