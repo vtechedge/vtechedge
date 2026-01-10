@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { FaMoneyBillWave, FaShieldAlt, FaUserFriends, FaRocket } from 'react-icons/fa';
 import Clamp from "@/utils/Clamp";
 
 const Service = () => {
@@ -7,22 +8,22 @@ const Service = () => {
     {
       title: " Substantial Cost Reduction",
       description: "Organizations working with us have seen operational costs drop by up to 50%, thanks to automation and streamlined digital workflows.",
-      icon: "💰",
+      icon: FaMoneyBillWave,
     },
     {
       title: "Stronger Regulatory Compliance",
       description: " We help healthcare, pharma, and regulated industries achieve up to 80% improvement in audit-readiness and compliance accuracy.",
-      icon: "🛡️",
+      icon: FaShieldAlt,
     },
     {
       title: "Enhanced Customer Experience",
       description: " Faster response times, seamless digital touchpoints, and intelligent systems deliver up to 50% better user satisfaction and retention.",
-      icon: "😊",
+      icon: FaUserFriends,
     },
     {
       title: "Higher Team Productivity",
       description: "By eliminating repetitive tasks, teams can focus on high-value work — boosting productivity by as much as 60%.",
-      icon: "⚡",
+      icon: FaRocket,
     },
   ];
 
@@ -41,12 +42,14 @@ const Service = () => {
       <div className="flex flex-row flex-wrap gap-[20px] justify-around">
         {services.map((service, index) => (
           <div key={index} className="bg-white p-8 rounded-[20px] shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full w-full xl:w-[49%]">
-            <div className="w-[60px] h-[60px] bg-blue-600 rounded-full flex items-center justify-center mb-6 text-[24px]">{service.icon}</div>
+            <div className="w-[60px] h-[60px] bg-accent rounded-full flex items-center justify-center mb-6 text-white text-[28px]">
+              {React.createElement(service.icon)}
+            </div>
             <h3 className="text-[24px] font-bold mb-4">{service.title}</h3>
             <p className="text-[16px] text-gray-600 mb-6 flex-1">{service.description}</p>
             <Link
-              href={`/services/${service.title.toLowerCase().replace(/\s+/g, "-")}`}
-              className="mt-auto inline-flex items-center gap-2 text-blue-600 font-semibold hover:underline group"
+              href="/contact"
+              className="mt-auto inline-flex items-center gap-2 text-accent font-semibold hover:underline group"
             >
               Learn More
               <svg
@@ -64,7 +67,7 @@ const Service = () => {
       </div>
 
       <div className="text-center mt-[50px]">
-        <button className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white px-[20px] py-[10px] rounded-[25px] text-[18px]">See How It Works.</button>
+        <Link href="/rpa" className="inline-block bg-accent hover:bg-accent/90 transition-all duration-300 text-white px-8 py-3 rounded-full text-[18px] font-semibold shadow-lg hover:shadow-xl">See How It Works.</Link>
       </div>
     </div>
   );

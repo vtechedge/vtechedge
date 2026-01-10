@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Clamp from "@/utils/Clamp";
 
 const Brands = () => {
@@ -13,78 +14,78 @@ const Brands = () => {
           <div className="marquee-track">
             <div className="marquee-content">
               <span className="marquee-item">
-                <img src="/images/brand1.png" alt="Brand 1" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand1.png" alt="Brand 1 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand2.png" alt="Brand 2" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand2.png" alt="Brand 2 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand3.png" alt="Brand 3" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand3.png" alt="Brand 3 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand4.png" alt="Brand 4" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand4.png" alt="Brand 4 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand5.png" alt="Brand 5" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand5.png" alt="Brand 5 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand6.png" alt="Brand 6" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand6.png" alt="Brand 6 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand7.png" alt="Brand 7" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand7.png" alt="Brand 7 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand8.png" alt="Brand 8" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand8.png" alt="Brand 8 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand9.png" alt="Brand 9" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand9.png" alt="Brand 9 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand10.png" alt="Brand 10" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand10.png" alt="Brand 10 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand11.png" alt="Brand 11" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand11.png" alt="Brand 11 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand12.png" alt="Brand 12" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand12.png" alt="Brand 12 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
             </div>
             <div className="marquee-content" aria-hidden="true">
               <span className="marquee-item">
-                <img src="/images/brand1.png" alt="Brand 1" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand1.png" alt="Brand 1 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand2.png" alt="Brand 2" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand2.png" alt="Brand 2 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand3.png" alt="Brand 3" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand3.png" alt="Brand 3 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand4.png" alt="Brand 4" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand4.png" alt="Brand 4 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand5.png" alt="Brand 5" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand5.png" alt="Brand 5 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand6.png" alt="Brand 6" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand6.png" alt="Brand 6 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand7.png" alt="Brand 7" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand7.png" alt="Brand 7 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand8.png" alt="Brand 8" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand8.png" alt="Brand 8 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand9.png" alt="Brand 9" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand9.png" alt="Brand 9 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand10.png" alt="Brand 10" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand10.png" alt="Brand 10 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand11.png" alt="Brand 11" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand11.png" alt="Brand 11 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
               <span className="marquee-item">
-                <img src="/images/brand12.png" alt="Brand 12" className="w-32 h-16 md:w-40 md:h-20 object-contain" />
+                <Image src="/images/brand12.png" alt="Brand 12 logo" width={0} height={0} className="object-contain w-auto h-20" unoptimized />
               </span>
             </div>
           </div>

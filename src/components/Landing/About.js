@@ -10,7 +10,7 @@ const About = () => {
         <div className="relative w-full md:w-[60%] h-[300px] md:h-[500px]">
           <Image src="/images/image1.jpg" alt="about" fill className="rounded-[30px] object-cover" />
         </div>
-        <div className="w-full md:w-[40%] flex flex-col gap-[20px]">
+        <div className="w-full md:w-[40%] flex flex-col gap-[20px] items-start">
           <h2 className="xl:text-4xl font-light mb-4 xl:mb-6" style={{ fontSize: `${Clamp(1.5, 2.2)}` }}>
             Revolutionizing Businesses with RPA & Custom Tech Solutions
           </h2>
@@ -22,7 +22,7 @@ const About = () => {
           <p className="text-[16px] text-gray-600">
             From healthcare to enterprise IT, we build scalable, compliant, and future-ready solutions that drive productivity and innovation.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white px-[20px] py-[10px] rounded-[25px] text-[18px]">Explore Our Solutions</button>
+          <Link href="/about" className="bg-accent hover:bg-accent/90 transition-all duration-300 text-white px-8 py-3 rounded-full text-[16px] font-semibold shadow-lg hover:shadow-xl">Explore Our Solutions</Link>
         </div>
       </div>
       <div
@@ -43,7 +43,7 @@ const About = () => {
             We streamline and enhance your business processes through tailored automation solutions, improving efficiency, reducing manual tasks, and enabling scalable growth. Our
             approach ensures your operations are optimized for performance, cost-effectiveness, and long-term success in a competitive landscape.
           </p>
-          <Link href="/contact" className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white px-[20px] py-[10px] rounded-[25px] text-[18px]">
+          <Link href="/contact" className="bg-accent hover:bg-accent/90 transition-all duration-300 text-white px-8 py-3 rounded-full text-[18px] font-semibold shadow-lg hover:shadow-xl">
             Contact Us
           </Link>
         </div>

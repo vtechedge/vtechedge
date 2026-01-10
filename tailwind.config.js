@@ -10,8 +10,42 @@ export const content = [
 export const theme = {
   extend: {
     colors: {
-      primary: "#0070f3",
-      // Your custom colors will be added here
+      // Primary Brand Colors (Blue-Gray Family) - Professional & Trustworthy
+      primary: {
+        DEFAULT: '#415A77',     // Main brand color
+        50: '#f0f4f8',
+        100: '#d9e2ec',
+        200: '#b8c5d1',
+        300: '#9fb3c8',
+        400: '#7c98b3',
+        500: '#415A77',         // Base
+        600: '#344861',         // Hover states
+        700: '#2c3e50',         // Darker variant
+        800: '#274c77',         // Footer/accents
+        900: '#1b263b',         // Very dark
+      },
+
+      // Accent Colors (Bright Blue for CTAs) - Action & Engagement
+      accent: {
+        DEFAULT: '#2563eb',     // Tailwind blue-600 (vibrant)
+        light: '#3b82f6',       // blue-500
+        dark: '#1e3a8a',        // blue-900
+        hover: '#1d4ed8',       // blue-700
+      },
+
+      // Dark Theme Colors (for Coming Soon & dark sections)
+      dark: {
+        DEFAULT: '#0d1b2a',
+        800: '#1b263b',
+        700: '#415a77',
+        600: '#778da9',
+        100: '#e0e1dd',
+      },
+
+      // Neutral/Gray Scale
+      neutral: {
+        bg: '#ececec',          // Light backgrounds
+      }
     },
   },
 };
