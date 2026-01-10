@@ -769,28 +769,28 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Market entry strategies for healthcare startups",
           description: "Deep market research and competitive analysis to inform strategic decisions.",
         },
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Business expansion planning for medical practices",
           description: "Design and optimize business models for sustainable growth and profitability.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Competitive positioning for pharmaceutical companies",
           description: "Develop comprehensive growth strategies aligned with your business objectives.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Long-term growth planning for wellness brands",
           description: "Develop comprehensive growth strategies aligned with your business objectives.",
         },
 
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Risk assessment and mitigation strategies",
           description: "Develop comprehensive growth strategies aligned with your business objectives.",
         },
@@ -800,27 +800,27 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:stacked-line-chart-rounded",
+          icon: "mdi:chart-line",
           title: "Reduced market risk",
           description: "Make informed decisions with comprehensive market intelligence and analytics.",
         },
         {
-          icon: "material-symbols-light:shutter-speed",
+          icon: "mdi:speedometer",
           title: "Faster time-to-market",
           description: "Quick turnaround on strategic plans with actionable recommendations.",
         },
         {
-          icon: "material-symbols-light:briefcase-meal-outline",
+          icon: "mdi:briefcase",
           title: "Competitive advantage",
           description: "Deep knowledge of healthcare and pharmaceutical industry dynamics.",
         },
         {
-          icon: "material-symbols-light:growth",
+          icon: "mdi:trending-up",
           title: "Sustainable growth",
           description: "Long-term strategies ensure scalable, profitable business development",
         },
         {
-          icon: "material-symbols-light:analytics",
+          icon: "mdi:google-analytics",
           title: "Informed decision-making",
           description: "Comprehensive market intelligence supports strategic choices",
         },
@@ -839,27 +839,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Product launch feasibility studies",
           description: "Validate concepts with in-depth feasibility and demand analysis.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Market size and opportunity assessment",
           description: "Identify growth opportunities and evaluate market potential.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Customer demographics and behavior analysis",
           description: "Understand your target audience to align product-market fit.",
         },
         {
-          icon: "⚖️",
+          icon: "mdi:scale-balance",
           title: "Regulatory landscape evaluation",
           description: "Assess compliance requirements for safe and legal market entry.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Competitive intelligence gathering",
           description: "Gain insights into competitors to build a winning strategy.",
         },
@@ -869,27 +869,27 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Validated Business Concepts",
           description: "Thorough research confirms market demand before investment.",
         },
         {
-          icon: "material-symbols-light:rocket-launch",
+          icon: "mdi:rocket-launch",
           title: "Optimized Product Development",
           description: "Market insights guide product features and positioning.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Early identification of challenges prevents costly mistakes.",
         },
         {
-          icon: "material-symbols-light:account-balance",
+          icon: "mdi:bank",
           title: "Investment Confidence",
           description: "Detailed feasibility reports support funding and investor presentations.",
         },
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Market Positioning",
           description: "Understanding competition enables superior positioning strategies.",
         },
@@ -909,27 +909,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🧑‍💼",
+          icon: "mdi:briefcase-account",
           title: "Executive advisory for healthcare startups",
           description: "Guidance from industry experts for scaling new ventures.",
         },
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Strategic decision support for medical practices",
           description: "Data-driven support for critical practice management decisions.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Business model optimization for pharmaceutical companies",
           description: "Enhance profitability and streamline operations with effective models.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Operational efficiency consulting for wellness brands",
           description: "Improve workflows and reduce inefficiencies for sustainable growth.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Change management for healthcare organizations",
           description: "Support smooth transitions and adoption of new strategies.",
         },
@@ -979,27 +979,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Competitor product and pricing analysis",
           description: "Evaluate competitor offerings to identify strengths and weaknesses.",
         },
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Market positioning evaluation",
           description: "Understand current standing and optimize brand positioning.",
         },
         {
-          icon: "🏆",
+          icon: "mdi:trophy",
           title: "Industry best practices identification",
           description: "Leverage proven strategies for operational excellence.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Performance benchmarking against peers",
           description: "Measure business performance against industry standards.",
         },
         {
-          icon: "💡",
+          icon: "mdi:lightbulb",
           title: "Strategic opportunity identification",
           description: "Discover new opportunities for growth and differentiation.",
         },
@@ -1048,27 +1048,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏢",
+          icon: "mdi:office-building",
           title: "Healthcare startup incorporation",
           description: "Incorporation services tailored for healthcare startups.",
         },
         {
-          icon: "🏥",
+          icon: "mdi:hospital-building",
           title: "Medical practice establishment",
           description: "Support in setting up compliant medical practices.",
         },
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Pharmaceutical company registration",
           description: "Guidance for registering pharmaceutical businesses.",
         },
         {
-          icon: "🧘",
+          icon: "mdi:yoga",
           title: "Wellness business formation",
           description: "Legal setup for wellness-focused businesses.",
         },
         {
-          icon: "⚖️",
+          icon: "mdi:scale-balance",
           title: "Corporate structure optimization",
           description: "Design structures that support tax and legal efficiency.",
         },
@@ -1118,27 +1118,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🇨🇦",
+          icon: "mdi:flag",
           title: "Health Canada licensing applications",
           description: "Navigate Health Canada’s regulatory licensing process.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Provincial healthcare permits",
           description: "Acquire necessary permits for provincial healthcare operations.",
         },
         {
-          icon: "🇺🇸",
+          icon: "mdi:flag",
           title: "FDA registration for US market entry",
           description: "Facilitate FDA approval for healthcare and pharmaceutical businesses.",
         },
         {
-          icon: "👩‍⚕️",
+          icon: "mdi:doctor",
           title: "Professional practice licenses",
           description: "Support licensing for medical and healthcare professionals.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "Import/export permits for pharmaceutical products",
           description: "Assist in securing permits for international pharmaceutical trade.",
         },
@@ -1163,7 +1163,7 @@ export const serviceData = {
           description: "Licensed operations build customer trust and credibility.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Compliance reduces legal and financial risks.",
         },
@@ -1188,27 +1188,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏛️",
+          icon: "mdi:bank",
           title: "Holding company establishment",
           description: "Create structures to centralize ownership and management.",
         },
         {
-          icon: "📂",
+          icon: "mdi:folder",
           title: "Subsidiary structure creation",
           description: "Set up subsidiaries to optimize business operations.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Partnership agreements",
           description: "Design partnership agreements aligned with business goals.",
         },
         {
-          icon: "🔗",
+          icon: "mdi:link-variant",
           title: "Joint venture formation",
           description: "Establish collaborations with clear agreements and protections.",
         },
         {
-          icon: "💡",
+          icon: "mdi:lightbulb",
           title: "Intellectual property holding structures",
           description: "Protect and manage intellectual property assets effectively.",
         },
@@ -1218,7 +1218,7 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:account-balance",
+          icon: "mdi:bank",
           title: "Tax Efficiency",
           description: "Optimized structure minimizes tax liability and maximizes profit retention.",
         },
@@ -1258,27 +1258,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Partnership and shareholder agreements",
           description: "Draft and review agreements to protect partner interests.",
         },
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Employment and consulting contracts",
           description: "Develop contracts to define clear roles and responsibilities.",
         },
         {
-          icon: "💡",
+          icon: "mdi:lightbulb",
           title: "Intellectual property documentation",
           description: "Secure intellectual property rights with proper legal documentation.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory compliance documentation",
           description: "Ensure adherence to healthcare and pharmaceutical regulations.",
         },
         {
-          icon: "📑",
+          icon: "mdi:bookmark-multiple",
           title: "Commercial agreements and contracts",
           description: "Prepare business agreements to support operations and growth.",
         },
@@ -1308,7 +1308,7 @@ export const serviceData = {
           description: "Quality documentation enhances business credibility.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Comprehensive contracts minimize legal and financial exposure.",
         },
@@ -1327,27 +1327,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🇨🇦",
+          icon: "mdi:flag",
           title: "Health Canada regulatory navigation",
           description: "Expert support navigating Health Canada’s regulatory processes.",
         },
         {
-          icon: "🇺🇸",
+          icon: "mdi:flag",
           title: "FDA compliance guidance",
           description: "Ensure FDA compliance for healthcare and pharmaceutical products.",
         },
         {
-          icon: "🇪🇺",
+          icon: "mdi:flag",
           title: "European medicines regulation",
           description: "Navigate EMA requirements for medicines and therapies.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "International pharmaceutical standards",
           description: "Comply with global pharmaceutical regulations and standards.",
         },
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Medical device regulatory pathways",
           description: "Guidance for approval and compliance of medical devices.",
         },
@@ -1372,7 +1372,7 @@ export const serviceData = {
           description: "Efficient navigation reduces regulatory costs and delays.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Proper compliance prevents penalties and market access issues.",
         },
@@ -1397,27 +1397,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏭",
+          icon: "mdi:factory",
           title: "Good Manufacturing Practices (GMP) implementation",
           description: "Establish GMP-compliant systems for healthcare manufacturing.",
         },
         {
-          icon: "🔬",
+          icon: "mdi:microscope",
           title: "Good Laboratory Practices (GLP) compliance",
           description: "Support in implementing GLP standards for laboratories.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "ISO quality management systems",
           description: "Implement ISO-based quality management frameworks.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Healthcare quality standards",
           description: "Achieve compliance with industry-wide healthcare quality requirements.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "International compliance harmonization",
           description: "Align operations with international healthcare compliance standards.",
         },
@@ -1437,7 +1437,7 @@ export const serviceData = {
           description: "Certified compliance enhances customer and partner confidence.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Reduction",
           description: "Standards adherence minimizes quality-related risks and liabilities.",
         },
@@ -1467,27 +1467,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🌐",
+          icon: "mdi:web",
           title: "Multi-country regulatory strategy",
           description: "Develop strategies to manage compliance across multiple countries.",
         },
         {
-          icon: "⚖️",
+          icon: "mdi:scale-balance",
           title: "International standards harmonization",
           description: "Align operations with global compliance frameworks.",
         },
         {
-          icon: "🔗",
+          icon: "mdi:link-variant",
           title: "Cross-border compliance coordination",
           description: "Coordinate compliance efforts across international teams.",
         },
         {
-          icon: "🚀",
+          icon: "mdi:rocket-launch",
           title: "Global market entry compliance",
           description: "Prepare businesses for smooth entry into international markets.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "Regional regulatory adaptation",
           description: "Adapt business practices to meet regional regulatory requirements.",
         },
@@ -1537,27 +1537,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📡",
+          icon: "mdi:antenna",
           title: "Regulatory change monitoring",
           description: "Track and adapt to changing healthcare regulations.",
         },
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Compliance audit preparation",
           description: "Prepare businesses for successful regulatory audits.",
         },
         {
-          icon: "📂",
+          icon: "mdi:folder",
           title: "Documentation maintenance",
           description: "Ensure compliance documentation is always up-to-date.",
         },
         {
-          icon: "🎓",
+          icon: "mdi:school",
           title: "Training and education programs",
           description: "Provide ongoing compliance education for teams.",
         },
         {
-          icon: "⚡",
+          icon: "mdi:flash",
           title: "Corrective action implementation",
           description: "Address compliance issues proactively with corrective measures.",
         },
@@ -1572,7 +1572,7 @@ export const serviceData = {
           description: "Ongoing monitoring ensures sustained regulatory adherence.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Proactive Risk Management",
           description: "Early warning systems prevent compliance issues.",
         },
@@ -1606,11 +1606,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📦", title: "Real-time pharmacy inventory tracking", description: "Monitor inventory levels across pharmacies in real time." },
-        { icon: "🔄", title: "Automated reorder point management", description: "Automatically trigger reorders based on usage and thresholds." },
-        { icon: "⏰", title: "Expiration date monitoring and alerts", description: "Track expiry dates and receive alerts to prevent waste." },
-        { icon: "🏥", title: "Multi-location inventory synchronization", description: "Keep stock data consistent across multiple facilities." },
-        { icon: "📊", title: "Demand forecasting and optimization", description: "Use AI to predict demand and optimize inventory levels." },
+        { icon: "mdi:package-variant", title: "Real-time pharmacy inventory tracking", description: "Monitor inventory levels across pharmacies in real time." },
+        { icon: "mdi:refresh", title: "Automated reorder point management", description: "Automatically trigger reorders based on usage and thresholds." },
+        { icon: "mdi:alarm", title: "Expiration date monitoring and alerts", description: "Track expiry dates and receive alerts to prevent waste." },
+        { icon: "mdi:hospital-building", title: "Multi-location inventory synchronization", description: "Keep stock data consistent across multiple facilities." },
+        { icon: "mdi:chart-bar", title: "Demand forecasting and optimization", description: "Use AI to predict demand and optimize inventory levels." },
       ],
     },
     featureSection: {
@@ -1621,10 +1621,10 @@ export const serviceData = {
           title: "Cost Reduction",
           description: "Automated inventory reduces carrying costs and minimizes waste from expired products.",
         },
-        { icon: "material-symbols-light:check-circle", title: "Improved Accuracy", description: "AI systems eliminate human errors in inventory counting and management." },
+        { icon: "mdi:check-circle", title: "Improved Accuracy", description: "AI systems eliminate human errors in inventory counting and management." },
         { icon: "material-symbols-light:bolt", title: "Enhanced Efficiency", description: "24/7 automated monitoring frees staff for patient care activities." },
         { icon: "material-symbols-light:health-and-safety", title: "Better Patient Safety", description: "Automated tracking prevents stockouts of critical medications." },
-        { icon: "material-symbols-light:analytics", title: "Data-Driven Insights", description: "Advanced analytics optimize inventory levels and purchasing decisions." },
+        { icon: "mdi:google-analytics", title: "Data-Driven Insights", description: "Advanced analytics optimize inventory levels and purchasing decisions." },
       ],
     },
   },
@@ -1640,11 +1640,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📅", title: "Automated appointment booking and reminders", description: "Simplify scheduling with automated bookings and notifications." },
-        { icon: "👩‍⚕️", title: "Multi-provider schedule coordination", description: "Coordinate appointments across multiple doctors and staff." },
-        { icon: "⚙️", title: "Resource allocation optimization", description: "Maximize utilization of rooms, staff, and equipment." },
-        { icon: "🚦", title: "Patient flow management", description: "Ensure smooth patient flow through scheduling systems." },
-        { icon: "⏱", title: "Emergency scheduling adaptation", description: "Quickly adjust schedules in case of emergencies." },
+        { icon: "mdi:calendar", title: "Automated appointment booking and reminders", description: "Simplify scheduling with automated bookings and notifications." },
+        { icon: "mdi:doctor", title: "Multi-provider schedule coordination", description: "Coordinate appointments across multiple doctors and staff." },
+        { icon: "mdi:cog", title: "Resource allocation optimization", description: "Maximize utilization of rooms, staff, and equipment." },
+        { icon: "mdi:traffic-light", title: "Patient flow management", description: "Ensure smooth patient flow through scheduling systems." },
+        { icon: "mdi:timer", title: "Emergency scheduling adaptation", description: "Quickly adjust schedules in case of emergencies." },
       ],
     },
     featureSection: {
@@ -1657,7 +1657,7 @@ export const serviceData = {
           description: "Seamless booking and timely reminders enhance patient satisfaction.",
         },
         { icon: "material-symbols-light:groups", title: "Staff Efficiency", description: "Automated scheduling reduces administrative burden on healthcare staff." },
-        { icon: "material-symbols-light:insights", title: "Resource Optimization", description: "AI algorithms maximize utilization of rooms, equipment, and providers." },
+        { icon: "mdi:chart-line", title: "Resource Optimization", description: "AI algorithms maximize utilization of rooms, equipment, and providers." },
         { icon: "material-symbols-light:update", title: "Real-Time Adaptability", description: "System automatically adjusts for cancellations and emergency situations." },
       ],
     },
@@ -1674,21 +1674,21 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🏭", title: "Manufacturing process automation", description: "Automate production processes for efficiency and quality." },
-        { icon: "✅", title: "Quality control workflow management", description: "Ensure consistent quality with automated checks." },
-        { icon: "📋", title: "Batch tracking and documentation", description: "Track batches and maintain complete documentation." },
-        { icon: "🛠", title: "Equipment maintenance scheduling", description: "Automate preventive maintenance for critical equipment." },
-        { icon: "📑", title: "Compliance reporting automation", description: "Generate regulatory reports automatically." },
+        { icon: "mdi:factory", title: "Manufacturing process automation", description: "Automate production processes for efficiency and quality." },
+        { icon: "mdi:check-circle", title: "Quality control workflow management", description: "Ensure consistent quality with automated checks." },
+        { icon: "mdi:clipboard-text", title: "Batch tracking and documentation", description: "Track batches and maintain complete documentation." },
+        { icon: "mdi:tools", title: "Equipment maintenance scheduling", description: "Automate preventive maintenance for critical equipment." },
+        { icon: "mdi:bookmark-multiple", title: "Compliance reporting automation", description: "Generate regulatory reports automatically." },
       ],
     },
     featureSection: {
       heading: "How It's Benefitted Our Clients:",
       features: [
-        { icon: "material-symbols-light:check-circle", title: "Quality Consistency", description: "Automated workflows ensure consistent product quality and reduce variability." },
+        { icon: "mdi:check-circle", title: "Quality Consistency", description: "Automated workflows ensure consistent product quality and reduce variability." },
         { icon: "material-symbols-light:fact-check", title: "Regulatory Compliance", description: "Automated documentation ensures complete regulatory compliance." },
         { icon: "material-symbols-light:savings", title: "Cost Efficiency", description: "Streamlined processes reduce manufacturing costs and improve margins." },
         { icon: "material-symbols-light:speed", title: "Faster Production", description: "Optimized workflows accelerate production cycles and time-to-market." },
-        { icon: "material-symbols-light:warning", title: "Risk Reduction", description: "Automated quality control minimizes product recalls and safety issues." },
+        { icon: "mdi:alert", title: "Risk Reduction", description: "Automated quality control minimizes product recalls and safety issues." },
       ],
     },
   },
@@ -1704,11 +1704,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🤖", title: "24/7 patient inquiry handling", description: "Provide round-the-clock responses to patient queries." },
-        { icon: "💊", title: "Prescription refill automation", description: "Automate refill requests for medications." },
-        { icon: "📑", title: "Insurance verification assistance", description: "Help patients with insurance checks and approvals." },
-        { icon: "📘", title: "Health information guidance", description: "Offer accurate and consistent health information." },
-        { icon: "📅", title: "Appointment scheduling support", description: "Assist patients in booking appointments easily." },
+        { icon: "mdi:robot", title: "24/7 patient inquiry handling", description: "Provide round-the-clock responses to patient queries." },
+        { icon: "mdi:pill", title: "Prescription refill automation", description: "Automate refill requests for medications." },
+        { icon: "mdi:bookmark-multiple", title: "Insurance verification assistance", description: "Help patients with insurance checks and approvals." },
+        { icon: "mdi:book-education", title: "Health information guidance", description: "Offer accurate and consistent health information." },
+        { icon: "mdi:calendar", title: "Appointment scheduling support", description: "Assist patients in booking appointments easily." },
       ],
     },
     featureSection: {
@@ -1734,17 +1734,17 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📊", title: "Healthcare data analytics platforms", description: "Enable advanced analytics tailored for healthcare decision-making." },
-        { icon: "🔮", title: "Predictive modeling for patient outcomes", description: "Forecast and improve patient health outcomes with AI models." },
-        { icon: "💊", title: "Drug discovery AI platforms", description: "Accelerate drug discovery with AI-driven insights and analysis." },
-        { icon: "🧪", title: "Clinical trial optimization systems", description: "Streamline clinical trials using AI optimization tools." },
-        { icon: "🌍", title: "Population health management tools", description: "Support large-scale healthcare management through AI platforms." },
+        { icon: "mdi:chart-bar", title: "Healthcare data analytics platforms", description: "Enable advanced analytics tailored for healthcare decision-making." },
+        { icon: "mdi:crystal-ball", title: "Predictive modeling for patient outcomes", description: "Forecast and improve patient health outcomes with AI models." },
+        { icon: "mdi:pill", title: "Drug discovery AI platforms", description: "Accelerate drug discovery with AI-driven insights and analysis." },
+        { icon: "mdi:test-tube", title: "Clinical trial optimization systems", description: "Streamline clinical trials using AI optimization tools." },
+        { icon: "mdi:earth", title: "Population health management tools", description: "Support large-scale healthcare management through AI platforms." },
       ],
     },
     featureSection: {
       heading: "How It's Benefitted Our Clients:",
       features: [
-        { icon: "material-symbols-light:analytics", title: "Data-Driven Decisions", description: "Advanced analytics provide actionable insights for better decision-making." },
+        { icon: "mdi:google-analytics", title: "Data-Driven Decisions", description: "Advanced analytics provide actionable insights for better decision-making." },
         { icon: "material-symbols-light:health-metrics", title: "Improved Outcomes", description: "Predictive models help optimize patient care and treatment protocols." },
         {
           icon: "material-symbols-light:military-tech",
@@ -1768,11 +1768,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📝", title: "Medical content generation and summarization", description: "Generate accurate healthcare documents and summaries with AI." },
-        { icon: "🧬", title: "Drug molecule design and optimization", description: "Design and optimize molecules to accelerate drug discovery." },
-        { icon: "👩‍⚕️", title: "Personalized treatment plan creation", description: "Develop AI-powered personalized treatment plans for patients." },
-        { icon: "📑", title: "Clinical documentation automation", description: "Automate and streamline clinical paperwork processes." },
-        { icon: "🎓", title: "Patient education material generation", description: "Produce personalized, easy-to-understand patient education materials." },
+        { icon: "mdi:file-document", title: "Medical content generation and summarization", description: "Generate accurate healthcare documents and summaries with AI." },
+        { icon: "mdi:dna", title: "Drug molecule design and optimization", description: "Design and optimize molecules to accelerate drug discovery." },
+        { icon: "mdi:doctor", title: "Personalized treatment plan creation", description: "Develop AI-powered personalized treatment plans for patients." },
+        { icon: "mdi:bookmark-multiple", title: "Clinical documentation automation", description: "Automate and streamline clinical paperwork processes." },
+        { icon: "mdi:school", title: "Patient education material generation", description: "Produce personalized, easy-to-understand patient education materials." },
       ],
     },
     featureSection: {
@@ -1798,11 +1798,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "☁️", title: "Healthcare data processing with Vertex AI", description: "Leverage Google Vertex AI for secure healthcare data processing." },
-        { icon: "🩻", title: "Medical image analysis and diagnosis", description: "Use AI for accurate medical image interpretation and diagnosis." },
-        { icon: "💬", title: "Natural language processing for clinical notes", description: "Analyze and structure clinical notes using advanced NLP models." },
-        { icon: "🔬", title: "AI-powered research and development", description: "Support medical R&D with Google Cloud AI capabilities." },
-        { icon: "🚀", title: "Cloud-based AI model deployment", description: "Deploy AI models at scale using Google Cloud infrastructure." },
+        { icon: "mdi:cloud", title: "Healthcare data processing with Vertex AI", description: "Leverage Google Vertex AI for secure healthcare data processing." },
+        { icon: "mdi:x-ray", title: "Medical image analysis and diagnosis", description: "Use AI for accurate medical image interpretation and diagnosis." },
+        { icon: "mdi:message", title: "Natural language processing for clinical notes", description: "Analyze and structure clinical notes using advanced NLP models." },
+        { icon: "mdi:microscope", title: "AI-powered research and development", description: "Support medical R&D with Google Cloud AI capabilities." },
+        { icon: "mdi:rocket-launch", title: "Cloud-based AI model deployment", description: "Deploy AI models at scale using Google Cloud infrastructure." },
       ],
     },
     featureSection: {
@@ -1811,7 +1811,7 @@ export const serviceData = {
         { icon: "material-symbols-light:security", title: "Enterprise-Grade Security", description: "Google Cloud ensures HIPAA compliance and data protection." },
         { icon: "material-symbols-light:stack", title: "Scalable Performance", description: "Cloud infrastructure handles varying workloads efficiently." },
         { icon: "material-symbols-light:attach-money", title: "Cost Optimization", description: "Pay-as-you-use model reduces AI implementation costs." },
-        { icon: "material-symbols-light:rocket-launch", title: "Rapid Deployment", description: "Pre-built AI services accelerate time-to-implementation." },
+        { icon: "mdi:rocket-launch", title: "Rapid Deployment", description: "Pre-built AI services accelerate time-to-implementation." },
         { icon: "material-symbols-light:lightbulb", title: "Continuous Innovation", description: "Access to latest Google AI advancements and updates." },
       ],
     },
@@ -1828,11 +1828,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🧠", title: "Disease prediction models", description: "Develop AI models that predict diseases and improve prevention." },
-        { icon: "💊", title: "Drug efficacy prediction algorithms", description: "Assess and forecast drug effectiveness with AI algorithms." },
-        { icon: "🩺", title: "Medical image recognition systems", description: "Create AI models for accurate interpretation of medical images." },
-        { icon: "⚕️", title: "Clinical outcome optimization models", description: "Enhance treatment outcomes using predictive optimization models." },
-        { icon: "📏", title: "Personalized dosing algorithms", description: "Design AI algorithms for tailored medication dosing." },
+        { icon: "mdi:brain", title: "Disease prediction models", description: "Develop AI models that predict diseases and improve prevention." },
+        { icon: "mdi:pill", title: "Drug efficacy prediction algorithms", description: "Assess and forecast drug effectiveness with AI algorithms." },
+        { icon: "mdi:stethoscope", title: "Medical image recognition systems", description: "Create AI models for accurate interpretation of medical images." },
+        { icon: "mdi:medical-bag", title: "Clinical outcome optimization models", description: "Enhance treatment outcomes using predictive optimization models." },
+        { icon: "mdi:ruler", title: "Personalized dosing algorithms", description: "Design AI algorithms for tailored medication dosing." },
       ],
     },
     featureSection: {
@@ -1857,11 +1857,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📋", title: "Healthcare workflow analysis", description: "Evaluate healthcare workflows to identify automation opportunities." },
-        { icon: "🔍", title: "Automation opportunity identification", description: "Pinpoint processes with high potential for automation benefits." },
-        { icon: "⚙️", title: "Process redesign and optimization", description: "Restructure workflows to improve efficiency before automation." },
-        { icon: "💰", title: "ROI assessment and planning", description: "Analyze financial impact and returns of automation projects." },
-        { icon: "🛣️", title: "Implementation roadmap development", description: "Build clear roadmaps to guide automation execution." },
+        { icon: "mdi:clipboard-text", title: "Healthcare workflow analysis", description: "Evaluate healthcare workflows to identify automation opportunities." },
+        { icon: "mdi:magnify", title: "Automation opportunity identification", description: "Pinpoint processes with high potential for automation benefits." },
+        { icon: "mdi:cog", title: "Process redesign and optimization", description: "Restructure workflows to improve efficiency before automation." },
+        { icon: "mdi:currency-usd", title: "ROI assessment and planning", description: "Analyze financial impact and returns of automation projects." },
+        { icon: "mdi:road", title: "Implementation roadmap development", description: "Build clear roadmaps to guide automation execution." },
       ],
     },
     featureSection: {
@@ -1869,7 +1869,7 @@ export const serviceData = {
       features: [
         { icon: "material-symbols-light:trending-up", title: "Maximized ROI", description: "Thorough assessment ensures highest-value automation opportunities are prioritized." },
         { icon: "material-symbols-light:settings", title: "Optimized Processes", description: "Redesigned workflows improve efficiency beyond simple automation." },
-        { icon: "material-symbols-light:warning", title: "Risk Mitigation", description: "Careful planning prevents automation failures and disruptions." },
+        { icon: "mdi:alert", title: "Risk Mitigation", description: "Careful planning prevents automation failures and disruptions." },
         { icon: "material-symbols-light:flag", title: "Strategic Alignment", description: "Automation roadmap aligns with organizational goals and priorities." },
         { icon: "material-symbols-light:groups", title: "Change Management", description: "Structured approach ensures smooth adoption and user acceptance." },
       ],
@@ -1887,11 +1887,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "💼", title: "Insurance claim processing automation", description: "Automate insurance claim workflows to reduce processing time." },
-        { icon: "🧾", title: "Patient data entry and verification", description: "Automate patient information entry and validation for accuracy." },
-        { icon: "📊", title: "Regulatory reporting automation", description: "Generate and file reports automatically to meet compliance standards." },
-        { icon: "🧪", title: "Laboratory result processing", description: "Streamline lab results handling with automation tools." },
-        { icon: "📦", title: "Supply chain automation", description: "Automate supply chain processes for efficiency and accuracy." },
+        { icon: "mdi:briefcase", title: "Insurance claim processing automation", description: "Automate insurance claim workflows to reduce processing time." },
+        { icon: "mdi:receipt", title: "Patient data entry and verification", description: "Automate patient information entry and validation for accuracy." },
+        { icon: "mdi:chart-bar", title: "Regulatory reporting automation", description: "Generate and file reports automatically to meet compliance standards." },
+        { icon: "mdi:test-tube", title: "Laboratory result processing", description: "Streamline lab results handling with automation tools." },
+        { icon: "mdi:package-variant", title: "Supply chain automation", description: "Automate supply chain processes for efficiency and accuracy." },
       ],
     },
     featureSection: {
@@ -1921,11 +1921,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📈", title: "Bot performance tracking and optimization", description: "Monitor and enhance bot performance for consistent results." },
-        { icon: "📊", title: "Process efficiency measurement", description: "Track efficiency levels to identify areas of improvement." },
-        { icon: "❗", title: "Error detection and correction", description: "Automatically detect and fix process errors quickly." },
-        { icon: "📑", title: "Usage analytics and reporting", description: "Generate reports to analyze automation effectiveness." },
-        { icon: "💹", title: "ROI measurement and validation", description: "Validate ROI through accurate performance data and reporting." },
+        { icon: "mdi:trending-up", title: "Bot performance tracking and optimization", description: "Monitor and enhance bot performance for consistent results." },
+        { icon: "mdi:chart-bar", title: "Process efficiency measurement", description: "Track efficiency levels to identify areas of improvement." },
+        { icon: "mdi:exclamation", title: "Error detection and correction", description: "Automatically detect and fix process errors quickly." },
+        { icon: "mdi:bookmark-multiple", title: "Usage analytics and reporting", description: "Generate reports to analyze automation effectiveness." },
+        { icon: "mdi:chart-line-variant", title: "ROI measurement and validation", description: "Validate ROI through accurate performance data and reporting." },
       ],
     },
     featureSection: {
@@ -1933,8 +1933,8 @@ export const serviceData = {
       features: [
         { icon: "material-symbols-light:refresh", title: "Continuous Improvement", description: "Ongoing monitoring identifies optimization opportunities." },
         { icon: "material-symbols-light:bug-report", title: "Proactive Issue Resolution", description: "Early detection prevents automation failures and downtime." },
-        { icon: "material-symbols-light:check-circle", title: "ROI Validation", description: "Clear metrics demonstrate automation value and success." },
-        { icon: "material-symbols-light:rocket-launch", title: "Performance Optimization", description: "Analytics-driven adjustments maximize automation benefits." },
+        { icon: "mdi:check-circle", title: "ROI Validation", description: "Clear metrics demonstrate automation value and success." },
+        { icon: "mdi:rocket-launch", title: "Performance Optimization", description: "Analytics-driven adjustments maximize automation benefits." },
         { icon: "material-symbols-light:lightbulb", title: "Strategic Planning", description: "Performance data informs future automation investments." },
       ],
     },
@@ -1951,11 +1951,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🛠️", title: "Bot maintenance and updates", description: "Ensure bots remain updated and functional at all times." },
-        { icon: "⚡", title: "Process optimization and enhancement", description: "Continuously improve automated processes for better outcomes." },
-        { icon: "🔗", title: "System integration maintenance", description: "Maintain seamless integration with other healthcare systems." },
-        { icon: "📜", title: "Regulatory compliance updates", description: "Keep automation processes aligned with regulatory requirements." },
-        { icon: "📈", title: "Performance tuning and scaling", description: "Optimize and scale bots to handle increased workloads." },
+        { icon: "mdi:tools", title: "Bot maintenance and updates", description: "Ensure bots remain updated and functional at all times." },
+        { icon: "mdi:flash", title: "Process optimization and enhancement", description: "Continuously improve automated processes for better outcomes." },
+        { icon: "mdi:link-variant", title: "System integration maintenance", description: "Maintain seamless integration with other healthcare systems." },
+        { icon: "mdi:script-text", title: "Regulatory compliance updates", description: "Keep automation processes aligned with regulatory requirements." },
+        { icon: "mdi:trending-up", title: "Performance tuning and scaling", description: "Optimize and scale bots to handle increased workloads." },
       ],
     },
     featureSection: {
@@ -1964,7 +1964,7 @@ export const serviceData = {
         { icon: "material-symbols-light:settings", title: "Sustained Performance", description: "Regular maintenance ensures continued optimal operation." },
         { icon: "material-symbols-light:shield", title: "Compliance Assurance", description: "Updates maintain regulatory compliance as requirements change." },
         { icon: "material-symbols-light:trending-up", title: "Technology Evolution", description: "Ongoing optimization incorporates new capabilities and improvements." },
-        { icon: "material-symbols-light:warning", title: "Risk Mitigation", description: "Proactive maintenance prevents system failures and disruptions." },
+        { icon: "mdi:alert", title: "Risk Mitigation", description: "Proactive maintenance prevents system failures and disruptions." },
         { icon: "material-symbols-light:savings", title: "Cost Optimization", description: "Continuous optimization maximizes ROI over time." },
       ],
     },
@@ -1980,11 +1980,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📦", title: "Pharmaceutical packaging automation", description: "Automate drug packaging processes for consistency and speed." },
-        { icon: "🧪", title: "Laboratory sample handling", description: "Robots manage and process lab samples with precision." },
-        { icon: "🧼", title: "Clean room operations", description: "Ensure sterile conditions with robotic clean room handling." },
-        { icon: "✅", title: "Quality control automation", description: "Automated inspections improve accuracy and reduce defects." },
-        { icon: "🚚", title: "Material handling and logistics", description: "Streamline logistics with robotic material transport." },
+        { icon: "mdi:package-variant", title: "Pharmaceutical packaging automation", description: "Automate drug packaging processes for consistency and speed." },
+        { icon: "mdi:test-tube", title: "Laboratory sample handling", description: "Robots manage and process lab samples with precision." },
+        { icon: "mdi:hand-wash", title: "Clean room operations", description: "Ensure sterile conditions with robotic clean room handling." },
+        { icon: "mdi:check-circle", title: "Quality control automation", description: "Automated inspections improve accuracy and reduce defects." },
+        { icon: "mdi:truck", title: "Material handling and logistics", description: "Streamline logistics with robotic material transport." },
       ],
     },
     featureSection: {
@@ -2014,11 +2014,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🔪", title: "Surgical assistance robots", description: "Enhance precision in surgeries with robotic assistance." },
-        { icon: "🤖", title: "Patient mobility assistance", description: "Provide robotic support for patient movement and rehabilitation." },
-        { icon: "💊", title: "Medication dispensing automation", description: "Automated systems ensure accurate and timely medication dispensing." },
-        { icon: "🦾", title: "Rehabilitation therapy robots", description: "Assist patients with robotic rehabilitation therapies." },
-        { icon: "📹", title: "Telemedicine robotics", description: "Enable remote consultations through robotic telepresence." },
+        { icon: "mdi:knife", title: "Surgical assistance robots", description: "Enhance precision in surgeries with robotic assistance." },
+        { icon: "mdi:robot", title: "Patient mobility assistance", description: "Provide robotic support for patient movement and rehabilitation." },
+        { icon: "mdi:pill", title: "Medication dispensing automation", description: "Automated systems ensure accurate and timely medication dispensing." },
+        { icon: "mdi:arm-flex", title: "Rehabilitation therapy robots", description: "Assist patients with robotic rehabilitation therapies." },
+        { icon: "mdi:video", title: "Telemedicine robotics", description: "Enable remote consultations through robotic telepresence." },
       ],
     },
     featureSection: {
@@ -2044,11 +2044,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🏭", title: "Automated production lines", description: "Set up fully automated pharmaceutical and device production lines." },
-        { icon: "🔍", title: "Real-time quality monitoring", description: "Monitor production quality continuously with AI-driven systems." },
-        { icon: "⚡", title: "Predictive maintenance systems", description: "Detect and prevent equipment failures with predictive analytics." },
-        { icon: "🔗", title: "Supply chain integration", description: "Integrate supply chain systems for smoother operations." },
-        { icon: "🖥️", title: "Digital twin manufacturing", description: "Simulate production processes for optimization and testing." },
+        { icon: "mdi:factory", title: "Automated production lines", description: "Set up fully automated pharmaceutical and device production lines." },
+        { icon: "mdi:magnify", title: "Real-time quality monitoring", description: "Monitor production quality continuously with AI-driven systems." },
+        { icon: "mdi:flash", title: "Predictive maintenance systems", description: "Detect and prevent equipment failures with predictive analytics." },
+        { icon: "mdi:link-variant", title: "Supply chain integration", description: "Integrate supply chain systems for smoother operations." },
+        { icon: "mdi:monitor", title: "Digital twin manufacturing", description: "Simulate production processes for optimization and testing." },
       ],
     },
     featureSection: {
@@ -2058,7 +2058,7 @@ export const serviceData = {
         { icon: "material-symbols-light:verified", title: "Quality Assurance", description: "Real-time monitoring ensures consistent product quality." },
         { icon: "material-symbols-light:build", title: "Predictive Maintenance", description: "AI-driven maintenance prevents costly equipment failures." },
         { icon: "material-symbols-light:rule", title: "Regulatory Compliance", description: "Automated documentation ensures complete compliance." },
-        { icon: "material-symbols-light:rocket-launch", title: "Competitive Advantage", description: "Advanced manufacturing capabilities differentiate from competitors." },
+        { icon: "mdi:rocket-launch", title: "Competitive Advantage", description: "Advanced manufacturing capabilities differentiate from competitors." },
       ],
     },
   },
@@ -2074,18 +2074,18 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📡", title: "Connected medical device networks", description: "Integrate medical devices into connected IoT networks." },
-        { icon: "🌡️", title: "Environmental monitoring systems", description: "Track environmental conditions in real-time with IoT sensors." },
-        { icon: "📍", title: "Asset tracking and management", description: "Manage healthcare assets with smart IoT tracking systems." },
-        { icon: "🏥", title: "Remote patient monitoring", description: "Enable real-time patient monitoring through IoT-enabled devices." },
-        { icon: "🚛", title: "Supply chain visibility", description: "Gain complete visibility of supply chains with IoT solutions." },
+        { icon: "mdi:antenna", title: "Connected medical device networks", description: "Integrate medical devices into connected IoT networks." },
+        { icon: "mdi:thermometer", title: "Environmental monitoring systems", description: "Track environmental conditions in real-time with IoT sensors." },
+        { icon: "mdi:map-marker", title: "Asset tracking and management", description: "Manage healthcare assets with smart IoT tracking systems." },
+        { icon: "mdi:hospital-building", title: "Remote patient monitoring", description: "Enable real-time patient monitoring through IoT-enabled devices." },
+        { icon: "mdi:truck-delivery", title: "Supply chain visibility", description: "Gain complete visibility of supply chains with IoT solutions." },
       ],
     },
     featureSection: {
       heading: "How It's Benefitted Our Clients:",
       features: [
         { icon: "material-symbols-light:visibility", title: "Real-Time Visibility", description: "IoT provides comprehensive visibility into operations and assets." },
-        { icon: "material-symbols-light:analytics", title: "Predictive Analytics", description: "Connected data enables predictive insights and optimization." },
+        { icon: "mdi:google-analytics", title: "Predictive Analytics", description: "Connected data enables predictive insights and optimization." },
         { icon: "material-symbols-light:monitor-heart", title: "Remote Monitoring", description: "IoT allows monitoring of patients and equipment from anywhere." },
         { icon: "material-symbols-light:bolt", title: "Operational Efficiency", description: "Connected systems optimize resource utilization and workflows." },
         { icon: "material-symbols-light:data-thresholding", title: "Data-Driven Decisions", description: "Rich IoT data enables better decision-making across the organization." },
@@ -2103,11 +2103,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "💻", title: "Healthcare network infrastructure", description: "Design and implement robust healthcare networks." },
-        { icon: "🖥️", title: "Data center design and implementation", description: "Create secure, scalable data centers." },
-        { icon: "💾", title: "Server and storage solutions", description: "Reliable server and storage systems for healthcare operations." },
-        { icon: "🔄", title: "Backup and disaster recovery systems", description: "Ensure data safety and business continuity." },
-        { icon: "🛡️", title: "HIPAA-compliant infrastructure", description: "Maintain compliance with healthcare regulations." },
+        { icon: "mdi:laptop", title: "Healthcare network infrastructure", description: "Design and implement robust healthcare networks." },
+        { icon: "mdi:monitor", title: "Data center design and implementation", description: "Create secure, scalable data centers." },
+        { icon: "mdi:floppy", title: "Server and storage solutions", description: "Reliable server and storage systems for healthcare operations." },
+        { icon: "mdi:refresh", title: "Backup and disaster recovery systems", description: "Ensure data safety and business continuity." },
+        { icon: "mdi:shield-check", title: "HIPAA-compliant infrastructure", description: "Maintain compliance with healthcare regulations." },
       ],
     },
     featureSection: {
@@ -2137,11 +2137,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🔁", title: "Legacy system migration", description: "Seamlessly migrate outdated systems to modern platforms." },
-        { icon: "☁️", title: "Cloud transformation initiatives", description: "Move workloads to secure, scalable cloud environments." },
-        { icon: "📋", title: "Electronic health record implementation", description: "Implement EHR solutions for better patient care management." },
-        { icon: "⚡", title: "Digital workflow optimization", description: "Streamline processes to reduce manual tasks and inefficiencies." },
-        { icon: "🛠️", title: "Technology stack modernization", description: "Upgrade technology stack to support future-ready operations." },
+        { icon: "mdi:repeat", title: "Legacy system migration", description: "Seamlessly migrate outdated systems to modern platforms." },
+        { icon: "mdi:cloud", title: "Cloud transformation initiatives", description: "Move workloads to secure, scalable cloud environments." },
+        { icon: "mdi:clipboard-text", title: "Electronic health record implementation", description: "Implement EHR solutions for better patient care management." },
+        { icon: "mdi:flash", title: "Digital workflow optimization", description: "Streamline processes to reduce manual tasks and inefficiencies." },
+        { icon: "mdi:tools", title: "Technology stack modernization", description: "Upgrade technology stack to support future-ready operations." },
       ],
     },
     featureSection: {
@@ -2171,11 +2171,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "📧", title: "Microsoft 365 healthcare implementations", description: "Deploy Microsoft 365 tailored for healthcare teams." },
-        { icon: "🌐", title: "Google Workspace medical configurations", description: "Implement Google Workspace for secure medical collaboration." },
-        { icon: "🔑", title: "Secure remote access solutions", description: "Enable staff to securely access systems remotely." },
-        { icon: "🤝", title: "Collaboration platform deployment", description: "Deploy tools for seamless team collaboration." },
-        { icon: "📱", title: "Mobile device management", description: "Manage and secure mobile devices across the organization." },
+        { icon: "mdi:email", title: "Microsoft 365 healthcare implementations", description: "Deploy Microsoft 365 tailored for healthcare teams." },
+        { icon: "mdi:web", title: "Google Workspace medical configurations", description: "Implement Google Workspace for secure medical collaboration." },
+        { icon: "mdi:key", title: "Secure remote access solutions", description: "Enable staff to securely access systems remotely." },
+        { icon: "mdi:handshake", title: "Collaboration platform deployment", description: "Deploy tools for seamless team collaboration." },
+        { icon: "mdi:cellphone", title: "Mobile device management", description: "Manage and secure mobile devices across the organization." },
       ],
     },
     featureSection: {
@@ -2200,11 +2200,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🏢", title: "Healthcare technology vendor selection", description: "Choose the right technology vendors for healthcare operations." },
-        { icon: "✍️", title: "Contract negotiation and management", description: "Negotiate favorable contracts and manage vendor agreements." },
-        { icon: "📅", title: "Technology lifecycle planning", description: "Plan for the entire lifecycle of technology assets." },
-        { icon: "💰", title: "Cost optimization strategies", description: "Optimize procurement costs through strategic planning." },
-        { icon: "🤝", title: "Vendor relationship management", description: "Manage vendors for reliable delivery and support." },
+        { icon: "mdi:office-building", title: "Healthcare technology vendor selection", description: "Choose the right technology vendors for healthcare operations." },
+        { icon: "mdi:pencil", title: "Contract negotiation and management", description: "Negotiate favorable contracts and manage vendor agreements." },
+        { icon: "mdi:calendar", title: "Technology lifecycle planning", description: "Plan for the entire lifecycle of technology assets." },
+        { icon: "mdi:currency-usd", title: "Cost optimization strategies", description: "Optimize procurement costs through strategic planning." },
+        { icon: "mdi:handshake", title: "Vendor relationship management", description: "Manage vendors for reliable delivery and support." },
       ],
     },
     featureSection: {
@@ -2217,7 +2217,7 @@ export const serviceData = {
         },
         { icon: "material-symbols-light:shield", title: "Risk Mitigation", description: "Professional vendor management reduces procurement risks and compliance issues." },
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Technology Optimization",
           description: "Strategic planning ensures technology investments align with organizational goals.",
         },
@@ -2242,11 +2242,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🌐", title: "Healthcare practice websites", description: "Design and develop responsive websites for medical practices." },
-        { icon: "📱", title: "Patient portal development", description: "Create user-friendly patient portals for better engagement." },
-        { icon: "📲", title: "Medical mobile applications", description: "Develop apps for healthcare services, telemedicine, and patient care." },
-        { icon: "💻", title: "Telemedicine platforms", description: "Build platforms enabling remote consultations and care." },
-        { icon: "🛒", title: "Pharmaceutical e-commerce sites", description: "Develop e-commerce solutions for pharmacies and medical products." },
+        { icon: "mdi:web", title: "Healthcare practice websites", description: "Design and develop responsive websites for medical practices." },
+        { icon: "mdi:cellphone", title: "Patient portal development", description: "Create user-friendly patient portals for better engagement." },
+        { icon: "mdi:cellphone-arrow-down", title: "Medical mobile applications", description: "Develop apps for healthcare services, telemedicine, and patient care." },
+        { icon: "mdi:laptop", title: "Telemedicine platforms", description: "Build platforms enabling remote consultations and care." },
+        { icon: "mdi:cart", title: "Pharmaceutical e-commerce sites", description: "Develop e-commerce solutions for pharmacies and medical products." },
       ],
     },
     featureSection: {
@@ -2276,11 +2276,11 @@ export const serviceData = {
     mobileCards: {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
-        { icon: "🔗", title: "Electronic health record integrations", description: "Integrate EHR systems for seamless patient data flow." },
-        { icon: "⚙️", title: "Practice management system connections", description: "Connect practice management software with other tools." },
-        { icon: "🧪", title: "Laboratory information system interfaces", description: "Integrate lab systems for faster, accurate results." },
-        { icon: "💊", title: "Pharmacy management integrations", description: "Ensure pharmacy systems communicate effectively with other platforms." },
-        { icon: "📊", title: "Medical device data integration", description: "Connect medical devices to IT systems for real-time data." },
+        { icon: "mdi:link-variant", title: "Electronic health record integrations", description: "Integrate EHR systems for seamless patient data flow." },
+        { icon: "mdi:cog", title: "Practice management system connections", description: "Connect practice management software with other tools." },
+        { icon: "mdi:test-tube", title: "Laboratory information system interfaces", description: "Integrate lab systems for faster, accurate results." },
+        { icon: "mdi:pill", title: "Pharmacy management integrations", description: "Ensure pharmacy systems communicate effectively with other platforms." },
+        { icon: "mdi:chart-bar", title: "Medical device data integration", description: "Connect medical devices to IT systems for real-time data." },
       ],
     },
     featureSection: {
@@ -2289,7 +2289,7 @@ export const serviceData = {
         { icon: "material-symbols-light:sync_alt", title: "Seamless Workflows", description: "Integrated systems eliminate data silos and streamline processes." },
         { icon: "material-symbols-light:check_circle", title: "Improved Accuracy", description: "Automated data exchange reduces errors and improves data quality." },
         { icon: "material-symbols-light:trending_up", title: "Enhanced Productivity", description: "Integrated systems reduce duplicate data entry and manual processes." },
-        { icon: "material-symbols-light:insights", title: "Better Decision Making", description: "Unified data provides comprehensive insights for clinical decisions." },
+        { icon: "mdi:chart-line", title: "Better Decision Making", description: "Unified data provides comprehensive insights for clinical decisions." },
         { icon: "material-symbols-light:shield", title: "Compliance Assurance", description: "Proper integrations maintain data security and regulatory compliance." },
       ],
     },
@@ -2307,27 +2307,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Patient portal usability improvement",
           description: "Enhance patient portal design for better user experience and engagement.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Medical application interface design",
           description: "Create intuitive interfaces for medical applications and software.",
         },
         {
-          icon: "🌐",
+          icon: "mdi:web",
           title: "Healthcare website optimization",
           description: "Optimize healthcare websites for better user experience and conversion.",
         },
         {
-          icon: "📲",
+          icon: "mdi:cellphone-arrow-down",
           title: "Mobile health app user experience",
           description: "Design exceptional mobile experiences for health and wellness apps.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Clinical workflow interface design",
           description: "Streamline clinical workflows through optimized interface design.",
         },
@@ -2377,27 +2377,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Pharmaceutical mobile shopping apps",
           description: "Develop mobile apps for pharmaceutical product sales and management.",
         },
         {
-          icon: "🛒",
+          icon: "mdi:cart",
           title: "Health product e-commerce platforms",
           description: "Create comprehensive e-commerce platforms for health and wellness products.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Prescription refill mobile solutions",
           description: "Build mobile solutions for convenient prescription refills and management.",
         },
         {
-          icon: "💳",
+          icon: "mdi:credit-card",
           title: "Telehealth payment processing",
           description: "Implement secure payment processing for telehealth services.",
         },
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Medical device mobile ordering",
           description: "Enable mobile ordering and management of medical devices and equipment.",
         },
@@ -2427,7 +2427,7 @@ export const serviceData = {
           description: "Mobile apps provide direct customer communication and engagement.",
         },
         {
-          icon: "material-symbols-light:rocket-launch",
+          icon: "mdi:rocket-launch",
           title: "Competitive Positioning",
           description: "Mobile-first approach positions ahead of competitors.",
         },
@@ -2447,27 +2447,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏥",
+          icon: "mdi:hospital-building",
           title: "Healthcare data migration to cloud",
           description: "Securely migrate healthcare data to cloud platforms with full compliance.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Electronic health record cloud deployment",
           description: "Deploy EHR systems on cloud infrastructure for scalability and accessibility.",
         },
         {
-          icon: "🧪",
+          icon: "mdi:test-tube",
           title: "Pharmaceutical research cloud infrastructure",
           description: "Set up cloud infrastructure for pharmaceutical research and development.",
         },
         {
-          icon: "☁️",
+          icon: "mdi:cloud",
           title: "Multi-cloud strategy implementation",
           description: "Implement multi-cloud strategies for optimal performance and redundancy.",
         },
         {
-          icon: "🔗",
+          icon: "mdi:link-variant",
           title: "Hybrid cloud architecture design",
           description: "Design hybrid cloud architectures combining on-premises and cloud resources.",
         },
@@ -2517,27 +2517,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Patient data backup and recovery",
           description: "Secure backup and recovery solutions for patient health information.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Electronic health record backup",
           description: "Comprehensive backup strategies for EHR systems and data.",
         },
         {
-          icon: "🩻",
+          icon: "mdi:x-ray",
           title: "Medical imaging data protection",
           description: "Protect and backup medical imaging data with high availability.",
         },
         {
-          icon: "🧪",
+          icon: "mdi:test-tube",
           title: "Pharmaceutical research data backup",
           description: "Secure backup solutions for critical research and development data.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Automated backup monitoring",
           description: "Continuous monitoring and alerting for backup system health.",
         },
@@ -2567,7 +2567,7 @@ export const serviceData = {
           description: "Cloud backup reduces infrastructure costs compared to traditional methods.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Peace of Mind",
           description: "Automated monitoring ensures backup systems are always functioning properly.",
         },
@@ -2587,27 +2587,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏥",
+          icon: "mdi:hospital-building",
           title: "Healthcare network design and implementation",
           description: "Design and implement robust networks for healthcare facilities.",
         },
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Medical device network connectivity",
           description: "Connect and manage medical devices on secure healthcare networks.",
         },
         {
-          icon: "📶",
+          icon: "mdi:signal",
           title: "Wireless infrastructure for hospitals",
           description: "Deploy reliable wireless networks for hospital environments.",
         },
         {
-          icon: "🔒",
+          icon: "mdi:lock",
           title: "Network security monitoring",
           description: "Continuous monitoring and protection of healthcare network infrastructure.",
         },
         {
-          icon: "⚡",
+          icon: "mdi:flash",
           title: "Performance optimization",
           description: "Optimize network performance for healthcare applications and systems.",
         },
@@ -2632,7 +2632,7 @@ export const serviceData = {
           description: "Optimized networks deliver faster access to patient data and applications.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Reduced Downtime",
           description: "Proactive monitoring and maintenance prevent network failures.",
         },
@@ -2657,27 +2657,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏢",
+          icon: "mdi:office-building",
           title: "Multi-site healthcare network design",
           description: "Design and implement networks connecting multiple healthcare facilities.",
         },
         {
-          icon: "🏗️",
+          icon: "mdi:crane",
           title: "Enterprise data center consolidation",
           description: "Consolidate and optimize data center infrastructure across the organization.",
         },
         {
-          icon: "☁️",
+          icon: "mdi:cloud",
           title: "Large-scale cloud infrastructure",
           description: "Deploy and manage enterprise-scale cloud infrastructure solutions.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "Global pharmaceutical IT infrastructure",
           description: "Build IT infrastructure supporting global pharmaceutical operations.",
         },
         {
-          icon: "🛡️",
+          icon: "mdi:shield-check",
           title: "Enterprise security architecture",
           description: "Design comprehensive security architectures for large organizations.",
         },
@@ -2727,27 +2727,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🛡️",
+          icon: "mdi:shield-check",
           title: "HIPAA compliance security implementation",
           description: "Implement comprehensive security measures to ensure HIPAA compliance.",
         },
         {
-          icon: "🔐",
+          icon: "mdi:lock-outline",
           title: "Healthcare data encryption",
           description: "Encrypt sensitive healthcare data at rest and in transit.",
         },
         {
-          icon: "📡",
+          icon: "mdi:antenna",
           title: "Network security monitoring",
           description: "Monitor network traffic and detect security threats in real-time.",
         },
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Endpoint protection for medical devices",
           description: "Secure medical devices and endpoints against cyber threats.",
         },
         {
-          icon: "🎓",
+          icon: "mdi:school",
           title: "Security awareness training",
           description: "Train staff on cybersecurity best practices and threat recognition.",
         },
@@ -2767,7 +2767,7 @@ export const serviceData = {
           description: "Security solutions ensure compliance with HIPAA and other regulations.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Proactive security reduces the risk of costly data breaches.",
         },
@@ -2797,27 +2797,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Patient data privacy compliance",
           description: "Ensure patient data handling meets all privacy regulations and requirements.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Healthcare data governance",
           description: "Implement comprehensive data governance frameworks for healthcare organizations.",
         },
         {
-          icon: "🚫",
+          icon: "mdi:cancel",
           title: "Data loss prevention systems",
           description: "Deploy systems to prevent unauthorized data access and loss.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Privacy impact assessments",
           description: "Conduct assessments to evaluate privacy risks and compliance requirements.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Consent management systems",
           description: "Manage patient consent for data collection and processing activities.",
         },
@@ -2832,7 +2832,7 @@ export const serviceData = {
           description: "Comprehensive privacy measures ensure compliance with healthcare regulations.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Reduction",
           description: "Proper data protection reduces legal and financial risks from privacy violations.",
         },
@@ -2867,27 +2867,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "HIPAA compliance audits",
           description: "Conduct thorough audits to ensure HIPAA compliance across all systems.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Penetration testing for healthcare systems",
           description: "Test security defenses through controlled penetration testing.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Security policy development",
           description: "Develop comprehensive security policies and procedures.",
         },
         {
-          icon: "⚠️",
+          icon: "mdi:alert",
           title: "Vulnerability assessments",
           description: "Identify and assess security vulnerabilities in healthcare systems.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Compliance gap analysis",
           description: "Analyze gaps between current state and regulatory requirements.",
         },
@@ -2897,7 +2897,7 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Compliance Assurance",
           description: "Regular audits ensure ongoing compliance with healthcare regulations.",
         },
@@ -2937,27 +2937,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏥",
+          icon: "mdi:hospital-building",
           title: "Healthcare business continuity planning",
           description: "Develop comprehensive business continuity plans for healthcare operations.",
         },
         {
-          icon: "🚨",
+          icon: "mdi:alert-circle",
           title: "Emergency response procedures",
           description: "Create detailed emergency response procedures for various scenarios.",
         },
         {
-          icon: "💾",
+          icon: "mdi:floppy",
           title: "Data recovery planning",
           description: "Plan for rapid data recovery and system restoration after disasters.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "System failover strategies",
           description: "Implement failover strategies to maintain critical system availability.",
         },
         {
-          icon: "🧪",
+          icon: "mdi:test-tube",
           title: "Recovery testing and validation",
           description: "Test and validate recovery procedures to ensure they work effectively.",
         },
@@ -2982,7 +2982,7 @@ export const serviceData = {
           description: "Proper planning meets healthcare regulatory requirements for continuity.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Prepared organizations recover faster and with less impact from disasters.",
         },
@@ -3007,27 +3007,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Medical device network connectivity",
           description: "Connect medical devices to secure healthcare networks for data sharing.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Electronic health record device integration",
           description: "Integrate medical devices directly with EHR systems for seamless data flow.",
         },
         {
-          icon: "🧪",
+          icon: "mdi:test-tube",
           title: "Laboratory equipment data integration",
           description: "Connect lab equipment to IT systems for automated result processing.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Monitoring device connectivity",
           description: "Connect patient monitoring devices for real-time data collection.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Mobile device management",
           description: "Manage and secure mobile devices used in healthcare settings.",
         },
@@ -3042,7 +3042,7 @@ export const serviceData = {
           description: "Integrated devices streamline clinical workflows and reduce manual data entry.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Enhanced Accuracy",
           description: "Direct device integration eliminates transcription errors.",
         },
@@ -3077,27 +3077,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📍",
+          icon: "mdi:map-marker",
           title: "Asset tracking and management",
           description: "Track and manage healthcare assets with IoT-enabled systems.",
         },
         {
-          icon: "🌡️",
+          icon: "mdi:thermometer",
           title: "Environmental monitoring systems",
           description: "Monitor environmental conditions in real-time with IoT sensors.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Patient monitoring IoT devices",
           description: "Deploy IoT devices for continuous patient monitoring and care.",
         },
         {
-          icon: "🚛",
+          icon: "mdi:truck-delivery",
           title: "Supply chain visibility",
           description: "Gain complete visibility of supply chains with IoT solutions.",
         },
         {
-          icon: "🔧",
+          icon: "mdi:wrench",
           title: "Equipment maintenance monitoring",
           description: "Monitor equipment health and predict maintenance needs with IoT.",
         },
@@ -3112,7 +3112,7 @@ export const serviceData = {
           description: "IoT provides comprehensive visibility into assets, patients, and operations.",
         },
         {
-          icon: "material-symbols-light:analytics",
+          icon: "mdi:google-analytics",
           title: "Predictive Analytics",
           description: "Connected data enables predictive insights and proactive management.",
         },
@@ -3147,27 +3147,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Mobile device management for healthcare",
           description: "Manage and secure mobile devices used by healthcare staff.",
         },
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Smart medical device administration",
           description: "Administer and manage smart medical devices across the organization.",
         },
         {
-          icon: "🔒",
+          icon: "mdi:lock",
           title: "IoT device security management",
           description: "Secure and manage IoT devices to prevent security vulnerabilities.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Device lifecycle management",
           description: "Manage the complete lifecycle of devices from procurement to disposal.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Remote device monitoring",
           description: "Monitor device health and performance remotely for proactive maintenance.",
         },
@@ -3197,7 +3197,7 @@ export const serviceData = {
           description: "Managed devices maintain compliance with healthcare regulations.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Improved Reliability",
           description: "Proactive monitoring prevents device failures and downtime.",
         },
@@ -3217,27 +3217,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🩺",
+          icon: "mdi:stethoscope",
           title: "Medical equipment procurement",
           description: "Source and procure medical equipment from reliable vendors.",
         },
         {
-          icon: "💻",
+          icon: "mdi:laptop",
           title: "IT hardware vendor selection",
           description: "Select the best IT hardware vendors for healthcare organizations.",
         },
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Contract negotiation and management",
           description: "Negotiate favorable contracts and manage vendor relationships.",
         },
         {
-          icon: "📅",
+          icon: "mdi:calendar",
           title: "Hardware lifecycle planning",
           description: "Plan for hardware refresh cycles and technology upgrades.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Vendor performance management",
           description: "Monitor and manage vendor performance and service delivery.",
         },
@@ -3257,7 +3257,7 @@ export const serviceData = {
           description: "Professional vendor selection ensures reliable, high-quality equipment.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Proper procurement processes reduce vendor and performance risks.",
         },
@@ -3287,27 +3287,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Pharmaceutical drug formulation",
           description: "Develop safe and effective pharmaceutical drug formulations.",
         },
         {
-          icon: "🌿",
+          icon: "mdi:leaf",
           title: "Nutraceutical product development",
           description: "Create high-quality nutraceutical and dietary supplement products.",
         },
         {
-          icon: "✨",
+          icon: "mdi:sparkles",
           title: "Cosmetic and skincare formulation",
           description: "Formulate innovative cosmetic and skincare products.",
         },
         {
-          icon: "🌱",
+          icon: "mdi:sprout",
           title: "Herbal and natural product development",
           description: "Develop herbal and natural health products with scientific backing.",
         },
         {
-          icon: "🧪",
+          icon: "mdi:test-tube",
           title: "API (Active Pharmaceutical Ingredient) formulation",
           description: "Formulate and develop active pharmaceutical ingredients.",
         },
@@ -3332,7 +3332,7 @@ export const serviceData = {
           description: "Efficient formulation processes reduce time and costs to market.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Rigorous testing ensures product safety, efficacy, and stability.",
         },
@@ -3357,27 +3357,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏭",
+          icon: "mdi:factory",
           title: "Small batch pharmaceutical production",
           description: "Manufacture small batches of pharmaceutical products for testing and trials.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Large-scale drug manufacturing",
           description: "Produce large volumes of pharmaceutical products for commercial distribution.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Contract manufacturing services",
           description: "Provide contract manufacturing services for pharmaceutical companies.",
         },
         {
-          icon: "🏷️",
+          icon: "mdi:tag",
           title: "Private label pharmaceutical production",
           description: "Manufacture private label pharmaceutical products for retailers.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Custom formulation manufacturing",
           description: "Manufacture custom formulations according to specific requirements.",
         },
@@ -3392,7 +3392,7 @@ export const serviceData = {
           description: "Manufacturing facilities meet Good Manufacturing Practice standards.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Rigorous quality control ensures consistent product quality.",
         },
@@ -3427,27 +3427,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🧬",
+          icon: "mdi:dna",
           title: "Custom API synthesis",
           description: "Synthesize custom active pharmaceutical ingredients for specific needs.",
         },
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Generic API development",
           description: "Develop generic APIs for cost-effective pharmaceutical production.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "API sourcing and qualification",
           description: "Source and qualify APIs from reliable suppliers worldwide.",
         },
         {
-          icon: "🚛",
+          icon: "mdi:truck-delivery",
           title: "Supply chain management",
           description: "Manage complete API supply chains for reliable delivery.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Quality assurance and testing",
           description: "Ensure API quality through comprehensive testing and validation.",
         },
@@ -3462,7 +3462,7 @@ export const serviceData = {
           description: "Secure supply chains ensure consistent API availability.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Comprehensive testing ensures API meets all specifications.",
         },
@@ -3497,27 +3497,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🇨🇦",
+          icon: "mdi:flag",
           title: "Health Canada drug submissions",
           description: "Prepare and submit drug applications to Health Canada for approval.",
         },
         {
-          icon: "🇺🇸",
+          icon: "mdi:flag",
           title: "FDA pharmaceutical applications",
           description: "Submit pharmaceutical applications to the US Food and Drug Administration.",
         },
         {
-          icon: "🇪🇺",
+          icon: "mdi:flag",
           title: "European medicines registration",
           description: "Register pharmaceutical products with European regulatory authorities.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "International drug approvals",
           description: "Obtain drug approvals in multiple international markets.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Post-market surveillance support",
           description: "Provide ongoing regulatory support after product approval.",
         },
@@ -3567,27 +3567,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Pharmaceutical product testing",
           description: "Comprehensive testing of pharmaceutical products for quality and safety.",
         },
         {
-          icon: "🧪",
+          icon: "mdi:test-tube",
           title: "Raw material analysis",
           description: "Analyze raw materials to ensure quality and purity standards.",
         },
         {
-          icon: "⏰",
+          icon: "mdi:alarm",
           title: "Stability testing studies",
           description: "Conduct stability studies to determine product shelf life and storage conditions.",
         },
         {
-          icon: "🔬",
+          icon: "mdi:microscope",
           title: "Microbiological testing",
           description: "Test products for microbial contamination and sterility.",
         },
         {
-          icon: "⚠️",
+          icon: "mdi:alert",
           title: "Heavy metals and contaminants analysis",
           description: "Analyze products for heavy metals and other harmful contaminants.",
         },
@@ -3607,12 +3607,12 @@ export const serviceData = {
           description: "Comprehensive testing confirms product safety for consumers.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Consistent testing maintains product quality and efficacy.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Testing identifies potential issues before market release.",
         },
@@ -3637,27 +3637,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Clinical trial support",
           description: "Provide comprehensive support for clinical trial design and execution.",
         },
         {
-          icon: "🧬",
+          icon: "mdi:dna",
           title: "Toxicology studies",
           description: "Conduct toxicology studies to assess product safety profiles.",
         },
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Bioavailability testing",
           description: "Test how effectively active ingredients are absorbed and utilized.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Pharmacokinetic studies",
           description: "Study how drugs are absorbed, distributed, metabolized, and eliminated.",
         },
         {
-          icon: "🛡️",
+          icon: "mdi:shield-check",
           title: "Safety assessment studies",
           description: "Comprehensive safety assessments for pharmaceutical products.",
         },
@@ -3672,12 +3672,12 @@ export const serviceData = {
           description: "Testing data supports regulatory submissions and approvals.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Product Validation",
           description: "Studies confirm product safety and efficacy claims.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Assessment",
           description: "Comprehensive testing identifies potential safety concerns.",
         },
@@ -3707,27 +3707,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏭",
+          icon: "mdi:factory",
           title: "GMP facility certification",
           description: "Help facilities achieve Good Manufacturing Practice certification.",
         },
         {
-          icon: "🔬",
+          icon: "mdi:microscope",
           title: "GLP laboratory accreditation",
           description: "Support laboratories in achieving Good Laboratory Practice accreditation.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Quality system implementation",
           description: "Implement comprehensive quality management systems.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Audit preparation and support",
           description: "Prepare facilities for regulatory audits and inspections.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Continuous compliance monitoring",
           description: "Ongoing monitoring to maintain certification and compliance.",
         },
@@ -3747,7 +3747,7 @@ export const serviceData = {
           description: "Certified facilities can manufacture for global markets.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "GMP/GLP systems ensure consistent quality and reliability.",
         },
@@ -3757,7 +3757,7 @@ export const serviceData = {
           description: "Certifications differentiate from non-certified competitors.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Reduction",
           description: "Systematic approaches reduce quality and compliance risks.",
         },
@@ -3777,27 +3777,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "ISO standard implementation",
           description: "Implement ISO standards for quality management and compliance.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "ICH guideline compliance",
           description: "Ensure compliance with International Council for Harmonisation guidelines.",
         },
         {
-          icon: "🔗",
+          icon: "mdi:link-variant",
           title: "International harmonization",
           description: "Harmonize practices across different international markets.",
         },
         {
-          icon: "🗺️",
+          icon: "mdi:map",
           title: "Multi-country compliance strategy",
           description: "Develop strategies for compliance across multiple countries.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Global quality system alignment",
           description: "Align quality systems with international standards globally.",
         },
@@ -3817,7 +3817,7 @@ export const serviceData = {
           description: "Harmonized systems reduce duplicate compliance efforts.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Consistency",
           description: "International standards ensure consistent quality globally.",
         },
@@ -3847,27 +3847,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏭",
+          icon: "mdi:factory",
           title: "Manufacturing facility design",
           description: "Design efficient manufacturing facilities for pharmaceutical production.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Production line setup",
           description: "Set up complete production lines for pharmaceutical manufacturing.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Process optimization",
           description: "Optimize manufacturing processes for maximum efficiency and quality.",
         },
         {
-          icon: "🔧",
+          icon: "mdi:wrench",
           title: "Equipment selection and validation",
           description: "Select and validate manufacturing equipment for optimal performance.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Workflow design and implementation",
           description: "Design and implement efficient manufacturing workflows.",
         },
@@ -3882,7 +3882,7 @@ export const serviceData = {
           description: "Optimized production processes maximize efficiency and minimize waste.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Proper setup ensures consistent product quality.",
         },
@@ -3917,27 +3917,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Regulatory compliant labeling",
           description: "Create labels that meet all regulatory requirements and standards.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Pharmaceutical packaging design",
           description: "Design professional packaging for pharmaceutical products.",
         },
         {
-          icon: "🔒",
+          icon: "mdi:lock",
           title: "Anti-counterfeiting measures",
           description: "Implement advanced security features to prevent counterfeiting.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "Multi-language labeling",
           description: "Create labels in multiple languages for global distribution.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Serialization and track-and-trace",
           description: "Implement serialization for complete product traceability.",
         },
@@ -3987,27 +3987,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏗️",
+          icon: "mdi:crane",
           title: "Turnkey manufacturing facility setup",
           description: "Complete turnkey setup of manufacturing facilities from design to operation.",
         },
         {
-          icon: "🔧",
+          icon: "mdi:wrench",
           title: "Equipment procurement and installation",
           description: "Source, procure, and install all necessary manufacturing equipment.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Staff training and certification",
           description: "Train and certify staff for pharmaceutical manufacturing operations.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Regulatory approval support",
           description: "Support regulatory approval processes for manufacturing facilities.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Technology transfer services",
           description: "Transfer manufacturing technology and processes to new facilities.",
         },
@@ -4032,7 +4032,7 @@ export const serviceData = {
           description: "Comprehensive packages reduce overall setup costs.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Professional setup ensures manufacturing quality from start.",
         },
@@ -4057,27 +4057,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Raw material sourcing and procurement",
           description: "Source and procure high-quality raw materials for pharmaceutical production.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Vendor qualification and management",
           description: "Qualify and manage suppliers to ensure consistent quality and delivery.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Inventory optimization",
           description: "Optimize inventory levels to balance cost and availability.",
         },
         {
-          icon: "🚛",
+          icon: "mdi:truck-delivery",
           title: "Distribution network design",
           description: "Design efficient distribution networks for global reach.",
         },
         {
-          icon: "❄️",
+          icon: "mdi:snowflake",
           title: "Cold chain logistics",
           description: "Manage temperature-controlled logistics for sensitive products.",
         },
@@ -4097,12 +4097,12 @@ export const serviceData = {
           description: "Strategic sourcing and inventory management reduce costs.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Vendor qualification ensures consistent material quality.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Diversified supply chains reduce supply disruption risks.",
         },
@@ -4127,27 +4127,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Electronic health record implementation",
           description: "Implement and optimize EHR systems for medical centers.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Practice management optimization",
           description: "Optimize practice management systems for efficiency and profitability.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Patient engagement platforms",
           description: "Develop platforms to enhance patient engagement and satisfaction.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Clinical workflow automation",
           description: "Automate clinical workflows to improve efficiency and reduce errors.",
         },
         {
-          icon: "💰",
+          icon: "mdi:currency-usd",
           title: "Revenue cycle management",
           description: "Optimize billing and revenue cycle management processes.",
         },
@@ -4197,27 +4197,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🌿",
+          icon: "mdi:leaf",
           title: "Natural health product development",
           description: "Develop natural health products with scientific backing.",
         },
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Wellness product formulation",
           description: "Formulate effective wellness products for various health needs.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Regulatory approval support",
           description: "Support regulatory approval processes for health products.",
         },
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Market entry strategy",
           description: "Develop comprehensive market entry strategies for wellness products.",
         },
         {
-          icon: "🏷️",
+          icon: "mdi:tag",
           title: "Brand development and marketing",
           description: "Create strong brands and marketing strategies for wellness products.",
         },
@@ -4237,7 +4237,7 @@ export const serviceData = {
           description: "Professional support ensures compliance with health product regulations.",
         },
         {
-          icon: "material-symbols-light:rocket-launch",
+          icon: "mdi:rocket-launch",
           title: "Market Success",
           description: "Strategic planning and marketing support accelerate market penetration.",
         },
@@ -4267,27 +4267,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "✨",
+          icon: "mdi:sparkles",
           title: "Cosmetic product formulation",
           description: "Formulate innovative cosmetic products for beauty and personal care.",
         },
         {
-          icon: "🧴",
+          icon: "mdi:bottle-tonic",
           title: "Skincare product development",
           description: "Develop effective skincare products for various skin types and concerns.",
         },
         {
-          icon: "💇",
+          icon: "mdi:content-cut",
           title: "Haircare product innovation",
           description: "Create innovative haircare products for different hair types and needs.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Regulatory compliance for cosmetics",
           description: "Ensure compliance with cosmetic regulations and safety standards.",
         },
         {
-          icon: "🎨",
+          icon: "mdi:palette",
           title: "Beauty brand development",
           description: "Develop comprehensive beauty brands from concept to market.",
         },
@@ -4312,12 +4312,12 @@ export const serviceData = {
           description: "Unique formulations and branding create competitive advantages.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Quality Assurance",
           description: "Rigorous testing ensures product safety and efficacy.",
         },
         {
-          icon: "material-symbols-light:rocket-launch",
+          icon: "mdi:rocket-launch",
           title: "Brand Success",
           description: "Comprehensive support from formulation to market launch.",
         },
@@ -4337,27 +4337,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "💊",
+          icon: "mdi:pill",
           title: "Supplement formulation and development",
           description: "Formulate and develop effective dietary supplements.",
         },
         {
-          icon: "🧬",
+          icon: "mdi:dna",
           title: "Nutraceutical product innovation",
           description: "Create innovative nutraceutical products with health benefits.",
         },
         {
-          icon: "🇨🇦",
+          icon: "mdi:flag",
           title: "Health Canada NHP licensing",
           description: "Support Health Canada Natural Health Product licensing process.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Clinical trial support",
           description: "Provide support for clinical trials and efficacy studies.",
         },
         {
-          icon: "🏷️",
+          icon: "mdi:tag",
           title: "Supplement brand development",
           description: "Develop comprehensive supplement brands and marketing strategies.",
         },
@@ -4407,27 +4407,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Business plan development",
           description: "Develop comprehensive business plans for healthcare startups.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Market validation and research",
           description: "Validate market opportunities through thorough research and analysis.",
         },
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Startup strategy consulting",
           description: "Provide strategic consulting for healthcare startup development.",
         },
         {
-          icon: "💰",
+          icon: "mdi:currency-usd",
           title: "Funding and investment preparation",
           description: "Prepare startups for funding rounds and investment opportunities.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory planning for healthcare startups",
           description: "Plan regulatory compliance strategies for healthcare ventures.",
         },
@@ -4437,7 +4437,7 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Reduced Failure Risk",
           description: "Expert guidance helps avoid common startup mistakes.",
         },
@@ -4477,27 +4477,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👤",
+          icon: "mdi:account",
           title: "One-on-one entrepreneur mentoring",
           description: "Provide personalized mentoring for individual entrepreneurs.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Group mentorship sessions",
           description: "Facilitate group mentoring sessions for peer learning.",
         },
         {
-          icon: "🎓",
+          icon: "mdi:school",
           title: "Industry expert advisory panels",
           description: "Connect entrepreneurs with industry expert advisory panels.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Peer networking opportunities",
           description: "Create networking opportunities among entrepreneur peers.",
         },
         {
-          icon: "📚",
+          icon: "mdi:bookshelf",
           title: "Skill development workshops",
           description: "Conduct workshops to develop entrepreneurial skills.",
         },
@@ -4547,27 +4547,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Business plan and pitch deck development",
           description: "Develop compelling business plans and pitch decks for investors.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Financial modeling and projections",
           description: "Create detailed financial models and growth projections.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Due diligence preparation",
           description: "Prepare comprehensive due diligence materials for investors.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Investor network introductions",
           description: "Connect startups with relevant healthcare investors.",
         },
         {
-          icon: "💼",
+          icon: "mdi:briefcase",
           title: "Valuation analysis and negotiation support",
           description: "Provide valuation analysis and negotiation support for funding rounds.",
         },
@@ -4577,7 +4577,7 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Investment Readiness",
           description: "Professional preparation increases chances of securing funding.",
         },
@@ -4617,27 +4617,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Comprehensive business plan writing",
           description: "Write detailed business plans for healthcare and pharmaceutical ventures.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Financial modeling and projections",
           description: "Develop financial models and growth projections for business plans.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Market analysis and competitive research",
           description: "Conduct thorough market analysis and competitive research.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory strategy development",
           description: "Develop regulatory strategies for healthcare business plans.",
         },
         {
-          icon: "🚀",
+          icon: "mdi:rocket-launch",
           title: "Go-to-market planning",
           description: "Create comprehensive go-to-market strategies and plans.",
         },
@@ -4657,7 +4657,7 @@ export const serviceData = {
           description: "High-quality business plans attract investors and partners.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Thorough planning identifies and addresses potential challenges.",
         },
@@ -4667,7 +4667,7 @@ export const serviceData = {
           description: "Clear plans guide efficient resource allocation and priorities.",
         },
         {
-          icon: "material-symbols-light:analytics",
+          icon: "mdi:google-analytics",
           title: "Performance Measurement",
           description: "Detailed plans provide benchmarks for tracking progress.",
         },
@@ -4687,27 +4687,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "⭐",
+          icon: "mdi:star",
           title: "Influencer brand development",
           description: "Develop strong personal brands for healthcare and wellness influencers.",
         },
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Content strategy and creation",
           description: "Create comprehensive content strategies and high-quality content.",
         },
         {
-          icon: "💰",
+          icon: "mdi:currency-usd",
           title: "Monetization strategy development",
           description: "Develop multiple revenue streams for influencer businesses.",
         },
         {
-          icon: "🚀",
+          icon: "mdi:rocket-launch",
           title: "Product development and launches",
           description: "Support product development and successful product launches.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Compliance and regulatory guidance",
           description: "Ensure compliance with healthcare and advertising regulations.",
         },
@@ -4737,7 +4737,7 @@ export const serviceData = {
           description: "Strategic planning enables sustainable business expansion.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Management",
           description: "Compliance guidance protects against regulatory and legal issues.",
         },
@@ -4757,27 +4757,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Personal brand strategy development",
           description: "Develop comprehensive personal brand strategies for healthcare professionals.",
         },
         {
-          icon: "🌐",
+          icon: "mdi:web",
           title: "Professional website and portfolio creation",
           description: "Create professional websites and portfolios to showcase expertise.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Social media presence optimization",
           description: "Optimize social media presence across all relevant platforms.",
         },
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Content development and management",
           description: "Develop and manage high-quality content for personal brands.",
         },
         {
-          icon: "🎓",
+          icon: "mdi:school",
           title: "Thought leadership positioning",
           description: "Position professionals as thought leaders in their fields.",
         },
@@ -4827,27 +4827,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Platform-specific content strategies",
           description: "Develop tailored content strategies for each social media platform.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Audience growth and engagement tactics",
           description: "Implement strategies to grow followers and increase engagement.",
         },
         {
-          icon: "📅",
+          icon: "mdi:calendar",
           title: "Content calendar development",
           description: "Create comprehensive content calendars for consistent posting.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Influencer collaboration strategies",
           description: "Develop strategies for effective influencer collaborations.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance analytics and optimization",
           description: "Analyze performance and optimize strategies for better results.",
         },
@@ -4897,27 +4897,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🚀",
+          icon: "mdi:rocket-launch",
           title: "Product development and launches",
           description: "Develop and launch products that align with personal brands.",
         },
         {
-          icon: "📚",
+          icon: "mdi:bookshelf",
           title: "Course and educational content creation",
           description: "Create educational courses and content for monetization.",
         },
         {
-          icon: "🔗",
+          icon: "mdi:link-variant",
           title: "Affiliate marketing strategies",
           description: "Develop effective affiliate marketing strategies and partnerships.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Sponsored content and partnerships",
           description: "Secure and manage sponsored content and brand partnerships.",
         },
         {
-          icon: "💼",
+          icon: "mdi:briefcase",
           title: "Consulting and coaching services",
           description: "Develop consulting and coaching services for monetization.",
         },
@@ -4947,7 +4947,7 @@ export const serviceData = {
           description: "Monetization strategies position influencers as business professionals.",
         },
         {
-          icon: "material-symbols-light:check-circle",
+          icon: "mdi:check-circle",
           title: "Long-term Sustainability",
           description: "Diversified income creates sustainable long-term businesses.",
         },
@@ -4967,27 +4967,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🎨",
+          icon: "mdi:palette",
           title: "Logo design and visual identity",
           description: "Create distinctive logos and comprehensive visual identity systems.",
         },
         {
-          icon: "💬",
+          icon: "mdi:message",
           title: "Brand messaging and positioning",
           description: "Develop compelling brand messaging and positioning strategies.",
         },
         {
-          icon: "🎨",
+          icon: "mdi:palette",
           title: "Color palette and typography selection",
           description: "Select appropriate colors and typography that reflect brand personality.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Brand guidelines and standards",
           description: "Create comprehensive brand guidelines for consistent application.",
         },
         {
-          icon: "📄",
+          icon: "mdi:file-document-outline",
           title: "Brand application across all materials",
           description: "Apply brand identity consistently across all marketing materials.",
         },
@@ -5037,27 +5037,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Brand strategy development",
           description: "Develop comprehensive brand strategies for healthcare companies.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Marketing compliance review",
           description: "Review all marketing materials for regulatory compliance.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory-compliant messaging",
           description: "Create messaging that meets healthcare regulatory requirements.",
         },
         {
-          icon: "🚀",
+          icon: "mdi:rocket-launch",
           title: "Brand launch campaigns",
           description: "Execute compliant brand launch campaigns for healthcare products.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Ongoing brand management",
           description: "Provide ongoing brand management with compliance oversight.",
         },
@@ -5072,7 +5072,7 @@ export const serviceData = {
           description: "All branding meets healthcare and pharmaceutical regulatory requirements.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Compliance review prevents costly marketing violations.",
         },
@@ -5107,27 +5107,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🎨",
+          icon: "mdi:palette",
           title: "Logo design and development",
           description: "Create professional logos that represent healthcare brands effectively.",
         },
         {
-          icon: "🖼️",
+          icon: "mdi:image-frame",
           title: "Visual identity system creation",
           description: "Develop comprehensive visual identity systems for consistent branding.",
         },
         {
-          icon: "🎨",
+          icon: "mdi:palette",
           title: "Brand color and typography selection",
           description: "Select colors and typography that convey trust and professionalism.",
         },
         {
-          icon: "💳",
+          icon: "mdi:credit-card",
           title: "Business card and stationery design",
           description: "Design professional business cards and stationery materials.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Digital and print application design",
           description: "Apply visual identity across digital and print applications.",
         },
@@ -5177,27 +5177,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Competitive analysis and positioning",
           description: "Analyze competitors and develop unique positioning strategies.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Target audience research and profiling",
           description: "Research and profile target audiences for precise positioning.",
         },
         {
-          icon: "💡",
+          icon: "mdi:lightbulb",
           title: "Unique value proposition development",
           description: "Develop compelling unique value propositions for healthcare brands.",
         },
         {
-          icon: "💬",
+          icon: "mdi:message",
           title: "Brand messaging framework",
           description: "Create comprehensive brand messaging frameworks.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Market positioning validation",
           description: "Validate positioning strategies through market research and testing.",
         },
@@ -5247,27 +5247,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Growth opportunity analysis",
           description: "Identify and analyze growth opportunities for healthcare businesses.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "Market expansion strategies",
           description: "Develop strategies for expanding into new markets and segments.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Product line extension planning",
           description: "Plan and execute product line extensions for growth.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Partnership and acquisition strategies",
           description: "Develop strategies for partnerships and acquisitions to drive growth.",
         },
         {
-          icon: "💻",
+          icon: "mdi:laptop",
           title: "Digital transformation for growth",
           description: "Leverage digital transformation to accelerate business growth.",
         },
@@ -5317,27 +5317,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Market research and analysis",
           description: "Conduct comprehensive market research for new market entry.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory requirements assessment",
           description: "Assess regulatory requirements for entering new markets.",
         },
         {
-          icon: "🎯",
+          icon: "mdi:target",
           title: "Go-to-market strategy development",
           description: "Develop comprehensive go-to-market strategies for new markets.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Local partnership identification",
           description: "Identify and evaluate local partnership opportunities.",
         },
         {
-          icon: "🚀",
+          icon: "mdi:rocket-launch",
           title: "Launch campaign planning and execution",
           description: "Plan and execute market launch campaigns for new markets.",
         },
@@ -5347,7 +5347,7 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Reduced Market Risk",
           description: "Thorough research and planning minimize entry risks.",
         },
@@ -5362,7 +5362,7 @@ export const serviceData = {
           description: "Expert guidance ensures compliance in new markets.",
         },
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Local Market Understanding",
           description: "Research provides insights into local customer needs and preferences.",
         },
@@ -5387,27 +5387,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Partnership opportunity identification",
           description: "Identify strategic partnership opportunities for healthcare companies.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Partner evaluation and due diligence",
           description: "Evaluate potential partners through comprehensive due diligence.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Partnership negotiation and structuring",
           description: "Negotiate and structure beneficial partnership agreements.",
         },
         {
-          icon: "🏢",
+          icon: "mdi:office-building",
           title: "Joint venture development",
           description: "Develop and structure joint ventures for mutual growth.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Strategic alliance management",
           description: "Manage ongoing strategic alliances for maximum benefit.",
         },
@@ -5437,7 +5437,7 @@ export const serviceData = {
           description: "Partnerships provide access to complementary technologies and expertise.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Shared risks and resources reduce individual company exposure.",
         },
@@ -5457,27 +5457,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "International market research",
           description: "Conduct comprehensive research for international market entry.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory compliance across countries",
           description: "Ensure compliance with regulations across multiple countries.",
         },
         {
-          icon: "🚛",
+          icon: "mdi:truck-delivery",
           title: "Distribution network development",
           description: "Develop distribution networks for international markets.",
         },
         {
-          icon: "🌐",
+          icon: "mdi:web",
           title: "Cultural adaptation strategies",
           description: "Develop strategies for cultural adaptation in new markets.",
         },
         {
-          icon: "📢",
+          icon: "mdi:bullhorn",
           title: "International marketing and branding",
           description: "Create international marketing and branding strategies.",
         },
@@ -5502,7 +5502,7 @@ export const serviceData = {
           description: "Local market knowledge improves acceptance and success.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Professional planning reduces international expansion risks.",
         },
@@ -5527,27 +5527,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏪",
+          icon: "mdi:store",
           title: "Amazon seller account setup and optimization",
           description: "Set up and optimize Amazon seller accounts for healthcare products.",
         },
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "Product listing creation and optimization",
           description: "Create and optimize product listings for maximum visibility and sales.",
         },
         {
-          icon: "📢",
+          icon: "mdi:bullhorn",
           title: "Amazon advertising campaigns management",
           description: "Manage Amazon advertising campaigns to drive traffic and sales.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Inventory management and fulfillment",
           description: "Manage inventory and fulfillment processes for Amazon sales.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance monitoring and optimization",
           description: "Monitor performance and optimize for better results.",
         },
@@ -5597,27 +5597,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🏪",
+          icon: "mdi:store",
           title: "Walmart marketplace account setup",
           description: "Set up Walmart marketplace accounts for healthcare product sellers.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Product catalog integration",
           description: "Integrate product catalogs with Walmart marketplace systems.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Inventory synchronization",
           description: "Synchronize inventory across Walmart marketplace and other systems.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Order management automation",
           description: "Automate order management processes for Walmart marketplace.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance analytics and optimization",
           description: "Analyze performance and optimize Walmart marketplace operations.",
         },
@@ -5667,27 +5667,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Multi-platform inventory synchronization",
           description: "Synchronize inventory across multiple e-commerce platforms.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Unified order management system",
           description: "Manage orders from all platforms through a unified system.",
         },
         {
-          icon: "📢",
+          icon: "mdi:bullhorn",
           title: "Cross-platform advertising coordination",
           description: "Coordinate advertising campaigns across multiple platforms.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance analytics across all platforms",
           description: "Analyze performance metrics across all marketplace platforms.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Integrated customer service management",
           description: "Manage customer service across all marketplace platforms.",
         },
@@ -5712,7 +5712,7 @@ export const serviceData = {
           description: "Strategic platform management maximizes revenue across all channels.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Diversified presence reduces dependence on single platforms.",
         },
@@ -5737,27 +5737,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🛒",
+          icon: "mdi:cart",
           title: "E-commerce platform selection and setup",
           description: "Select and set up appropriate e-commerce platforms for healthcare businesses.",
         },
         {
-          icon: "💳",
+          icon: "mdi:credit-card",
           title: "Payment gateway integration",
           description: "Integrate secure payment gateways for healthcare e-commerce.",
         },
         {
-          icon: "🚚",
+          icon: "mdi:truck",
           title: "Shipping and logistics integration",
           description: "Integrate shipping and logistics systems for order fulfillment.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Inventory management system setup",
           description: "Set up comprehensive inventory management systems.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Customer relationship management integration",
           description: "Integrate CRM systems for customer relationship management.",
         },
@@ -5807,27 +5807,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Direct-to-consumer channel development",
           description: "Develop and establish direct-to-consumer sales channels for healthcare products.",
         },
         {
-          icon: "🏢",
+          icon: "mdi:office-building",
           title: "B2B sales channel establishment",
           description: "Establish business-to-business sales channels for healthcare companies.",
         },
         {
-          icon: "🏪",
+          icon: "mdi:store",
           title: "Retail partnership channel setup",
           description: "Set up retail partnership channels for healthcare product distribution.",
         },
         {
-          icon: "🛒",
+          icon: "mdi:cart",
           title: "Online marketplace channel optimization",
           description: "Optimize online marketplace channels for maximum sales performance.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "International sales channel development",
           description: "Develop international sales channels for global market expansion.",
         },
@@ -5852,7 +5852,7 @@ export const serviceData = {
           description: "Multiple channels accelerate overall business growth.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Diversified channels reduce dependence on single revenue sources.",
         },
@@ -5877,27 +5877,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Channel performance analysis and optimization",
           description: "Analyze and optimize existing sales channel performance.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Sales process improvement",
           description: "Improve sales processes across all channels for better efficiency.",
         },
         {
-          icon: "🛤️",
+          icon: "mdi:train",
           title: "Customer journey optimization",
           description: "Optimize customer journey across all sales channels.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Conversion rate improvement",
           description: "Improve conversion rates across all sales channels.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Channel partner relationship management",
           description: "Manage and optimize relationships with channel partners.",
         },
@@ -5947,27 +5947,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Sales performance dashboard development",
           description: "Develop comprehensive sales performance dashboards for real-time insights.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Customer behavior analysis",
           description: "Analyze customer behavior patterns to improve sales strategies.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Revenue forecasting and projection",
           description: "Create accurate revenue forecasting and projection models.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Channel performance comparison",
           description: "Compare performance across different sales channels.",
         },
         {
-          icon: "💰",
+          icon: "mdi:currency-usd",
           title: "ROI measurement and optimization",
           description: "Measure and optimize return on investment for sales activities.",
         },
@@ -5977,7 +5977,7 @@ export const serviceData = {
       heading: "How It's Benefitted Our Clients:",
       features: [
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Data-Driven Decisions",
           description: "Comprehensive analytics enable informed strategic decisions.",
         },
@@ -6017,27 +6017,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Real-time inventory synchronization across channels",
           description: "Synchronize inventory in real-time across all sales channels.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Automated reorder point management",
           description: "Automate reorder point management to prevent stockouts.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Demand forecasting and planning",
           description: "Forecast demand and plan inventory accordingly.",
         },
         {
-          icon: "🧠",
+          icon: "mdi:brain",
           title: "Inventory optimization algorithms",
           description: "Use advanced algorithms to optimize inventory levels.",
         },
         {
-          icon: "🔔",
+          icon: "mdi:bell",
           title: "Stock level monitoring and alerts",
           description: "Monitor stock levels and send alerts when needed.",
         },
@@ -6087,27 +6087,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Automated order processing systems",
           description: "Set up automated order processing systems for efficient fulfillment.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Pick, pack, and ship optimization",
           description: "Optimize pick, pack, and ship processes for maximum efficiency.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Quality control and verification processes",
           description: "Implement quality control and verification processes for accuracy.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Return and exchange management",
           description: "Manage returns and exchanges efficiently and professionally.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Customer notification automation",
           description: "Automate customer notifications throughout the fulfillment process.",
         },
@@ -6157,27 +6157,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🌡️",
+          icon: "mdi:thermometer",
           title: "Temperature-controlled storage facilities",
           description: "Provide temperature-controlled storage for sensitive healthcare products.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Inventory management and tracking",
           description: "Implement comprehensive inventory management and tracking systems.",
         },
         {
-          icon: "🔒",
+          icon: "mdi:lock",
           title: "Security and compliance monitoring",
           description: "Ensure security and compliance monitoring for healthcare products.",
         },
         {
-          icon: "📦",
+          icon: "mdi:package-variant",
           title: "Pick and pack services",
           description: "Provide professional pick and pack services for order fulfillment.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Quality control and inspection",
           description: "Conduct quality control and inspection processes for stored products.",
         },
@@ -6207,7 +6207,7 @@ export const serviceData = {
           description: "Flexible warehousing accommodates seasonal and growth variations.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Secure, monitored storage protects valuable inventory.",
         },
@@ -6227,27 +6227,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🚚",
+          icon: "mdi:truck",
           title: "Carrier selection and negotiation",
           description: "Select and negotiate with carriers for optimal shipping solutions.",
         },
         {
-          icon: "🗺️",
+          icon: "mdi:map",
           title: "Shipping zone optimization",
           description: "Optimize shipping zones for cost-effective and efficient delivery.",
         },
         {
-          icon: "🌡️",
+          icon: "mdi:thermometer",
           title: "Temperature-controlled shipping setup",
           description: "Set up temperature-controlled shipping for sensitive products.",
         },
         {
-          icon: "🌍",
+          icon: "mdi:earth",
           title: "International shipping compliance",
           description: "Ensure compliance with international shipping regulations.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Tracking and delivery confirmation",
           description: "Implement tracking and delivery confirmation systems.",
         },
@@ -6297,27 +6297,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Supplier network development and management",
           description: "Develop and manage a network of reliable suppliers for dropshipping.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Automated order routing and processing",
           description: "Automate order routing and processing for efficient fulfillment.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Quality control and vendor management",
           description: "Implement quality control and vendor management processes.",
         },
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Customer service coordination",
           description: "Coordinate customer service across the dropshipping network.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance monitoring and optimization",
           description: "Monitor and optimize dropshipping performance continuously.",
         },
@@ -6342,7 +6342,7 @@ export const serviceData = {
           description: "Easy addition of products and suppliers supports growth.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Reduction",
           description: "Reduced inventory risk and lower operational overhead.",
         },
@@ -6367,27 +6367,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Product content optimization across platforms",
           description: "Optimize product content for maximum visibility across all digital platforms.",
         },
         {
-          icon: "🛍️",
+          icon: "mdi:shopping",
           title: "Digital merchandising and presentation",
           description: "Create compelling digital merchandising and product presentation strategies.",
         },
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Search visibility optimization",
           description: "Optimize search visibility to improve product discoverability.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Competitive analysis and positioning",
           description: "Analyze competitors and position products for maximum advantage.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Performance monitoring and improvement",
           description: "Monitor performance and continuously improve digital shelf presence.",
         },
@@ -6437,27 +6437,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📝",
+          icon: "mdi:file-document",
           title: "SEO-optimized product descriptions",
           description: "Create SEO-optimized product descriptions for better search visibility.",
         },
         {
-          icon: "📸",
+          icon: "mdi:camera-burst",
           title: "High-quality product photography",
           description: "Provide professional product photography for compelling listings.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Detailed specification cataloging",
           description: "Create detailed product specifications and catalog information.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Regulatory compliance information",
           description: "Include proper regulatory compliance information in product listings.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Multi-platform listing synchronization",
           description: "Synchronize product listings across multiple platforms automatically.",
         },
@@ -6507,27 +6507,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Real-time inventory tracking and management",
           description: "Implement real-time inventory tracking and management systems.",
         },
         {
-          icon: "⚙️",
+          icon: "mdi:cog",
           title: "Automated order processing and fulfillment",
           description: "Automate order processing and fulfillment for efficiency.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Multi-channel inventory synchronization",
           description: "Synchronize inventory across multiple sales channels.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Demand forecasting and planning",
           description: "Forecast demand and plan inventory accordingly.",
         },
         {
-          icon: "⚠️",
+          icon: "mdi:alert",
           title: "Exception handling and problem resolution",
           description: "Handle exceptions and resolve problems in inventory and orders.",
         },
@@ -6557,7 +6557,7 @@ export const serviceData = {
           description: "Systems grow with business without proportional complexity increases.",
         },
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Data-Driven Insights",
           description: "Integrated systems provide valuable business intelligence.",
         },
@@ -6577,27 +6577,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🌐",
+          icon: "mdi:web",
           title: "Partner portal development and management",
           description: "Develop and manage partner portals for seamless collaboration.",
         },
         {
-          icon: "🎓",
+          icon: "mdi:school",
           title: "Sales training and certification programs",
           description: "Create comprehensive sales training and certification programs.",
         },
         {
-          icon: "📢",
+          icon: "mdi:bullhorn",
           title: "Marketing resource development",
           description: "Develop marketing resources and materials for partners.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance monitoring and support",
           description: "Monitor partner performance and provide ongoing support.",
         },
         {
-          icon: "🎁",
+          icon: "mdi:gift",
           title: "Incentive program design and management",
           description: "Design and manage incentive programs to motivate partners.",
         },
@@ -6647,27 +6647,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🔍",
+          icon: "mdi:magnify",
           title: "Regional distributor identification and evaluation",
           description: "Identify and evaluate regional distributors for healthcare products.",
         },
         {
-          icon: "🤝",
+          icon: "mdi:handshake",
           title: "Distribution agreement negotiation",
           description: "Negotiate distribution agreements with local partners.",
         },
         {
-          icon: "📜",
+          icon: "mdi:script-text",
           title: "Local market compliance and regulations",
           description: "Ensure compliance with local market regulations and requirements.",
         },
         {
-          icon: "🗺️",
+          icon: "mdi:map",
           title: "Territory management and optimization",
           description: "Manage and optimize distribution territories for maximum coverage.",
         },
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Performance monitoring and support",
           description: "Monitor distributor performance and provide ongoing support.",
         },
@@ -6692,7 +6692,7 @@ export const serviceData = {
           description: "Regional distribution enables faster customer delivery.",
         },
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Market Knowledge",
           description: "Local distributors provide valuable market insights.",
         },
@@ -6717,27 +6717,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "👥",
+          icon: "mdi:account-group",
           title: "Wholesale distributor recruitment and qualification",
           description: "Recruit and qualify wholesale distributors for healthcare products.",
         },
         {
-          icon: "📋",
+          icon: "mdi:clipboard-text",
           title: "Distribution agreement development",
           description: "Develop comprehensive distribution agreements with wholesale partners.",
         },
         {
-          icon: "💰",
+          icon: "mdi:currency-usd",
           title: "Pricing strategy and margin management",
           description: "Develop pricing strategies and manage margins for wholesale distribution.",
         },
         {
-          icon: "🛡️",
+          icon: "mdi:shield-check",
           title: "Territory protection and conflict resolution",
           description: "Protect territories and resolve conflicts in wholesale distribution.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Performance measurement and optimization",
           description: "Measure and optimize wholesale distributor performance.",
         },
@@ -6762,12 +6762,12 @@ export const serviceData = {
           description: "Wholesale distribution reduces direct sales costs.",
         },
         {
-          icon: "material-symbols-light:insights",
+          icon: "mdi:chart-line",
           title: "Market Intelligence",
           description: "Distributors provide valuable market feedback and insights.",
         },
         {
-          icon: "material-symbols-light:warning",
+          icon: "mdi:alert",
           title: "Risk Mitigation",
           description: "Diversified distribution reduces market risk.",
         },
@@ -6787,27 +6787,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "📊",
+          icon: "mdi:chart-bar",
           title: "Channel strategy development and design",
           description: "Develop comprehensive distribution channel strategies and designs.",
         },
         {
-          icon: "🏗️",
+          icon: "mdi:crane",
           title: "Multi-tier distribution structure",
           description: "Design multi-tier distribution structures for optimal market coverage.",
         },
         {
-          icon: "⚖️",
+          icon: "mdi:scale-balance",
           title: "Channel conflict resolution systems",
           description: "Implement systems to resolve conflicts in distribution channels.",
         },
         {
-          icon: "📈",
+          icon: "mdi:trending-up",
           title: "Performance measurement frameworks",
           description: "Develop frameworks for measuring distribution channel performance.",
         },
         {
-          icon: "🔄",
+          icon: "mdi:refresh",
           title: "Continuous optimization processes",
           description: "Implement continuous optimization processes for distribution channels.",
         },
@@ -6857,27 +6857,27 @@ export const serviceData = {
       heading: "How We Can Help You To Offer And Build:",
       cards: [
         {
-          icon: "🚚",
+          icon: "mdi:truck",
           title: "Last-mile delivery network development",
           description: "Develop comprehensive last-mile delivery networks for healthcare products.",
         },
         {
-          icon: "🗺️",
+          icon: "mdi:map",
           title: "Route optimization and planning",
           description: "Optimize delivery routes and plan efficient last-mile delivery.",
         },
         {
-          icon: "🌡️",
+          icon: "mdi:thermometer",
           title: "Temperature-controlled delivery options",
           description: "Provide temperature-controlled delivery options for sensitive products.",
         },
         {
-          icon: "📱",
+          icon: "mdi:cellphone",
           title: "Real-time tracking and communication",
           description: "Implement real-time tracking and communication for delivery updates.",
         },
         {
-          icon: "✅",
+          icon: "mdi:check-circle",
           title: "Quality assurance and compliance",
           description: "Ensure quality assurance and compliance in last-mile delivery.",
         },

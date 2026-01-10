@@ -1,11 +1,24 @@
+import Head from "next/head";
+import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import { serviceSchema, injectSchema } from "@/utils/structuredData";
 import Banner from "@/components/Banner";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { rpaBenefits } from "@/static/rpaData";
 
 const RPA = () => {
+  useScrollAnimation('fade-in-up', 0.1);
+  const rpaSchema = serviceSchema('Robotic Process Automation (RPA)', 'Automate repetitive tasks with RPA solutions. Increase efficiency, reduce errors, and save costs.');
+
   return (
     <>
+      <Head>
+        <title>Robotic Process Automation (RPA) - VTech</title>
+        <meta name="description" content="Automate repetitive tasks with RPA solutions. Increase efficiency, reduce errors, and save costs with VTech's robotic process automation services." />
+        <meta name="keywords" content="RPA, robotic process automation, business automation, workflow automation" />
+        {injectSchema(rpaSchema)}
+      </Head>
       <Banner
         title={"Robotic Process Automation (RPA)"}
         description={"Lorem ipsum dolor sit amet consectetur adipisicing elit"}
@@ -30,9 +43,9 @@ const RPA = () => {
             repetitive tasks. An RPA software robot never sleeps and makes zero
             mistakes.
           </p>
-          <button className="bg-[#415A77] text-white font-semibold py-3 px-8 rounded-lg transition">
+          <Link href="/contact" className="inline-block bg-primary-500 hover:bg-primary-600 text-white font-semibold py-3 px-8 rounded-lg transition">
             Discover
-          </button>
+          </Link>
         </div>
         <img
           src="/images/bg-3.jpg"
@@ -58,7 +71,7 @@ const RPA = () => {
               <p className="text-[14px] xl:text-base text-gray-600 mb-4 xl:mb-6">
                 {benefit.description}
               </p>
-              <span className="flex items-center text-[#415A77] font-semibold cursor-pointer hover:underline">
+              <Link href="/contact" className="flex items-center text-primary-500 font-semibold cursor-pointer hover:underline">
                 Explore{" "}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +87,7 @@ const RPA = () => {
                     d="M17.25 6.75L21 12m0 0l-3.75 5.25M21 12H3"
                   />
                 </svg>
-              </span>
+              </Link>
             </div>
           ))}
         </div>
@@ -187,9 +200,9 @@ const RPA = () => {
 
           {/* Right Side: Button */}
           <div className="flex-shrink-0">
-            <button className="bg-white text-[#415A77] hover:bg-gray-100 font-semibold py-3 xl:py-4 px-6 xl:px-8 rounded-lg transition-colors text-[14px] xl:text-base">
+            <Link href="/contact" className="inline-block bg-white text-primary-500 hover:bg-gray-100 font-semibold py-3 xl:py-4 px-6 xl:px-8 rounded-lg transition-colors text-[14px] xl:text-base">
               Setup a Free Meeting
-            </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -121,7 +121,7 @@ const Header = () => {
                 {item.name}
               </Link>
               {item.hasDropdown && (
-                <button onClick={toggleServicesDropdown} className="focus:outline-none text-[#e0e1dd] flex items-center" aria-label="Toggle services menu">
+                <button onClick={toggleServicesDropdown} className="focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded text-[#e0e1dd] flex items-center" aria-label="Toggle services menu">
                   <MdKeyboardArrowDown size={20} className={`transition-transform duration-300 ${showServicesDropdown ? "rotate-180" : ""}`} />
                 </button>
               )}
@@ -129,25 +129,23 @@ const Header = () => {
             <div className="absolute bottom-[-4px] left-0 h-[2px] bg-[#e0e1dd] w-0 group-hover:w-full transition-all duration-300 ease-out" />
             {item.hasDropdown && (
               <div
-                className={`absolute top-full left-0 mt-4 w-screen max-w-6xl bg-white rounded-[25px] shadow-lg py-6 z-50 transition-all duration-300 ${
-                  showServicesDropdown ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
-                }`}
+                className={`absolute top-full left-0 mt-4 w-screen max-w-6xl bg-white rounded-[25px] shadow-lg py-6 z-50 transition-all duration-300 ${showServicesDropdown ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2 pointer-events-none"
+                  }`}
                 style={{ left: "50%", transform: "translateX(-50%)" }}
                 onMouseEnter={() => setShowServicesDropdown(true)}
                 onMouseLeave={() => setShowServicesDropdown(false)}
               >
                 <div className="flex h-auto">
                   {/* Level 1: Categories */}
-                  <div className="w-1/3 border-r border-[#415a77]/30">
+                  <div className="w-1/3 border-r border-primary-500/30">
                     <div className="p-6">
                       <h2 className="text-black font-bold text-lg mb-4">Our Services</h2>
                       <ul className="space-y-2">
                         {serviceCategories.map((category, categoryIndex) => (
                           <li key={categoryIndex}>
                             <div
-                              className={`px-4 py-3 rounded-xl cursor-pointer transition-all duration-300 ${
-                                hoveredCategoryIndex === categoryIndex ? "bg-[#084a93] text-white" : "text-gray-600 hover:bg-[#084a93]/50 hover:text-white"
-                              }`}
+                              className={`px-4 py-3 rounded-xl cursor-pointer transition-all duration-300 ${hoveredCategoryIndex === categoryIndex ? "bg-primary-500 text-white" : "text-gray-600 hover:bg-primary-500/50 hover:text-white"
+                                }`}
                               onMouseEnter={() => {
                                 setHoveredCategoryIndex(categoryIndex);
                                 setHoveredSubcategoryIndex(0);
@@ -162,16 +160,15 @@ const Header = () => {
                   </div>
 
                   {/* Level 2: Subcategories */}
-                  <div className="w-1/3 border-r border-[#415a77]/30">
+                  <div className="w-1/3 border-r border-primary-500/30">
                     <div className="p-6">
                       <h3 className="text-black font-semibold text-base mb-4">{serviceCategories[hoveredCategoryIndex]?.name}</h3>
                       <ul className="space-y-2">
                         {serviceCategories[hoveredCategoryIndex]?.subcategories.map((subcategory, subIndex) => (
                           <li key={subIndex}>
                             <div
-                              className={`px-4 py-2 rounded-xl cursor-pointer transition-all duration-300 ${
-                                hoveredSubcategoryIndex === subIndex ? "bg-[#084a93] text-white" : "text-gray-600 hover:bg-[#084a93]/30 hover:text-white"
-                              }`}
+                              className={`px-4 py-2 rounded-xl cursor-pointer transition-all duration-300 ${hoveredSubcategoryIndex === subIndex ? "bg-primary-500 text-white" : "text-gray-600 hover:bg-primary-500/30 hover:text-white"
+                                }`}
                               onMouseEnter={() => setHoveredSubcategoryIndex(subIndex)}
                             >
                               <span className="text-sm font-medium">{subcategory.name}</span>
@@ -191,7 +188,7 @@ const Header = () => {
                           <li key={serviceIndex}>
                             <Link
                               href={service.slug === "rpa" || service.slug === "pharmacy-consultant" ? `/${service.slug}` : `/services/${service.slug}`}
-                              className="block px-3 py-2 text-gray-600 hover:text-white hover:bg-[#084a93] rounded-xl transition-colors duration-200 text-sm"
+                              className="block px-3 py-2 text-gray-600 hover:text-white hover:bg-primary-600 rounded-xl transition-colors duration-200 text-sm"
                               onClick={handleMenuItemClick}
                             >
                               {service.name}
@@ -211,35 +208,34 @@ const Header = () => {
       {/* Desktop Contact Button */}
       <Link
         href="/contact"
-        className="hidden lg:block bg-[#415a77] px-[20px] py-[10px] rounded-[5px] hover:bg-[#2c3e50] transition-colors duration-300"
+        className="hidden lg:block bg-primary-500 px-[20px] py-[10px] rounded-[5px] hover:bg-primary-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
         onClick={handleMenuItemClick}
       >
         CONTACT US
       </Link>
 
       {/* Mobile Hamburger Menu Button */}
-      <button onClick={toggleMobileMenu} className="lg:hidden focus:outline-none text-[#e0e1dd] p-2" aria-label="Toggle mobile menu">
+      <button onClick={toggleMobileMenu} className="lg:hidden focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded text-[#e0e1dd] p-2" aria-label="Toggle mobile menu">
         {isMobileMenuOpen ? <HiX size={24} className="transition-transform duration-300" /> : <HiMenu size={24} className="transition-transform duration-300" />}
       </button>
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`lg:hidden fixed top-0 right-0 w-full h-screen bg-[#0d1b2a]/95 backdrop-blur-[20px] z-50 flex flex-col transition-all duration-400 ${
-          isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
-        }`}
+        className={`lg:hidden fixed top-0 right-0 w-full h-screen bg-[#0d1b2a]/95 backdrop-blur-[20px] z-50 flex flex-col transition-all duration-400 ${isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
+          }`}
       >
         {/* Mobile Menu Header */}
-        <div className="flex items-center justify-between p-6 border-b border-[#415a77]/30">
+        <div className="flex items-center justify-between p-6 border-b border-primary-500/30">
           <Link href="/" className="flex items-end relative" onClick={handleMobileMenuItemClick}>
             <div className="relative w-[50px] h-[50px]">
-              <Image src="/images/main-logo.png" alt="logo" fill className="object-contain" priority />
+              <Image src="/images/logo-black.png" alt="VTech Logo" fill className="object-contain" priority />
             </div>
             <div>
               <h1 className="text-[18px] absolute left-[50px] bottom-[20px]">techEdge</h1>
               <h1 className="text-[12px] absolute left-[90px] bottom-[10px] font-thin">inc.</h1>
             </div>
           </Link>
-          <button onClick={toggleMobileMenu} className="focus:outline-none text-[#e0e1dd] p-2" aria-label="Close mobile menu">
+          <button onClick={toggleMobileMenu} className="focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded text-[#e0e1dd] p-2" aria-label="Close mobile menu">
             <HiX size={24} />
           </button>
         </div>
@@ -248,7 +244,7 @@ const Header = () => {
         <nav className="flex-1 p-6">
           <ul className="space-y-4">
             {navItems.map((item) => (
-              <li key={item.path} className="border-b border-[#415a77]/30 pb-4">
+              <li key={item.path} className="border-b border-primary-500/30 pb-4">
                 {item.hasDropdown ? (
                   <div>
                     <div className="flex items-center justify-between">
@@ -259,18 +255,17 @@ const Header = () => {
                       >
                         {item.name}
                       </Link>
-                      <button onClick={toggleMobileServicesDropdown} className="focus:outline-none text-[#e0e1dd] p-2" aria-label="Toggle mobile services menu">
+                      <button onClick={toggleMobileServicesDropdown} className="focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2 rounded text-[#e0e1dd] p-2" aria-label="Toggle mobile services menu">
                         <MdKeyboardArrowDown size={20} className={`transition-transform duration-300 ${showMobileServicesDropdown ? "rotate-180" : ""}`} />
                       </button>
                     </div>
                     <div
-                      className={`mt-4 pl-4 space-y-4 transition-all duration-300 overflow-hidden ${
-                        showMobileServicesDropdown ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
-                      }`}
+                      className={`mt-4 pl-4 space-y-4 transition-all duration-300 overflow-hidden ${showMobileServicesDropdown ? "max-h-[800px] opacity-100" : "max-h-0 opacity-0"
+                        }`}
                     >
                       {serviceCategories.map((category, categoryIndex) => (
                         <div key={categoryIndex} className="space-y-3">
-                          <h3 className="text-white font-semibold text-base border-b border-[#415a77] pb-1">{category.name}</h3>
+                          <h3 className="text-white font-semibold text-base border-b border-primary-500 pb-1">{category.name}</h3>
                           <div className="space-y-2 pl-2">
                             {category.subcategories.map((subcategory, subIndex) => (
                               <div key={subIndex} className="space-y-1">
@@ -310,10 +305,10 @@ const Header = () => {
         </nav>
 
         {/* Mobile Contact Button */}
-        <div className="p-6 border-t border-[#415a77]/30">
+        <div className="p-6 border-t border-primary-500/30">
           <Link
             href="/contact"
-            className="block w-full bg-[#415a77] px-[20px] py-[15px] rounded-[5px] hover:bg-[#2c3e50] transition-colors duration-300 text-center font-medium"
+            className="block w-full bg-primary-500 px-[20px] py-[15px] rounded-[5px] hover:bg-primary-700 transition-colors duration-300 text-center font-medium focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
             onClick={handleMobileMenuItemClick}
           >
             CONTACT US

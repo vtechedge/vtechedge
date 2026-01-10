@@ -1,9 +1,13 @@
+import Head from "next/head";
+import { serviceSchema, injectSchema } from "@/utils/structuredData";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import Clamp from "@/utils/Clamp";
 import { pharmaData, otherOfferingsData } from "@/static/pharmaData";
 
 const Index = () => {
+  const pharmaSchema = serviceSchema('Pharmacy IT Consulting', 'Specialized IT consulting for pharmacies. HIPAA-compliant solutions, AI integration, and 24/7 IT support to keep your pharmacy running smoothly.');
   const [openFAQ, setOpenFAQ] = useState(1); // First FAQ open by default
 
   const toggleFAQ = (id) => {
@@ -12,6 +16,12 @@ const Index = () => {
 
   return (
     <>
+      <Head>
+        <title>Pharmacy IT Consulting - VTech</title>
+        <meta name="description" content="Specialized IT consulting for pharmacies. HIPAA-compliant solutions, AI integration, and 24/7 IT support to keep your pharmacy running smoothly." />
+        <meta name="keywords" content="pharmacy IT, healthcare technology, HIPAA compliance, pharmacy automation" />
+        {injectSchema(pharmaSchema)}
+      </Head>
       {/* New Section: Two-column layout with left content and right image */}
       <div className="flex flex-col xl:flex-row items-center justify-between py-[50px] padding-x bg-white gap-8 mt-28">
         {/* Left Side */}
@@ -31,7 +41,7 @@ const Index = () => {
           <p className="text-[14px] xl:text-lg text-gray-700 mb-6 xl:mb-8 max-w-xl">
             And because your pharmacy can&apos;t afford downtime, we provide ongoing IT maintenance and dedicated support to keep your operations running smoothly, 24/7.
           </p>
-          <button className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white font-semibold py-3 px-6 xl:px-8 rounded-lg">Discover</button>
+          <Link href="/contact" className="inline-block bg-accent hover:bg-accent-hover transition-all duration-300 text-white font-semibold py-3 px-6 xl:px-8 rounded-lg">Discover</Link>
         </div>
         {/* Right Side */}
         <div className="flex-1 flex justify-center relative h-[300px] xl:h-[700px] w-full">
@@ -55,12 +65,12 @@ const Index = () => {
             >
               <h3 className="text-[20px] xl:text-[24px] font-light mb-2">{benefit.title}</h3>
               <p className="text-[14px] xl:text-gray-600 mb-4 xl:mb-6">{benefit.description}</p>
-              <span className="flex items-center text-[#415A77] font-semibold cursor-pointer hover:underline">
+              <Link href="/contact" className="flex items-center text-primary-500 font-semibold cursor-pointer hover:underline">
                 Explore{" "}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-4 h-4 xl:w-5 xl:h-5 ml-1">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L21 12m0 0l-3.75 5.25M21 12H3" />
                 </svg>
-              </span>
+              </Link>
             </div>
           ))}
         </div>
@@ -135,7 +145,7 @@ const Index = () => {
 
           {/* Right Side: Button */}
           <div className="flex-shrink-0">
-            <button className="bg-white text-[#415A77] hover:bg-gray-100 font-semibold py-3 xl:py-4 px-6 xl:px-8 rounded-lg transition-colors">Schedule a Free Call</button>
+            <Link href="/contact" className="inline-block bg-white text-primary-500 hover:bg-gray-100 font-semibold py-3 xl:py-4 px-6 xl:px-8 rounded-lg transition-colors">Schedule a Free Call</Link>
           </div>
         </div>
       </div>
@@ -150,13 +160,13 @@ const Index = () => {
         <div className="max-w-4xl mx-auto">
           {otherOfferingsData.map((offering) => (
             <div key={offering.id} className="mb-4 last:mb-0">
-              <button onClick={() => toggleFAQ(offering.id)} className="w-full text-left bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+              <button onClick={() => toggleFAQ(offering.id)} className="w-full text-left bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">
                 <div className="flex items-center justify-between p-6 xl:p-8">
                   <h3 className="text-[18px] xl:text-2xl font-light pr-4" style={{ fontSize: `${Clamp(1.0, 1.5)}` }}>
                     {offering.title}
                   </h3>
                   <div className={`transform transition-transform duration-500 ease-in-out ${openFAQ === offering.id ? "rotate-180" : ""}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 text-[#415A77]">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-6 h-6 text-primary-500">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                     </svg>
                   </div>

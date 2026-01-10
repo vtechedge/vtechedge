@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import Link from "next/link";
+import Image from "next/image";
 import Clamp from "@/utils/Clamp";
 
 const Landing = () => {
@@ -57,18 +59,20 @@ const Landing = () => {
 
       {/* Mobile Layout - Image full width with content overlay (320px, 375px, 425px, 768px) */}
       <div className="block lg:hidden relative z-0 h-full">
-        <img
+        <Image
           src={images[currentSlide]}
-          alt={`Slide ${currentSlide + 1}`}
-          className="w-full h-full object-cover"
+          alt={`${slideContent[currentSlide].title} - Slide ${currentSlide + 1}`}
+          fill
+          className="object-cover"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-transparent"></div>
 
         {/* Mobile Content - Centered overlay */}
         <div className="absolute inset-0 z-10 flex items-center justify-center px-4">
           <div className="text-center space-y-6">
-            <div className="inline-flex items-center px-4 py-2 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-200 text-sm font-medium">
-              <span className="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-ping"></span>
+            <div className="inline-flex items-center px-4 py-2 bg-accent/20 border border-accent/30 rounded-full text-accent-light text-sm font-medium">
+              <span className="w-2 h-2 bg-accent-light rounded-full mr-2 animate-ping"></span>
               {slideContent[currentSlide].title}
             </div>
 
@@ -78,7 +82,7 @@ const Landing = () => {
                 .map((word, index) => (
                   <span
                     key={index}
-                    className={index % 3 === 1 ? "text-blue-400" : ""}
+                    className={index % 3 === 1 ? "text-accent" : ""}
                   >
                     {word}{" "}
                   </span>
@@ -90,9 +94,9 @@ const Landing = () => {
             </p>
 
             <div className="pt-4">
-              <button className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white px-6 py-3 rounded-[25px] text-lg font-medium">
+              <Link href="/contact" className="inline-block bg-accent hover:bg-accent/90 transition-all duration-300 text-white px-6 py-3 rounded-full text-lg font-medium shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent-light focus:ring-offset-2">
                 {slideContent[currentSlide].cta}
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -104,8 +108,8 @@ const Landing = () => {
           {/* Content Section */}
           <div className="space-y-8">
             <div className="space-y-6">
-              <div className="inline-flex items-center px-4 py-2 bg-blue-500/20 border border-blue-400/30 rounded-full text-blue-200 text-sm font-medium">
-                <span className="w-2 h-2 bg-blue-400 rounded-full mr-2 animate-ping"></span>
+              <div className="inline-flex items-center px-4 py-2 bg-accent/20 border border-accent/30 rounded-full text-accent-light text-sm font-medium">
+                <span className="w-2 h-2 bg-accent-light rounded-full mr-2 animate-ping"></span>
                 {slideContent[currentSlide].title}
               </div>
 
@@ -115,7 +119,7 @@ const Landing = () => {
                   .map((word, index) => (
                     <span
                       key={index}
-                      className={index % 3 === 1 ? "text-blue-400" : ""}
+                      className={index % 3 === 1 ? "text-accent" : ""}
                     >
                       {word}{" "}
                     </span>
@@ -127,24 +131,29 @@ const Landing = () => {
               </p>
 
               <div className="pt-4">
-                <button className="bg-blue-600 hover:bg-blue-900 transition-all duration-300 text-white px-[20px] py-[10px] rounded-[25px] text-[18px] font-medium">
+                <Link href="/contact" className="inline-block bg-accent hover:bg-accent/90 transition-all duration-300 text-white px-8 py-3 rounded-full text-[18px] font-semibold shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-accent-light focus:ring-offset-2">
                   {slideContent[currentSlide].cta}
-                </button>
+                </Link>
               </div>
             </div>
           </div>
 
           {/* Image Section */}
           <div className="relative">
-            <img
-              src={images[currentSlide]}
-              alt={`Slide ${currentSlide + 1}`}
-              className="w-full h-auto max-h-[600px] object-cover rounded-2xl shadow-2xl shadow-black/50"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            <div className="relative w-full h-auto max-h-[600px] rounded-2xl overflow-hidden shadow-2xl shadow-black/50">
+              <Image
+                src={images[currentSlide]}
+                alt={`${slideContent[currentSlide].title} - Desktop view`}
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl"></div>
+            </div>
 
             {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-accent/20 rounded-full blur-2xl"></div>
             <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-purple-500/20 rounded-full blur-2xl"></div>
           </div>
         </div>
@@ -157,11 +166,10 @@ const Landing = () => {
             key={idx}
             onClick={() => setCurrentSlide(idx)}
             aria-label={`Go to slide ${idx + 1}`}
-            className={`transition-all duration-300 ${
-              idx === currentSlide
-                ? "w-12 h-3 bg-blue-500 rounded-full"
-                : "w-3 h-3 bg-white/40 hover:bg-white/60 rounded-full"
-            }`}
+            className={`transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-black/50 rounded-full ${idx === currentSlide
+              ? "w-12 h-3 bg-accent rounded-full"
+              : "w-3 h-3 bg-white/40 hover:bg-white/60 rounded-full"
+              }`}
           />
         ))}
       </div>
