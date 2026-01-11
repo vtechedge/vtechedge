@@ -6914,4 +6914,249 @@ export const serviceData = {
       ],
     },
   },
+
+  "custom-solution-development": {
+    title: "Enterprise Software Development",
+    content: [
+      {
+        heading: "Enterprise Software Development",
+        paragraphs: ["Scalable, secure, and high-performance enterprise software solutions tailored to streamline your business operations."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:monitor-dashboard",
+          title: "Custom ERP Solutions",
+          description: "Tailored ERP systems to manage your unique business processes.",
+        },
+        {
+          icon: "mdi:cloud-sync",
+          title: "Legacy System Modernization",
+          description: "Upgrade and migrate legacy systems to modern, efficient architectures.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:speedometer",
+          title: "Increased Efficiency",
+          description: "Automated workflows reduce manual effort and errors.",
+        },
+      ],
+    },
+  },
+
+  "website-app-development": {
+    title: "Custom Web Application Development",
+    content: [
+      {
+        heading: "Custom Web Application Development",
+        paragraphs: ["Besopke web applications built with cutting-edge technologies to deliver superior user experiences."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:web",
+          title: "Progressive Web Apps (PWA)",
+          description: "Fast, reliable, and engaging web applications for all devices.",
+        },
+        {
+          icon: "mdi:api",
+          title: "API Integration",
+          description: "Seamless integration with third-party services and APIs.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:rocket",
+          title: "Enhanced User Engagement",
+          description: "Intuitive interfaces keep users engaged and active.",
+        },
+      ],
+    },
+  },
+
+  "mobile-commerce-mcommerce": {
+    title: "Mobile App Development",
+    content: [
+      {
+        heading: "Mobile App Development",
+        paragraphs: ["Native and cross-platform mobile applications designed to expand your digital reach."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:cellphone",
+          title: "iOS & Android Apps",
+          description: "High-quality apps for both major mobile platforms.",
+        },
+        {
+          icon: "mdi:cart",
+          title: "mCommerce Solutions",
+          description: "Mobile shopping experiences that drive sales on the go.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:access-point",
+          title: "Wider Reach",
+          description: "Direct access to customers through their personal devices.",
+        },
+      ],
+    },
+  },
+
+  "process-assessment-design": {
+    title: "Business Intelligence & Process Automation",
+    content: [
+      {
+        heading: "Business Intelligence & Process Automation",
+        paragraphs: ["Data-driven insights and automated workflows to optimize your business performance."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:chart-pie",
+          title: "BI Dashboards",
+          description: "Visual analytics to monitor key performance indicators.",
+        },
+        {
+          icon: "mdi:robot",
+          title: "Workflow Automation",
+          description: "Reduce repetitive tasks with intelligent automation.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:trending-up",
+          title: "Data-Driven Decisions",
+          description: "Actionable insights lead to smarter business choices.",
+        },
+      ],
+    },
+  },
+
+  "custom-ai-model-development": {
+    title: "AI Software Development",
+    content: [
+      {
+        heading: "AI Software Development",
+        paragraphs: ["Innovative artificial intelligence solutions to transform your business capabilities."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:brain",
+          title: "Machine Learning Models",
+          description: "Custom models trained on your data for predictive analytics.",
+        },
+        {
+          icon: "mdi:message-text",
+          title: "NLP & Chatbots",
+          description: "Intelligent conversational interfaces for customer support.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:lightbulb",
+          title: "Innovation Leadership",
+          description: "Stay ahead of the curve with cutting-edge AI technology.",
+        },
+      ],
+    },
+  },
+
+  "logo-visual-design": {
+    title: "Graphic Design",
+    content: [
+      {
+        heading: "Graphic Design",
+        paragraphs: ["Creative visual design services to build a strong and memorable brand identity."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:draw",
+          title: "Logo Design",
+          description: "Unique and memorable logos that represent your brand.",
+        },
+        {
+          icon: "mdi:palette",
+          title: "Brand Collateral",
+          description: "Consistent visual assets for all your marketing needs.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:eye",
+          title: "Brand Recognition",
+          description: "Distinctive design makes your brand instantly recognizable.",
+        },
+      ],
+    },
+  },
+
+  "digital-marketing-campaigns": {
+    title: "Digital Marketing",
+    content: [
+      {
+        heading: "Digital Marketing",
+        paragraphs: ["Strategic digital marketing campaigns to grow your audience and drive conversions."],
+      },
+    ],
+    mobileCards: {
+      heading: "How We Can Help You To Offer And Build:",
+      cards: [
+        {
+          icon: "mdi:google-ads",
+          title: "PPC Advertising",
+          description: "Targeted ad campaigns to reach your ideal customers.",
+        },
+        {
+          icon: "mdi:email-outline",
+          title: "Email Marketing",
+          description: "Engaging email campaigns to nurture leads and retain customers.",
+        },
+      ],
+    },
+    featureSection: {
+      heading: "How It's Benefitted Our Clients:",
+      features: [
+        {
+          icon: "mdi:target",
+          title: "Higher ROI",
+          description: "Optimized campaigns deliver better results for your budget.",
+        },
+      ],
+    },
+  },
 };
