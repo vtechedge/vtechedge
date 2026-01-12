@@ -140,11 +140,11 @@ const Contact = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-4">Office Address</h3>
             <p className="text-gray-600">
-              123 Business Street
+              78 Braemar Dr Unit#1209
               <br />
-              Tech Valley, CA 94105
+              Brampton, ON L6T 2M2
               <br />
-              United States
+              Canada
             </p>
           </div>
 
@@ -152,7 +152,7 @@ const Contact = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <p className="text-gray-600">
-              Phone: +1 (555) 123-4567
+              Phone: +1 647-864-0847
               <br />
               Email: info@vtechedge.com
               <br />
