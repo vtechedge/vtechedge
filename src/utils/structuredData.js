@@ -21,9 +21,10 @@ export const organizationSchema = {
     },
     "sameAs": [
         // Add your social media URLs
-        "https://facebook.com/vtechedge",
-        "https://twitter.com/vtechedge",
-        "https://linkedin.com/company/vtechedge"
+        "https://www.facebook.com/vtechedge/",
+        "https://www.pinterest.com/vtechedge/",
+        "https://www.linkedin.com/company/vtechedge",
+        "https://twitter.com/vtechedge"
     ]
 };
 
