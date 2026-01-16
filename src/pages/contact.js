@@ -17,6 +17,8 @@ const Contact = () => {
     message: "",
   });
   const [showEmailOptions, setShowEmailOptions] = useState(false);
+  const [showContactEmailOptions, setShowContactEmailOptions] = useState(false);
+  const [showSupportEmailOptions, setShowSupportEmailOptions] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -90,13 +92,13 @@ const Contact = () => {
 
   const getEmailContent = () => {
     const subject = `Contact Request from ${formData.name}`;
-    const body = `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`;
+    const body = `Name: ${formData.name}\\nEmail: ${formData.email}\\nPhone: ${formData.phone}\\n\\nMessage:\\n${formData.message}`;
     return { subject, body };
   };
 
   const openDefaultClient = () => {
     const { subject, body } = getEmailContent();
-    const bodyEncoded = body.replace(/\n/g, '%0D%0A');
+    const bodyEncoded = body.replace(/\\n/g, '%0D%0A');
     const mailtoUrl = `mailto:info@vtechedge.com?subject=${encodeURIComponent(subject)}&body=${bodyEncoded}`;
     window.location.href = mailtoUrl;
     setShowEmailOptions(false);
@@ -114,6 +116,64 @@ const Contact = () => {
     const outlookUrl = `https://outlook.office.com/mail/deeplink/compose?to=info@vtechedge.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     window.open(outlookUrl, '_blank');
     setShowEmailOptions(false);
+  };
+
+  // Handler for opening address in maps
+  const handleAddressClick = () => {
+    const address = "78 Braemar Dr Unit#1209, Brampton, ON L6T 2M2, Canada";
+    const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+    window.open(mapsUrl, '_blank');
+  };
+
+  // Handler for phone click
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+16478640847';
+  };
+
+  // Handler for contact email click (info@vtechedge.com)
+  const handleContactEmailClick = () => {
+    setShowContactEmailOptions(true);
+  };
+
+  // Handler for support email click
+  const handleSupportEmailClick = () => {
+    setShowSupportEmailOptions(true);
+  };
+
+  // Contact email handlers
+  const openContactEmailDefault = () => {
+    window.location.href = 'mailto:info@vtechedge.com';
+    setShowContactEmailOptions(false);
+  };
+
+  const openContactEmailGmail = () => {
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=info@vtechedge.com`;
+    window.open(gmailUrl, '_blank');
+    setShowContactEmailOptions(false);
+  };
+
+  const openContactEmailOutlook = () => {
+    const outlookUrl = `https://outlook.office.com/mail/deeplink/compose?to=info@vtechedge.com`;
+    window.open(outlookUrl, '_blank');
+    setShowContactEmailOptions(false);
+  };
+
+  // Support email handlers
+  const openSupportEmailDefault = () => {
+    window.location.href = 'mailto:support@vtechedge.com';
+    setShowSupportEmailOptions(false);
+  };
+
+  const openSupportEmailGmail = () => {
+    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=support@vtechedge.com`;
+    window.open(gmailUrl, '_blank');
+    setShowSupportEmailOptions(false);
+  };
+
+  const openSupportEmailOutlook = () => {
+    const outlookUrl = `https://outlook.office.com/mail/deeplink/compose?to=support@vtechedge.com`;
+    window.open(outlookUrl, '_blank');
+    setShowSupportEmailOptions(false);
   };
 
 
@@ -139,7 +199,7 @@ const Contact = () => {
           {/* Office Address Card */}
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-4">Office Address</h3>
-            <p className="text-gray-600">
+            <p className="text-gray-600 cursor-pointer hover:text-primary-600 transition-colors" onClick={handleAddressClick}>
               78 Braemar Dr Unit#1209
               <br />
               Brampton, ON L6T 2M2
@@ -152,11 +212,11 @@ const Contact = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <p className="text-gray-600">
-              Phone: +1 647-864-0847
+              Phone: <span className="cursor-pointer hover:text-primary-600 transition-colors" onClick={handlePhoneClick}>+1 647-864-0847</span>
               <br />
-              Email: info@vtechedge.com
+              Email: <span className="cursor-pointer hover:text-primary-600 transition-colors" onClick={handleContactEmailClick}>info@vtechedge.com</span>
               <br />
-              Support: support@vtechedge.com
+              Support: <span className="cursor-pointer hover:text-primary-600 transition-colors" onClick={handleSupportEmailClick}>support@vtechedge.com</span>
             </p>
           </div>
 
@@ -274,7 +334,7 @@ const Contact = () => {
             </div>
           </form>
 
-          {/* Email Options Modal */}
+          {/* Form Email Options Modal */}
           {showEmailOptions && (
             <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
               <div className="bg-white rounded-lg p-6 max-w-md w-full shadow-xl">
@@ -329,6 +389,106 @@ const Contact = () => {
             </div>
           )}
         </div>
+
+        {/* Contact Email Options Modal */}
+        {showContactEmailOptions && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg p-6 max-w-md w-full shadow-xl">
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Choose Email Service</h3>
+              <p className="text-sm text-gray-600 mb-6">Select how you&apos;d like to contact us:</p>
+
+              <div className="space-y-3">
+                <button
+                  onClick={openContactEmailGmail}
+                  className="w-full flex items-center gap-3 bg-white border-2 border-gray-300 hover:border-red-500 hover:bg-red-50 text-gray-700 py-3 px-4 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+                >
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052C21.69 2.28 24 3.434 24 5.457z" fill="#EA4335" />
+                  </svg>
+                  <span className="font-medium">Open in Gmail</span>
+                </button>
+
+                <button
+                  onClick={openContactEmailOutlook}
+                  className="w-full flex items-center gap-3 bg-white border-2 border-gray-300 hover:border-accent hover:bg-accent/5 text-gray-700 py-3 px-4 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1"
+                >
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#0078D4">
+                    <path d="M7 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm0 2h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z" />
+                    <path d="M12 8.5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm0 1.5c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z" />
+                  </svg>
+                  <span className="font-medium">Open in Outlook Web</span>
+                </button>
+
+                <button
+                  onClick={openContactEmailDefault}
+                  className="w-full flex items-center gap-3 bg-white border-2 border-gray-300 hover:border-green-500 hover:bg-green-50 text-gray-700 py-3 px-4 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                  <span className="font-medium">Open Default Email App</span>
+                </button>
+              </div>
+
+              <button
+                onClick={() => setShowContactEmailOptions(false)}
+                className="w-full mt-4 text-gray-600 hover:text-gray-800 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1 rounded"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Support Email Options Modal */}
+        {showSupportEmailOptions && (
+          <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg p-6 max-w-md w-full shadow-xl">
+              <h3 className="text-xl font-bold mb-4 text-gray-800">Choose Email Service</h3>
+              <p className="text-sm text-gray-600 mb-6">Select how you&apos;d like to contact support:</p>
+
+              <div className="space-y-3">
+                <button
+                  onClick={openSupportEmailGmail}
+                  className="w-full flex items-center gap-3 bg-white border-2 border-gray-300 hover:border-red-500 hover:bg-red-50 text-gray-700 py-3 px-4 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+                >
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+                    <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L12 9.545l8.073-6.052C21.69 2.28 24 3.434 24 5.457z" fill="#EA4335" />
+                  </svg>
+                  <span className="font-medium">Open in Gmail</span>
+                </button>
+
+                <button
+                  onClick={openSupportEmailOutlook}
+                  className="w-full flex items-center gap-3 bg-white border-2 border-gray-300 hover:border-accent hover:bg-accent/5 text-gray-700 py-3 px-4 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-1"
+                >
+                  <svg className="w-6 h-6" viewBox="0 0 24 24" fill="#0078D4">
+                    <path d="M7 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm0 2h10a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z" />
+                    <path d="M12 8.5c-1.93 0-3.5 1.57-3.5 3.5s1.57 3.5 3.5 3.5 3.5-1.57 3.5-3.5-1.57-3.5-3.5-3.5zm0 1.5c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z" />
+                  </svg>
+                  <span className="font-medium">Open in Outlook Web</span>
+                </button>
+
+                <button
+                  onClick={openSupportEmailDefault}
+                  className="w-full flex items-center gap-3 bg-white border-2 border-gray-300 hover:border-green-500 hover:bg-green-50 text-gray-700 py-3 px-4 rounded-md transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-1"
+                >
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                  </svg>
+                  <span className="font-medium">Open Default Email App</span>
+                </button>
+              </div>
+
+              <button
+                onClick={() => setShowSupportEmailOptions(false)}
+                className="w-full mt-4 text-gray-600 hover:text-gray-800 py-2 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-1 rounded"
+              >
+                Cancel
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </>
   );
